@@ -12,11 +12,13 @@ CJSCore::Init(array("fx"));
 
 
     <?//$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.mousewheel.js")?>
+    <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery-3.2.1.min.js")?>
 
     <?$APPLICATION->SetAdditionalCSS("/bitrix/css/main/bootstrap.css");?>
     <?//$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/font-awesome.min.css");?>
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/style.css");?>
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/media.css");?>
+    <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/menu_style.css");?>
 
 
     <?$APPLICATION->ShowHead();?>
@@ -29,7 +31,14 @@ CJSCore::Init(array("fx"));
          <div class="header-wrapper">
              <div class="left-block col-xs-2 col-md-5">
                  <div class="burger">
-                     <a href="#" title="<?=GetMessage('MENU')?>">
+                     <script>
+                         $(document).ready(function () {
+                             $("#menu_open").click(function () {
+                                 $("#menu").css("display","block").css("visibility","visible")
+                             })
+                         });
+                     </script>
+                     <a href="#" title="<?=GetMessage('MENU')?>" id="menu_open">
                          <img src="<?=SITE_TEMPLATE_PATH."/img/menu.png"?>" alt="">
                          <span><?=GetMessage('MENU')?></span>
                      </a>
@@ -71,3 +80,74 @@ CJSCore::Init(array("fx"));
              <div class="clear"></div>
          </div>
     </header>
+    <div id="menu">
+        <header class="header">
+            <div class="header-wrapper">
+                <div class="left-block col-xs-2 col-md-5">
+                    <div class="burger">
+                        <script>
+                            $(document).ready(function () {
+                                $("#menu_close").click(function () {
+                                    $("#menu").css("display","none").css("visibility","hidden")
+                                })
+                            });
+                        </script>
+                        <a href="#" title="" id="menu_close">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/close_menu.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="logo col-xs-4 col-md-2">
+                    <a href="#" title="/">
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/logo.png">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="main_menu col-md-8 col-md-offset-2">
+            <ul>
+                <li class="col-md-3"><a href="#">Возможности</a>
+                    <ul>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="#">Тарифы</a></li>
+                        <li><a href="#">Отраслевые решения</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Клиенты</a></li>
+                        <li><a href="#">Коробка</a></li>
+                        <li><a href="#">Облако</a></li>
+                    </ul>
+                </li>
+                <li class="col-md-3"><a href="#">Партнерам</a>
+                    <ul>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Безопастность</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                        <li><a href="#">Решения для госорганов</a></li>
+                        <li><a href="#">Интеграции</a></li>
+                        <li><a href="#">1С в облаке</a></li>
+                        <li><a href="#">Мобильное приложение</a></li>
+                    </ul>
+                </li>
+                <li class="col-md-3"><a href="#">Помошь</a>
+                    <ul>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Видео</a></li>
+                        <li><a href="#">Обучение</a></li>
+                        <li><a href="#">Большие планы</a></li>
+                        <li><a href="#">Управление продажами</a></li>
+                        <li><a href="#">Управление проектами</a></li>
+                        <li><a href="#">Юридические документы</a></li>
+                    </ul>
+                </li>
+                <li class="col-md-3"><a href="#">О компании</a>
+                    <ul>
+                        <li><a href="#">Команда</a></li>
+                        <li><a href="#">Пресса</a></li>
+                        <li><a href="#">Квартирники</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#" class="circle_a">Презентация</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
