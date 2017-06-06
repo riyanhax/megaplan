@@ -1,0 +1,1 @@
+<a class="social-link" href="#" title="Twitter"><img src="<?=SITE_TEMPLATE_PATH."/img/social-tw-c.png"?>" alt="Twitter"></a>

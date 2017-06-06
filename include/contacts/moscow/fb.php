@@ -1,0 +1,1 @@
+<a class="social-link" href="#" title="Facebook"><img src="<?=SITE_TEMPLATE_PATH."/img/social-fb-b.png"?>" alt="Facebook"></a>

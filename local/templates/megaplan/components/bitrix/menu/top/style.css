@@ -1,0 +1,14 @@
+.top-nav-container {
+    margin-left: 60px;
+}
+
+.top-nav-list .top-nav-item {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.top-nav-list .top-nav-item:last-child {
+    margin-right: 0;
+}
