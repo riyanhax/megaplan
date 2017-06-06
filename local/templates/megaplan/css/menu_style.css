@@ -1,45 +1,53 @@
 #menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-  visibility: hidden;
-  width: 100%;
-  min-width: 800px;
-  height: 1000px;
-  background-color: #08bf32;
-  opacity: 0.949;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    visibility: hidden;
+    width: 100%;
+    min-width: 800px;
+    height: 1000px;
+    background-color: #08bf32;
+    opacity: 0.949;
 }
+
 #menu header {
-  position: static;
+    position: static;
 }
+
 #menu .main_menu {
-  display: block;
-  margin-top: 150px;
-  margin-bottom: 100px;
+    display: block;
+    margin-top: 150px;
+    margin-bottom: 100px;
 }
+
 #menu .main_menu > ul > li {
-  display: inline-block;
+    display: inline-block;
 }
+
 #menu .main_menu > ul > li > a {
-  color: #fff;
-  font-weight: 300;
-  text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
 }
+
 #menu .main_menu > ul > li > ul > li {
-  display: block;
-  margin-top: 10px;
+    display: block;
+    margin-top: 10px;
 }
+
 #menu .main_menu > ul > li > ul > li > a {
-  color: #fff;
-  font-weight: 200;
+    color: #fff;
+    font-weight: 200;
 }
+
 #menu .main_menu > ul > li > ul > li .circle_a {
-  display: block;
-  margin-top: 10px;
-  padding: 12px 30px;
-  border-radius: 50px;
-  border: 1px solid #fff;
-  font-size: 18px;
-  font-weight: 300;
+    display: block;
+    margin-top: 10px;
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    font-size: 18px;
+    font-weight: 300;
 }
