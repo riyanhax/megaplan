@@ -1,0 +1,1 @@
+<a class="social-link" href="#" title="Вконтакте"><img src="<?=SITE_TEMPLATE_PATH."/img/social-vk-b.png"?>" alt="Вконтакте"></a>

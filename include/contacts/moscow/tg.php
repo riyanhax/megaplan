@@ -1,0 +1,1 @@
+<a class="social-link" href="#" title="Telegram"><img src="<?=SITE_TEMPLATE_PATH."/img/social-tg-b.png"?>" alt="Telegram"></a>
