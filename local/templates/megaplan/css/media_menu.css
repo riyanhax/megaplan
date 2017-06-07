@@ -1,0 +1,40 @@
+@media screen and (max-width: 992px) {
+    #menu .main_menu > div > ul > li {
+        margin-left: 10%;
+        margin-bottom: 30px;
+    }
+    #menu .main_menu > div > ul > li > ul > li > a{
+        word-wrap: normal;
+    }
+    #menu .social {
+        padding: 0 15%;
+    }
+    #menu .payment_systems {
+        padding: 0 15%;
+    }
+}
+@media screen and (max-width: 767px) {
+    #menu .main_menu > div > ul > li {
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width: 640px) {
+    #menu .info_menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    #menu .info_menu a{
+        display: block;
+    }
+    #menu .social {
+        padding: 0 10%;
+    }
+    #menu .main_menu > div > ul > li {
+        margin-left: 15%;
+    }
+}
+@media screen and (max-width: 425px) {
+    #menu .social {
+        padding: 0;
+    }
+}

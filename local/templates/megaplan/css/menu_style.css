@@ -1,3 +1,7 @@
+header .logo{
+    z-index: 10000;
+}
+
 #menu {
     position: absolute;
     top: 0;
@@ -6,48 +10,80 @@
     display: none;
     visibility: hidden;
     width: 100%;
-    min-width: 800px;
-    height: 1000px;
+    /*min-width: 800px;*/
+    height: auto;
     background-color: #08bf32;
     opacity: 0.949;
 }
 
-#menu header {
-    position: static;
+.menu_wrap{
+    float: left;
+    width: 100%;
+}
+#menu::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 #menu .main_menu {
     display: block;
-    margin-top: 150px;
-    margin-bottom: 100px;
+    /*padding: 0;*/
+    margin-top: 135px;
+    margin-bottom: 20px;
+
 }
 
-#menu .main_menu > ul > li {
+#menu .main_menu > div > ul > li {
     display: inline-block;
+    padding: 0 15px 0 15px;
 }
 
-#menu .main_menu > ul > li > a {
+#menu .main_menu > div > ul > li > a {
     color: #fff;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
-#menu .main_menu > ul > li > ul > li {
+#menu .main_menu > div > ul > li > ul > li {
     display: block;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
-#menu .main_menu > ul > li > ul > li > a {
+#menu .main_menu > div > ul > li > ul > li > a {
     color: #fff;
-    font-weight: 200;
+    font-weight: 100;
+    word-wrap: break-word;
 }
 
-#menu .main_menu > ul > li > ul > li .circle_a {
+#menu .main_menu > div > ul > li > ul > li .circle_a {
     display: block;
-    margin-top: 10px;
-    padding: 12px 30px;
+    margin-top: 20px;
+    /*margin-left: 20px;*/
+    padding: 5px 25px;
+    width: 172px;
     border-radius: 50px;
     border: 1px solid #fff;
     font-size: 18px;
     font-weight: 300;
+}
+#menu .info_menu {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#menu .social {
+    margin-top: 20px;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#menu .payment_systems {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
 }

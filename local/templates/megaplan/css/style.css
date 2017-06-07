@@ -10,6 +10,7 @@ body {
 body .wrapper {
     font-size: 18px;
     font-family: 'Exo 2', sans-serif;
+    padding: 0;
 }
 
 h2.block-title {
@@ -77,7 +78,7 @@ header {
     height: 90px;
 }
 header img.logo-img {
-    max-height: 29px
+    max-height: 29px;
 }
 
 header .header-wrapper {
