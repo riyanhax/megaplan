@@ -27,45 +27,29 @@ header .logo{
 }
 
 #menu .main_menu {
-    display: block;
-    /*padding: 0;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     margin-top: 135px;
     margin-bottom: 20px;
 
 }
-
-#menu .main_menu > div > ul > li {
-    display: inline-block;
-    padding: 0 15px 0 15px;
+#menu .main_menu > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
-
-#menu .main_menu > div > ul > li > a {
-    color: #fff;
-    font-weight: 400;
+#menu .main_menu > div > div{
+    margin-bottom: 30px;
+}
+#menu .main_menu > div > div > a{
     text-transform: uppercase;
 }
-
-#menu .main_menu > div > ul > li > ul > li {
-    display: block;
-    margin-top: 5px;
-}
-
-#menu .main_menu > div > ul > li > ul > li > a {
-    color: #fff;
+#menu .main_menu > div > div > ul{
     font-weight: 100;
-    word-wrap: break-word;
 }
-
-#menu .main_menu > div > ul > li > ul > li .circle_a {
-    display: block;
-    margin-top: 20px;
-    /*margin-left: 20px;*/
-    padding: 5px 25px;
-    width: 172px;
-    border-radius: 50px;
-    border: 1px solid #fff;
-    font-size: 18px;
-    font-weight: 300;
+#menu .main_menu > div > div > ul > a{
+    line-height: 0.7;
 }
 #menu .info_menu {
     margin-top: 30px;

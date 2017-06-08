@@ -8,6 +8,7 @@ body {
 }
 
 body .wrapper {
+    position: relative;
     font-size: 18px;
     font-family: 'Exo 2', sans-serif;
     padding: 0;

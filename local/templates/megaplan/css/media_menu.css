@@ -1,11 +1,4 @@
 @media screen and (max-width: 992px) {
-    #menu .main_menu > div > ul > li {
-        margin-left: 10%;
-        margin-bottom: 30px;
-    }
-    #menu .main_menu > div > ul > li > ul > li > a{
-        word-wrap: normal;
-    }
     #menu .social {
         padding: 0 15%;
     }
@@ -14,11 +7,16 @@
     }
 }
 @media screen and (max-width: 767px) {
-    #menu .main_menu > div > ul > li {
-        margin-left: 20%;
+    #menu .main_menu {
+        justify-content: space-around;
     }
 }
 @media screen and (max-width: 640px) {
+    #menu .main_menu {
+        padding: 0 150px;
+        flex-direction: column;
+        align-items: stretch;
+    }
     #menu .info_menu{
         flex-direction: column;
         align-items: center;
@@ -29,11 +27,11 @@
     #menu .social {
         padding: 0 10%;
     }
-    #menu .main_menu > div > ul > li {
-        margin-left: 15%;
-    }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
+    #menu .main_menu {
+        padding: 0 100px;
+    }
     #menu .social {
         padding: 0;
     }

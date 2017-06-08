@@ -108,53 +108,76 @@ CJSCore::Init(array("fx"));
                 </div>
             </header>
             <div class="row">
-                <div class="main_menu col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-                    <div class="row">
-                        <ul>
-                            <li class="col-xs-5 col-sm-4 col-md-3"><a href="#">Возможности</a>
+                <div class="main_menu col-xs-12 col-sm-8 col-sm-offset-2 col-md-10 col-md-offset-1">
+<!--                    <div class="row">-->
+                        <div> <!--class="col-xs-5 col-sm-4 col-md-4"-->
+                            <div><a href="#">Возможности</a>
                                 <ul>
-                                    <li><a href="#">Цены</a></li>
-                                    <li><a href="#">Тарифы</a></li>
-                                    <li><a href="#">Отраслевые решения</a></li>
-                                    <li><a href="#">Отзывы</a></li>
-                                    <li><a href="#">Клиенты</a></li>
-                                    <li><a href="#">Коробка</a></li>
-                                    <li><a href="#">Облако</a></li>
-                                </ul>
-                            </li>
-                            <li class="col-xs-5 col-sm-4 col-md-3"><a href="#">Партнерам</a>
-                                <ul>
-                                    <li><a href="#">API</a></li>
-                                    <li><a href="#">Безопастность</a></li>
-                                    <li><a href="#">Конфиденциальность</a></li>
-                                    <li><a href="#">Решения для госорганов</a></li>
-                                    <li><a href="#">Интеграции</a></li>
-                                    <li><a href="#">1С в облаке</a></li>
+                                    <li><a href="#">Воронка продаж</a></li>
+                                    <li><a href="#">Коробка/облако</a></li>
+                                    <li><a href="#">Безопастность данных</a></li>
+                                    <li><a href="#">CRM</a></li>
+                                    <li><a href="#">Управление проэктами</a></li>
+                                    <li><a href="#">Интеграции с почтой</a></li>
+                                    <li><a href="#">Интеграции с телефонией</a></li>
                                     <li><a href="#">Мобильное приложение</a></li>
                                 </ul>
-                            </li>
-                            <li class="col-xs-5 col-sm-4 col-md-3"><a href="#">Помошь</a>
+                            </div>
+                            <div><a href="#">Цены</a>
                                 <ul>
-                                    <li><a href="#">Блог</a></li>
-                                    <li><a href="#">Видео</a></li>
-                                    <li><a href="#">Обучение</a></li>
-                                    <li><a href="#">Большие планы</a></li>
-                                    <li><a href="#">Управление продажами</a></li>
-                                    <li><a href="#">Управление проектами</a></li>
-                                    <li><a href="#">Юридические документы</a></li>
+                                    <li><a href="#">Выбрать тариф</a></li>
+                                    <li><a href="#">Бесплатный тариф</a></li>
+                                    <li><a href="#">Политика конфиденциальности</a></li>
+                                    <li><a href="#">Лицензированный договор</a></li>
+                                    <li><a href="#">Договор на доступ</a></li>
                                 </ul>
-                            </li>
-                            <li class="col-xs-5 col-sm-4 col-md-3"><a href="#">О компании</a>
+                            </div>
+                        </div>
+                        <div> <!--class="col-xs-5 col-sm-4 col-md-4"-->
+                            <div><a href="#">Помошь</a>
                                 <ul>
-                                    <li><a href="#">Команда</a></li>
-                                    <li><a href="#">Пресса</a></li>
-                                    <li><a href="#">Квартирники</a></li>
+                                    <li><a href="#">Инструкции</a></li>
+                                    <li><a href="#">Комплексное внедрение</a></li>
+                                    <li><a href="#">Консультанты (партнеры)</a></li>
+                                    <li><a href="#">Частые вопросы</a></li>
+                                    <li><a href="#">Онлайн уроки</a></li>
+                                </ul>
+                            </div>
+                            <div><a href="#">Партнерам</a>
+                                <ul>
+                                    <li><a href="#">API и виджеты</a></li>
+                                    <li><a href="#">Партнерская программа</a></li>
+                                    <li><a href="#">Реферальная программа</a></li>
+                                </ul>
+                            </div>
+                            <div><a href="#">О компании</a>
+                                <ul>
                                     <li><a href="#">Контакты</a></li>
-                                    <li><a href="#" class="circle_a">Презентация</a></li>
+                                    <li><a href="#">Команда</a></li>
+                                    <li><a href="#">Квартирники</a></li>
+                                    <li><a href="#">Вакансии</a></li>
                                 </ul>
-                            </li>
-                        </ul>
-                    </div>
+                            </div>
+                        </div>
+                        <div> <!--class="col-xs-5 col-sm-4 col-md-4"-->
+                            <div><a href="#">Блог</a>
+                                <ul>
+                                    <li><a href="#">Блог о продажах</a></li>
+                                    <li><a href="#">Блог о бизнесе</a></li>
+                                    <li><a href="#">Полезное чтение</a></li>
+                                    <li><a href="#">Видео блог</a></li>
+                                </ul>
+                            </div>
+                            <div><a href="#">Клиентам</a>
+                                <ul>
+                                    <li><a href="#">Личный кабинет</a></li>
+                                    <li><a href="#">Клиенты</a></li>
+                                    <li><a href="#">Кейсы</a></li>
+                                    <li><a href="#">Решения для бизнеса</a></li>
+                                </ul>
+                            </div>
+                        </div>
+<!--                    </div>-->
                 </div>
             </div>
             <div class="row">
