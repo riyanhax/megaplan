@@ -1,12 +1,12 @@
-header .logo{
-    z-index: 10000;
+header .logo {
+    z-index: 200;
 }
 
 #menu {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 100;
     display: none;
     visibility: hidden;
     width: 100%;
