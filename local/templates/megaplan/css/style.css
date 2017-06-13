@@ -1,7 +1,9 @@
 * {
     outline: none;
 }
-
+html{
+    overflow-x: hidden;
+}
 body {
     min-height: 800px;
     color: #414b4d;
