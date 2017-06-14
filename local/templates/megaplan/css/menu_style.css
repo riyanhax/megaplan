@@ -1,0 +1,73 @@
+header .logo {
+    z-index: 200;
+}
+
+#menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+    visibility: hidden;
+    width: 100%;
+    /*min-width: 800px;*/
+    height: auto;
+    background-color: #08bf32;
+    opacity: 0.949;
+}
+
+.menu_wrap{
+    float: left;
+    width: 100%;
+}
+#menu::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#menu .main_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 135px;
+    margin-bottom: 20px;
+
+}
+#menu .main_menu > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#menu .main_menu > div > div{
+    margin-bottom: 30px;
+}
+#menu .main_menu > div > div > a{
+    text-transform: uppercase;
+}
+#menu .main_menu > div > div > ul{
+    font-weight: 100;
+}
+#menu .main_menu > div > div > ul > a{
+    line-height: 0.7;
+}
+#menu .info_menu {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#menu .social {
+    margin-top: 20px;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#menu .payment_systems {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
