@@ -281,7 +281,7 @@
 .wrapper > .content .form > div form input {
   margin-top: 50px;
 }
-@media (max-width: 1025px) {
+@media (max-width: 1042px) {
   .wrapper > .content .slogan {
     margin-bottom: 60px;
   }
@@ -299,6 +299,10 @@
   }
   .wrapper > .content .plans > div > div .plan .plan_description ul {
     padding-left: 15%;
+  }
+  .wrapper > .content .plans > div .money {
+    top: -105px;
+    right: 10px;
   }
   .wrapper > .content .text > div > div:first-child {
     height: 75px;
@@ -341,7 +345,7 @@
     right: -90px;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .wrapper .content .slogan {
     margin-top: 60px;
   }
@@ -349,14 +353,14 @@
     font-size: 48px;
   }
   .wrapper .content .buttons_prices {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
   .wrapper .content .plans > div {
-    height: 2400px;
+    height: 2470px;
   }
   .wrapper .content .plans > div .money {
-    top: -75px;
-    right: -90px;
+    top: -45px;
+    right: 40%;
   }
   .wrapper .content .form > div {
     height: 490px;
@@ -365,14 +369,7 @@
     font-size: 48px;
   }
 }
-@media (max-width: 455px) {
-  .wrapper .content .slogan {
-    margin-top: 20px;
-  }
-  .wrapper .content .slogan p {
-    margin-bottom: 30px;
-    font-size: 32px;
-  }
+@media (max-width: 600px) {
   .wrapper .content .buttons_prices {
     margin-bottom: 50px;
   }
@@ -382,6 +379,15 @@
   }
   .wrapper .content .buttons_prices > div .button {
     flex-basis: auto;
+  }
+}
+@media (max-width: 455px) {
+  .wrapper .content .slogan {
+    margin-top: 20px;
+  }
+  .wrapper .content .slogan p {
+    margin-bottom: 30px;
+    font-size: 32px;
   }
   .wrapper .content .plans > div {
     height: 2530px;
