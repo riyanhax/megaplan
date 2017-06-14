@@ -3,6 +3,11 @@
 IncludeTemplateLangFile(__FILE__);
 CJSCore::Init(array("jquery"));
 CJSCore::Init(array("fx"));
+$page = $APPLICATION->GetCurPage();
+if($page=="/contacts/"||$page=="/company/"||$page=="/price/")
+    $theme = "dark";
+else
+    $theme = "";
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -22,7 +27,7 @@ CJSCore::Init(array("fx"));
     <?$APPLICATION->ShowHead();?>
     <title><?$APPLICATION->ShowTitle()?></title>
 </head>
-<body>
+<body class="<?=$theme?>">
 <div id="panel"><?$APPLICATION->ShowPanel();?></div>
 <div class="wrapper">
     <header class="header">
@@ -30,7 +35,11 @@ CJSCore::Init(array("fx"));
              <div class="left-block col-xs-2 col-md-5">
                  <div class="burger">
                      <a href="#" title="<?=GetMessage('MENU')?>">
-                         <img src="<?=SITE_TEMPLATE_PATH."/img/menu.png"?>" alt="">
+                         <?if($theme=="dark"):?>
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/menu_b.png" alt="">
+                         <?else:?>
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/menu.png" alt="">
+                         <?endif;?>
                          <span><?=GetMessage('MENU')?></span>
                      </a>
                  </div>
@@ -56,7 +65,11 @@ CJSCore::Init(array("fx"));
              </div>
              <div class="logo col-xs-4 col-md-2">
                  <a href="<?=SITE_DIR?>" title="<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/company_name.php"), false, array("HIDE_ICONS"=>"Y"));?>">
-                     <?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/logo.php"));?>
+                     <?if($theme=="dark"):?>
+                         <?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/logo_b.php"));?>
+                     <?else:?>
+                         <?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/logo.php"));?>
+                     <?endif;?>
                  </a>
              </div>
              <div class="right-block col-xs-6 col-md-5">

@@ -17,7 +17,7 @@ $this->setFrameMode(true);
     <div class="container">
         <div class="col-md-12 banner-inner">
             <div class="banner-text color-white">
-                <?=$arResult["NAME"]?>
+                Наши новости и анонсы из первых рук
             </div>
             <div class="banner-subtext">
                 <a class="button" href="#posts" title="">Все рубрики</a>
@@ -35,23 +35,26 @@ $this->setFrameMode(true);
         <div class="one-post" id="<?=$this->GetEditAreaId($arResult["FIRST_POST"]['ID']);?>">
             <div class="blog-item_block col-sm-12 col-md-6">
                 <div class="img-block">
-                    <img src="/local/templates/megaplan/img/blog/1.png" alt=""><?//=$arItem["DETAIL_PICTURE"]?>
+                    <a href="<?=$arResult["FIRST_POST"]["DETAIL_PAGE_URL"]?>#post" title="<?=$arResult["FIRST_POST"]["NAME"]?>">
+                        <img src="/local/templates/megaplan/img/blog/1.png" alt=""><?//=$arItem["DETAIL_PICTURE"]?>
+                    </a>
                 </div>
             </div>
             <div class="blog-item_block col-sm-12 col-md-6">
                 <div class="post-meta">
                     <span class="blog-rubric"><?=$arResult["FIRST_POST"]["PROPERTIES"]["RUBRIC"]["VALUE"]?></span>
                     <span class="date"><?=$arResult["FIRST_POST"]["PROPERTIES"]["DATE"]["VALUE"]?></span>
-                    <div class="clear">
-                    </div>
+                    <div class="clear"></div>
                 </div>
                 <div class="title">
-                    <?=$arResult["FIRST_POST"]["NAME"]?>
+                    <a href="<?=$arResult["FIRST_POST"]["DETAIL_PAGE_URL"]?>#post" title="<?=$arResult["FIRST_POST"]["NAME"]?>">
+                        <?=$arResult["FIRST_POST"]["NAME"]?>
+                    </a>
                 </div>
                 <p class="preview-text">
                     <?=$arResult["FIRST_POST"]["PREVIEW_TEXT"]?>
                 </p>
-                <a href="<?=$arResult["FIRST_POST"]["DETAIL_PAGE_URL"]?>" class="more-link">Читать далее...</a>
+                <a href="<?=$arResult["FIRST_POST"]["DETAIL_PAGE_URL"]?>#post" class="more-link" title="">Читать далее...</a>
             </div>
             <div class="clear"></div>
         </div>
@@ -69,15 +72,19 @@ $this->setFrameMode(true);
                         <div class="clear"></div>
                     </div>
                     <div class="img-block">
-                        <img src="/local/templates/megaplan/img/blog/2.png" alt=""><?//=$arItem["PREVIEW_PICTURE"]?>
+                        <a href="<?=$arItem["DETAIL_PAGE_URL"]?>#post" title="<?=$arItem["NAME"]?>">
+                            <img src="/local/templates/megaplan/img/blog/2.png" alt=""><?//=$arItem["PREVIEW_PICTURE"]?>
+                        </a>
                     </div>
                     <div class="title bg-grey">
-                        <?=$arItem["NAME"]?>
+                        <a href="<?=$arItem["DETAIL_PAGE_URL"]?>#post" title="<?=$arItem["NAME"]?>">
+                            <?=$arItem["NAME"]?>
+                        </a>
                     </div>
                     <p class="preview-text bg-grey">
                         <?=$arItem["PREVIEW_TEXT"]?>
                     </p>
-                    <a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="more-link bg-grey">Читать далее...</a>
+                    <a href="<?=$arItem["DETAIL_PAGE_URL"]?>#post" class="more-link bg-grey" title="">Читать далее...</a>
                 </div>
             <?endforeach;?>
 

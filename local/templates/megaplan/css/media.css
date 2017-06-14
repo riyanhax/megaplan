@@ -11,6 +11,14 @@
     header .top-nav-list .top-nav-item {
         margin-right: 15px;
     }
+    section.section-cloud-desc .cloud-desc_block > div:not(.cloud-desc_title) {
+        width: 100%;
+    }
+    section.section-cloud .cloud-block:first-of-type .cloud-img,
+    section.section-cloud .cloud-block:first-of-type .cloud-title,
+    section.section-cloud-desc .cloud-row .cloud-desc:first-of-type .cloud-button {
+        padding-left: 0;
+    }
     .hidden-md {
         display: none!important;
     }
@@ -49,6 +57,18 @@
     section.section-blog .other-posts .blog-item_block .title {
         height: inherit;
     }
+    section.section-cloud-desc .cloud-row .cloud-desc_block {
+        padding: 0 20px 60px 20px;
+    }
+    section.section-cloud-desc .cloud-row > div:first-of-type {
+        padding-left: 40px;
+    }
+    section.section-cloud-desc .cloud-row > div:last-of-type {
+        padding-right: 40px;
+    }
+    body.dark section.top-banner .banner-inner {
+        padding: 200px 0 100px 300px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -61,6 +81,12 @@
     .content-crop .section-wrapper {
         padding: 65px 0;
     }
+    section.section-cloud .cloud-block {
+        padding: 28px 20px 0 40px;
+    }
+    .content-crop.section-cloud .section-wrapper {
+        margin: -210px 40px 0 40px;
+    }
     .hidden-xs {
         display: none!important;
     }
@@ -69,5 +95,14 @@
 @media (max-width: 650px) {
     header .header-wrapper .top-phone {
         display: none!important;
+    }
+    section.section-cloud-desc .cloud-row.cloud-buttons {
+        display: none!important;
+    }
+    section.section-cloud-desc .cloud-row.cloud-one_button {
+        display: block!important;
+    }
+    body.dark section.top-banner .banner-inner {
+        padding: 200px 0 100px 0;
     }
 }
