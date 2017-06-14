@@ -23,6 +23,10 @@ h4.question-text {
     text-transform: uppercase;
 }
 
+img {
+    max-width: 100%;
+}
+
 p {
     margin: 0;
     font-size: 15px;
@@ -64,8 +68,11 @@ a:hover, a:focus {
     background: #ffd451;
     color: #414b4d;
 }
-a.button:hover {
+a.button, a.button:hover {
     text-decoration: none;
+}
+a.button:hover span {
+    box-shadow: 0 0 0 50px rgba(0, 0, 0, 0.1) inset;
 }
 .clear {
     clear: both;
@@ -87,6 +94,7 @@ header .header-wrapper {
 header .header-wrapper .burger {
     float: left;
     width: 40px;
+    line-height: 16px;
 }
 
 header .header-wrapper .burger a {
@@ -123,11 +131,35 @@ header .header-wrapper .top-login {
     font-weight: 300;
 }
 
+header .header-wrapper .top-login:hover {
+    text-decoration: none;
+    box-shadow: 0 0 0 50px rgba(0, 0, 0, 0.1) inset;
+}
+
 header .header-wrapper .top-lang {
     background: url(../img/arrow_down.png) no-repeat 100% 60%;
     padding: 0 15px;
 }
 
+body.dark header .header-wrapper .top-lang{
+    background: url(../img/arrow_down_b.png) no-repeat 100% 60%;
+}
+
+body.dark header .header-wrapper a {
+    color: #414b4d;
+}
+
+body.dark header .header-wrapper .top-login {
+    border: 1px solid #414b4d;
+}
+
+body.dark section.top-banner .banner-text {
+    color: #414b4d;
+}
+
+body.dark section.top-banner .banner-inner {
+    padding: 200px 0 100px 500px;
+}
 
 /*======================== TOP_BANNER =========================*/
 
@@ -138,18 +170,28 @@ header .header-wrapper .top-lang {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.1) inset
 }
 .top-banner.banner-security {
     background-image: url(../img/security/security-bg.jpg);
 }
 .top-banner.banner-blog {
-    background-image: url(../img/security/security-bg.jpg);
+    background-image: url(../img/blog/blog-bg.jpg);
 }
 .top-banner.banner-clients {
     background-image: url(../img/clients/clients-bg.jpg);
 }
 .top-banner.banner-contacts {
     background-image: url(../img/contacts/contacts-bg.jpg);
+}
+.top-banner.banner-company {
+    background-image: url(../img/company/company-bg.jpg);
+}
+.top-banner.banner-cloud {
+    background-image: url(../img/cloud/cloud-bg.jpg);
+}
+.top-banner.banner-partners {
+    background-image: url(../img/partners/partners-bg.jpg);
 }
 
 
@@ -185,7 +227,19 @@ header .header-wrapper .top-lang {
     font-weight: 300;
 }
 
+.top-banner.banner-company .banner-inner .banner-text {
+    margin-bottom: 40px;
+}
+
 .top-banner.banner-contacts .banner-inner .banner-text {
+    margin-bottom: 40px;
+}
+
+.top-banner.banner-cloud .banner-inner .banner-text {
+    margin-bottom: 150px;
+}
+
+.top-banner.banner-partners .banner-inner .banner-text {
     margin-bottom: 150px;
 }
 
@@ -243,6 +297,10 @@ header .header-wrapper .top-lang {
 
 /*======================== SECURITY =========================*/
 
+section.section-security .first-block .security-item_block {
+    text-align: center;
+}
+
 section.section-security .security-item_block:nth-of-type(4) {
     margin-left: 16.6%;
     clear: left;
@@ -258,7 +316,7 @@ section.section-security .security-img {
 
 section.section-security .security-title {
     margin-bottom: 25px;
-    font-size: 18px;
+    font-size: 19px;
     text-transform: uppercase;
 }
 
@@ -337,6 +395,10 @@ section.section-blog .one-post .blog-item_block .title {
     text-transform: uppercase;
 }
 
+section.section-blog .one-post .blog-item_block .title a {
+    color: #414b4d;
+}
+
 section.section-blog .one-post .blog-item_block .preview-text {
     margin-bottom: 20px;
     font-size: 18px;
@@ -388,6 +450,10 @@ section.section-blog .other-posts .blog-item_block .title {
     font-size: 20px;
 }
 
+section.section-blog .other-posts .blog-item_block .title a {
+    color: #414b4d;;
+}
+
 section.section-blog .other-posts .blog-item_block .preview-text {
     padding: 0 20px 20px;
     font-size: 18px;
@@ -421,6 +487,10 @@ section.section-blog .view-more span {
 
 section.section-blog_detail .post {
     padding: 0 130px;
+}
+
+section.section-blog_detail .post .block-title {
+    padding-bottom: 50px;
 }
 
 section.section-blog_detail .post .title {
@@ -652,7 +722,200 @@ section.section-contacts .social-list .social-item:last-child {
 
 
 /*======================== /CONTACTS =======================*/
+/*========================== CLOUD =========================*/
+section.content-crop.section-cloud .section-wrapper {
+    padding: 0;
+    margin: -238px 80px 0 80px;
+}
 
+section.section-cloud .cloud-block {
+    padding: 65px 85px;
+}
+
+section.section-cloud .cloud-img {
+    margin-bottom: 25px;
+}
+
+section.content-crop.section-cloud {
+    padding-bottom: 0;
+    padding-top: 1px;
+}
+
+section.section-cloud .cloud-block {
+    padding: 28px 40px 0 100px;
+}
+
+section.section-cloud .cloud-img {
+    margin-top: 37px;
+    margin-bottom: 25px;
+}
+
+section.section-cloud .cloud-block:first-of-type .cloud-img {
+    padding-left: 150px;
+}
+
+section.section-cloud .cloud-title {
+    margin-bottom: 40px;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+section.section-cloud .cloud-block:first-of-type .cloud-title {
+    padding-left: 150px;
+}
+
+section.section-cloud-desc .cloud-desc_block > div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+section.section-cloud-desc .cloud-desc_block .cloud-desc_title {
+    width: 150px;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+section.section-cloud-desc .cloud-desc_block > div:not(.cloud-desc_title) {
+    width: 60%;
+    font-weight: 300;
+    padding-left: 20px;
+}
+
+section.section-cloud-desc .cloud-row {
+    display: table;
+    width: 100%;
+}
+
+section.section-cloud-desc .cloud-row .cloud-desc {
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
+}
+
+section.section-cloud-desc .cloud-row > div:first-of-type {
+    padding-left: 90px;
+}
+
+section.section-cloud-desc .cloud-row > div:last-of-type {
+    padding-right: 90px;
+}
+
+section.section-cloud-desc .cloud-row .cloud-desc_block {
+    padding: 0 40px 60px 80px;
+}
+
+section.section-cloud-desc .cloud-row .cloud-desc .cloud-button {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+section.section-cloud-desc .cloud-row .cloud-desc:first-of-type .cloud-button {
+    padding-left: 170px;
+}
+
+section.section-cloud-desc .cloud-button span {
+    padding: 14px 40px;
+    border-radius: 50px;
+}
+
+section.section-cloud-desc .cloud-row.cloud-one_button {
+    display: none;
+}
+
+/*========================== /CLOUD =========================*/
+/*========================== PARTNES ========================*/
+
+section.section-partners .partners-title {
+    margin-bottom: 25px;
+    font-size: 44px;
+    text-transform: uppercase;
+}
+
+section.section-partners .partners-description {
+    margin-bottom: 35px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+section.section-partners-list {
+    padding: 0 165px 50px;
+}
+
+section.section-partners-list .partners-text,
+section.section-partners-dealers .partners-text {
+    width: 60%;
+    margin: 0 auto 50px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+section.section-partners-list .block-title,
+section.section-partners-dealers .block-title {
+    padding: 20px 20% 50px;
+}
+
+section.section-partners-list .partners-list {
+    display: table;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+section.section-partners-list .partners-list_item {
+    display: table-cell;
+    padding: 0 5%;
+}
+
+section.section-partners-list .partners-list img {
+    width: 100%;
+}
+
+section.section-partners-list .partners-button {
+    text-align: center;
+}
+
+section.section-partners-list .partners-button span {
+    padding: 14px 40px;
+    border-radius: 50px;
+}
+
+section.section-partners-list .dealers {
+    margin: 100px 0;
+    /*padding: 0 85px*/
+}
+
+section.section-partners-list .dealers .right {
+    padding-left: 50px;
+}
+
+section.section-partners-list .dealers .block-title {
+    padding: 0 0 10px;
+    text-align: left;
+}
+section.section-partners-list .block-title.decision-title {
+    padding: 60px 20% 50px;
+}
+
+section.section-partners-list .dealers .dealers-text {
+   margin-bottom: 50px;
+}
+
+section.section-partners-dealers {
+    padding: 70px 165px 50px;
+}
+section.section-partners-dealers .dealers-programm {
+    margin-top: 80px;
+}
+section.section-partners-dealers .dealers-programm_title {
+    padding-left: 10px;
+    margin-bottom: 25px;
+    color: #ffd451;
+    font-size: 19px;
+    line-height: 19px;
+    border-left: 2px solid #ffd451;
+}
+/*========================= /PARTNES ========================*/
 
 footer {
     background: #414b4d;

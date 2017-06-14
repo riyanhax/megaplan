@@ -1,11 +1,11 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetPageProperty("title", "Компания");
-$APPLICATION->SetTitle("Компания");?>
+$APPLICATION->SetTitle("История Мегаплана в датах, цифрах и лицах");?>
 
-    <section class="top-banner banner-contacts">
+    <section class="top-banner banner-company">
         <div class="container">
             <div class="col-md-12 banner-inner">
-                <div class="banner-text color-white">Компания</div>
+                <div class="banner-text color-white"><?$APPLICATION->ShowTitle(false)?></div>
                 <div class="banner-button">
                     <a class="button" href="#" title=""><span class="button-green">2 недели бесплатно</span></a>
                 </div>

@@ -17,7 +17,7 @@ $this->setFrameMode(true);
     <div class="container">
         <div class="col-md-12 banner-inner">
             <div class="banner-suptext"><?=$arResult["PROPERTIES"]["RUBRIC"]["VALUE"]?></div>
-            <div class="banner-text color-white"><?=$arResult["NAME"]?></div>
+            <div class="banner-text color-white">Наши новости и анонсы из первых рук</div>
             <div class="banner-date"><?=$arResult["PROPERTIES"]["DATE"]["VALUE"]?></div>
         </div>
     </div>
@@ -26,7 +26,10 @@ $this->setFrameMode(true);
 <section class="content-crop section-blog_detail bg-white">
     <div class="section-wrapper bg-white">
 
-        <div class="post">
+        <div class="post" id="post">
+            <h2 class="block-title">
+                <?=$arResult["NAME"]?>
+            </h2>
             <?if($arResult["PROPERTIES"]["SUBTITLE"]["VALUE"]){?>
                 <h2 class="title">
                     <?=$arResult["PROPERTIES"]["SUBTITLE"]["VALUE"]?>

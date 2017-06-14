@@ -1,11 +1,11 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetPageProperty("title", "Контакты");
-$APPLICATION->SetTitle("Контакты");?>
+$APPLICATION->SetTitle("Ответим, расскажем, проконсультируем");?>
 
     <section class="top-banner banner-contacts">
         <div class="container">
             <div class="col-md-12 banner-inner">
-                <div class="banner-text color-white">Контакты</div>
+                <div class="banner-text color-white"><?$APPLICATION->ShowTitle(false)?></div>
                 <div class="banner-button">
                     <a class="button" href="#" title=""><span class="button-green">2 недели бесплатно</span></a>
                 </div>
