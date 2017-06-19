@@ -137,8 +137,8 @@ else
                             <div><a href="#">Возможности</a>
                                 <ul>
                                     <li><a href="#">Воронка продаж</a></li>
-                                    <li><a href="#">Коробка/облако</a></li>
-                                    <li><a href="#">Безопастность данных</a></li>
+                                    <li><a href="http://out.megaplan.szdl.ru/local-internet/">Коробка/облако</a></li>
+                                    <li><a href="http://out.megaplan.szdl.ru/security/">Безопастность данных</a></li>
                                     <li><a href="#">CRM</a></li>
                                     <li><a href="#">Управление проэктами</a></li>
                                     <li><a href="#">Интеграции с почтой</a></li>
@@ -146,7 +146,7 @@ else
                                     <li><a href="#">Мобильное приложение</a></li>
                                 </ul>
                             </div>
-                            <div><a href="#">Цены</a>
+                            <div><a href="http://bvd.megaplan.szdl.ru/prices/">Цены</a>
                                 <ul>
                                     <li><a href="#">Выбрать тариф</a></li>
                                     <li><a href="#">Бесплатный тариф</a></li>
@@ -166,16 +166,16 @@ else
                                     <li><a href="#">Онлайн уроки</a></li>
                                 </ul>
                             </div>
-                            <div><a href="#">Партнерам</a>
+                            <div><a href="http://out.megaplan.szdl.ru/partners/">Партнерам</a>
                                 <ul>
-                                    <li><a href="#">API и виджеты</a></li>
+                                    <li><a href="http://out.megaplan.szdl.ru/integration/">API и виджеты</a></li>
                                     <li><a href="#">Партнерская программа</a></li>
                                     <li><a href="#">Реферальная программа</a></li>
                                 </ul>
                             </div>
-                            <div><a href="#">О компании</a>
+                            <div><a href="http://out.megaplan.szdl.ru/company/">О компании</a>
                                 <ul>
-                                    <li><a href="#">Контакты</a></li>
+                                    <li><a href="http://out.megaplan.szdl.ru/contacts/">Контакты</a></li>
                                     <li><a href="#">Команда</a></li>
                                     <li><a href="#">Квартирники</a></li>
                                     <li><a href="#">Вакансии</a></li>
@@ -183,7 +183,7 @@ else
                             </div>
                         </div>
                         <div> <!--class="col-xs-5 col-sm-4 col-md-4"-->
-                            <div><a href="#">Блог</a>
+                            <div><a href="http://out.megaplan.szdl.ru/blog/">Блог</a>
                                 <ul>
                                     <li><a href="#">Блог о продажах</a></li>
                                     <li><a href="#">Блог о бизнесе</a></li>
@@ -191,10 +191,10 @@ else
                                     <li><a href="#">Видео блог</a></li>
                                 </ul>
                             </div>
-                            <div><a href="#">Клиентам</a>
+                            <div><a href="">Клиентам</a>
                                 <ul>
                                     <li><a href="#">Личный кабинет</a></li>
-                                    <li><a href="#">Клиенты</a></li>
+                                    <li><a href="http://out.megaplan.szdl.ru/clients/">Клиенты</a></li>
                                     <li><a href="#">Кейсы</a></li>
                                     <li><a href="#">Решения для бизнеса</a></li>
                                 </ul>
