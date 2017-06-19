@@ -18,6 +18,7 @@ else
 
     <?//$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.mousewheel.js")?>
     <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.easing.min.js")?>
+    <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/prices.js")?>
 
     <?$APPLICATION->SetAdditionalCSS("/bitrix/css/main/bootstrap.css");?>
     <?//$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/font-awesome.min.css");?>

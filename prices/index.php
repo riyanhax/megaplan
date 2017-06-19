@@ -16,13 +16,13 @@ $APPLICATION->SetTitle("Блог");?>
     </div>
     <div class="plans row">
         <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-10 col-md-offset-1">
-            <script>
-                $(document).ready(function () {
-                    $(".plan").hover(function () {
-                        $(this).toggleClass("selected_plan");
-                    })
-                })
-            </script>
+<!--            <script>-->
+<!--                $(document).ready(function () {-->
+<!--                    $(".plan").hover(function () {-->
+<!--                        $(this).toggleClass("selected_plan");-->
+<!--                    })-->
+<!--                })-->
+<!--            </script>-->
             <div class="col-sm-12 col-md-five">
                 <div class="plan">
                     <div class="plan_name"><span>Старт</span></div>
@@ -122,40 +122,40 @@ $APPLICATION->SetTitle("Блог");?>
         </div>
     </div>
     <div class="button_compare row">
-        <script>
-            $(document).ready(function () {
-                var isPopupOpen = 0;
-                var contentHeight = $(".content").height();
-                var popupHeight = $("#compare_plans").height();
-                console.log(isPopupOpen);
-                $("#compare_plans .close_popup a").click(function () {
-                    $("#compare_plans").animate({
-                        top: "-2290px",
-                    }, {
-                        duration: 600
-                    });
-//                    background: url(../img/prices/lady.png) no-repeat;
-//                    background-size: contain;
-                    isPopupOpen = 0;
-                    console.log(isPopupOpen);
-                    $(".content>div").css("display","block").css("visibility","visible");
-                    $(".content").height("initial").css("background-image","url(/local/templates/megaplan/img/prices/lady.png)").css("background-size","contain").css("background-repeat","no-repeat");
-                });
-                $(".button_compare a").click(function () {
-                    $("#compare_plans").animate({
-                        top: "90px",
-                    }, {
-                        duration: 520
-                    });
-                    isPopupOpen = 1;
-                    console.log(isPopupOpen);
-                    console.log(contentHeight);
-                    console.log(popupHeight);
-                    $(".content>div").css("display","none").css("visibility","hidden");
-                    $(".content").height(popupHeight).css("background","none");
-                });
-            });
-        </script>
+<!--        <script>-->
+<!--            $(document).ready(function () {-->
+<!--                var isPopupOpen = 0;-->
+<!--                var contentHeight = $(".content").height();-->
+<!--                var popupHeight = $("#compare_plans").height();-->
+<!--                console.log(isPopupOpen);-->
+<!--                $("#compare_plans .close_popup a").click(function () {-->
+<!--                    $("#compare_plans").animate({-->
+<!--                        top: "-2290px",-->
+<!--                    }, {-->
+<!--                        duration: 600-->
+<!--                    });-->
+<!--//                    background: url(../img/prices/lady.png) no-repeat;-->
+<!--//                    background-size: contain;-->
+<!--                    isPopupOpen = 0;-->
+<!--                    console.log(isPopupOpen);-->
+<!--                    $(".content>div").css("display","block").css("visibility","visible");-->
+<!--                    $(".content").height("initial").css("background-image","url(/local/templates/megaplan/img/prices/lady.png)").css("background-size","contain").css("background-repeat","no-repeat");-->
+<!--                });-->
+<!--                $(".button_compare a").click(function () {-->
+<!--                    $("#compare_plans").animate({-->
+<!--                        top: "90px",-->
+<!--                    }, {-->
+<!--                        duration: 520-->
+<!--                    });-->
+<!--                    isPopupOpen = 1;-->
+<!--                    console.log(isPopupOpen);-->
+<!--                    console.log(contentHeight);-->
+<!--                    console.log(popupHeight);-->
+<!--                    $(".content>div").css("display","none").css("visibility","hidden");-->
+<!--                    $(".content").height(popupHeight).css("background","none");-->
+<!--                });-->
+<!--            });-->
+<!--        </script>-->
         <div class="col-md-4 col-md-offset-4">
             <a href="#" class="button-common button-green">Сравнить все тарифы</a>
         </div>
