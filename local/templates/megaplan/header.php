@@ -4,7 +4,7 @@ IncludeTemplateLangFile(__FILE__);
 CJSCore::Init(array("jquery"));
 CJSCore::Init(array("fx"));
 $page = $APPLICATION->GetCurPage();
-if($page=="/contacts/"||$page=="/company/"||$page=="/price/")
+if($page=="/contacts/"||$page=="/company/"||$page=="/prices/")
     $theme = "dark";
 else
     $theme = "";
@@ -16,9 +16,8 @@ else
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400&amp;subset=cyrillic" rel="stylesheet">
 
-
     <?//$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.mousewheel.js")?>
-    <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery-3.2.1.min.js")?>
+    <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.easing.min.js")?>
 
     <?$APPLICATION->SetAdditionalCSS("/bitrix/css/main/bootstrap.css");?>
     <?//$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/font-awesome.min.css");?>
@@ -41,28 +40,51 @@ else
                  <div class="burger">
                      <script>
                          $(document).ready(function () {
-                             $("#menu_open").click(function () {
-                                 $("#menu").css("display","block").css("visibility","visible")
-                             })
+
+                             <?if($theme=="dark"):?>
+                             $(".burger div").css("background-color","#414b4d");
+                             $(".burger span").css("color","#414b4d");
+                             <?else:?>
+                             $(".burger div").css("background-color","#fff");
+                             $(".burger span").css("color","#fff");
+                             <?endif;?>
+
+                             var menuIsOpen = 0;
+                             $(".burger").click(function () {
+                                 $(this).toggleClass("open");
+
+                                 if(menuIsOpen == 0){
+                                     $("#menu").animate({
+                                         top: 0,
+                                         left: 0
+                                     },{
+                                         duration:520
+                                     });
+                                     <?if($theme=="dark"):?>
+                                     $(".burger div").css("background-color","#fff");
+                                     $("#logo a").html('<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/logo.php"))?>');
+                                     <?endif;?>
+                                     menuIsOpen = 1;
+                                 }
+                                 else {
+                                     $("#menu").animate({
+                                         top: 0,
+                                         left: "-100%"
+                                     }, {
+                                         duration: 650
+                                     });
+                                     <?if($theme=="dark"):?>
+                                     $(".burger div").delay(300).css("background-color","#414b4d");
+                                     $("#logo a").delay(300).html('<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/logo_b.php"))?>');
+                                     <?endif;?>
+                                     menuIsOpen = 0;
+                                 }
+                             });
                          });
                      </script>
-                     <a href="#" title="<?=GetMessage('MENU')?>">
-                         <?if($theme=="dark"):?>
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/menu_b.png" alt="">
-                         <?else:?>
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/menu.png" alt="">
-                         <?endif;?>
-                     <script>
-                         $(document).ready(function () {
-                             $("#menu_open").click(function () {
-                                 $("#menu").css("display","block").css("visibility","visible")
-                             })
-                         });
-                     </script>
-                     <a href="#" title="<?=GetMessage('MENU')?>" id="menu_open">
-                         <img src="<?=SITE_TEMPLATE_PATH."/img/menu.png"?>" alt="">
-                         <span><?=GetMessage('MENU')?></span>
-                     </a>
+                     <div></div>
+                     <div></div>
+                     <span><?=GetMessage('MENU')?></span>
                  </div>
                  <div class="top-menu hidden-sm">
                      <?
@@ -84,8 +106,8 @@ else
                      ?>
                  </div>
              </div>
-             <div class="logo col-xs-4 col-md-2">
-                 <a href="<?=SITE_DIR?>" title="<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/company_name.php"), false, array("HIDE_ICONS"=>"Y"));?>">
+             <div class="logo col-xs-4 col-md-2" id="logo">
+                 <a id="logo_a" href="<?=SITE_DIR?>" title="<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/company_name.php"), false, array("HIDE_ICONS"=>"Y"));?>">
                      <?if($theme=="dark"):?>
                          <?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/logo_b.php"));?>
                      <?else:?>
@@ -107,29 +129,6 @@ else
     </header>
     <div id="menu">
         <div class="menu_wrap">
-            <header class="header">
-                <div class="header-wrapper">
-                    <div class="left-block col-xs-2 col-md-5">
-                        <div class="burger">
-                            <script>
-                                $(document).ready(function () {
-                                    $("#menu_close").click(function () {
-                                        $("#menu").css("display","none").css("visibility","hidden")
-                                    })
-                                });
-                            </script>
-                            <a href="#" title="" id="menu_close">
-                                <img src="<?=SITE_TEMPLATE_PATH?>/img/close_menu.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <!--                <div class="logo col-xs-4 col-md-2">-->
-                    <!--                    <a href="#" title="/">-->
-                    <!--                        <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/logo.png">-->
-                    <!--                    </a>-->
-                    <!--                </div>-->
-                </div>
-            </header>
             <div class="row">
                 <div class="main_menu col-xs-12 col-sm-8 col-sm-offset-2 col-md-10 col-md-offset-1">
 <!--                    <div class="row">-->
