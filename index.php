@@ -1,30 +1,35 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Мебельная компания");
-?><p>
-Наша компания существует на Российском рынке с 1992 года. За это время «Мебельная компания» прошла большой путь от маленькой торговой фирмы до одного из крупнейших производителей корпусной мебели в России.
-</p><p>
-«Мебельная компания» осуществляет производство мебели на высококлассном оборудовании с применением минимальной доли ручного труда, что позволяет обеспечить высокое качество нашей продукции. Налажен производственный процесс как массового и индивидуального характера, что с одной стороны позволяет обеспечить постоянную номенклатуру изделий и индивидуальный подход – с другой.
-<h3>Наша продукция</h3>
-<?$APPLICATION->IncludeComponent("bitrix:furniture.catalog.index", "", array(
-	"IBLOCK_TYPE" => "products",
-	"IBLOCK_ID" => "2",
-	"IBLOCK_BINDING" => "section",
-	"CACHE_TYPE" => "A",
-	"CACHE_TIME" => "36000000",
-	"CACHE_GROUPS" => "N"
-	),
-	false
-);?>
-<h3>Наши услуги</h3>
-<?$APPLICATION->IncludeComponent("bitrix:furniture.catalog.index", "", array(
-	"IBLOCK_TYPE" => "products",
-	"IBLOCK_ID" => "3",
-	"IBLOCK_BINDING" => "element",
-	"CACHE_TYPE" => "A",
-	"CACHE_TIME" => "36000000",
-	"CACHE_GROUPS" => "N"
-	),
-	false
-);?>
-</p><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+$APPLICATION->SetTitle("Нужен рост - нужен мегаплан");
+?>
+<style>html { overflow-y: hidden; }</style>
+
+
+<section class="top-banner banner-main">
+	<div class="container">
+		<div class="col-md-12 banner-inner main-height">
+			<div class="banner-text color-white"><?$APPLICATION->ShowTitle(false)?></div>
+			<div class="banner-button main">
+				<a class="button" href="#" title=""><span class="button-green">Попробовать бесплатно</span></a>
+				<a class="button" href="more/" title=""><span class="button-white">Узнать больше</span></a>
+			</div>
+			<div class="info-block-div">
+				<div class="info-block-main">Простой интерфейс</div>
+				<div class="info-block-main">Гибкие настройки</div>
+				<div class="info-block-main">Персональный менеджер</div>
+				<div class="info-block-main">Минимум времени для старта</div>
+			</div>
+			<button onclick="Mute()" type="button" class="main-block-mute"><div class="main-block-mute"></div></button>
+		</div>
+	</div>
+</section>
+
+<div id="trailer" class="is_overlay">
+<video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
+<!--<video id="video_bg" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">-->
+    <source src="/upload/mgplan.mp4" type="video/mp4"></source>
+</video>
+
+</div>
+
+<script src="/local/templates/megaplan/js/script.js"></script>
