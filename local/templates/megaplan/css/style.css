@@ -11,7 +11,7 @@ body {
 
 body .wrapper {
     position: relative;
-    font-size: 18px;
+    font-size: 19px;
     font-family: 'Exo 2', sans-serif;
     padding: 0;
 }
@@ -58,11 +58,23 @@ a:hover, a:focus {
 .color-white {
     color: #fff;
 }
+.color-grey{
+    color: #414b4d;
+}
 .bg-white {
     background: #fff;
 }
 .bg-grey {
     background: #f5f7fa;
+}
+.button-common{
+    text-align: center;
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    font-size: 19px;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 .button-green {
     background: #08bf32;
@@ -79,10 +91,19 @@ a:hover, a:focus {
     background: #ffd451;
     color: #414b4d;
 }
-a.button, a.button:hover {
+.button-tr{
+    border-color: #414b4d;
+    background: transparent;
+    color: #414b4d;
+}
+a.button, a.button:hover, a.button-common, a.button-common:hover{
     text-decoration: none;
 }
 a.button:hover span {
+    box-shadow: 0 0 0 50px rgba(0, 0, 0, 0.1) inset;
+}
+a.button-common:hover{
+    color: inherit;
     box-shadow: 0 0 0 50px rgba(0, 0, 0, 0.1) inset;
 }
 .clear {
@@ -101,20 +122,106 @@ header img.logo-img {
 header .header-wrapper {
     padding: 35px 10px 10px 10px;
 }
-
+/*======================== BURGER =========================*/
 header .header-wrapper .burger {
+    position: absolute;
+    z-index: 200;
     float: left;
     width: 40px;
+    height: 40px;
     line-height: 16px;
+    cursor: pointer;
 }
 
-header .header-wrapper .burger a {
+header .header-wrapper .burger div {
+    position: absolute;
+    /*z-index: 200;*/
+    float: left;
+    background: #000000;
+    width: 33px;
+    height: 3px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .20s ease-in-out;
+    -moz-transition: .20s ease-in-out;
+    -o-transition: .20s ease-in-out;
+    transition: .25s ease-in-out;
+}
+header .header-wrapper .burger span{
+    position: absolute;
+    display: inline-block;
     font-size: 11px;
     color: #fff;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .20s ease-in-out;
+    -moz-transition: .20s ease-in-out;
+    -o-transition: .20s ease-in-out;
+    transition: .25s ease-in-out;
 }
 
+header .header-wrapper .burger div:first-of-type {
+    top: 5px;
+}
+header .header-wrapper .burger div:last-of-type  {
+    top: 15px;
+}
+header .header-wrapper .burger span{
+    top: 20px;
+}
+/**/
+header .header-wrapper .burger:hover div:first-of-type{
+    top: 3px;
+    -webkit-transition: .20s ease-in-out;
+    -moz-transition: .20s ease-in-out;
+    -o-transition: .20s ease-in-out;
+    transition: .20s ease-in-out;
+}
+header .header-wrapper .burger:hover div:last-of-type{
+    top: 17px;
+    -webkit-transition: .20s ease-in-out;
+    -moz-transition: .20s ease-in-out;
+    -o-transition: .20s ease-in-out;
+    transition: .20s ease-in-out;
+}
+header .header-wrapper .burger:hover span{
+    top: 22px;
+    -webkit-transition: .20s ease-in-out;
+    -moz-transition: .20s ease-in-out;
+    -o-transition: .20s ease-in-out;
+    transition: .20s ease-in-out;
+}
+/**/
+header .header-wrapper .burger.open div:first-of-type{
+    top: 10px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+header .header-wrapper .burger.open div:last-of-type{
+    top: 10px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+header .header-wrapper .burger.open span{
+    opacity: 0;
+    left: -50px;
+    -webkit-transition: .16s ease-in-out;
+    -moz-transition: .16s ease-in-out;
+    -o-transition: .16s ease-in-out;
+    transition: .16s ease-in-out;
+}
+/*======================== /BURGER =========================*/
 header .header-wrapper .top-menu {
     float: left;
+    padding-left: 55px;
     line-height: 35px;
     font-weight: 300;
 }
@@ -203,6 +310,10 @@ body.dark section.top-banner .banner-inner {
 }
 .top-banner.banner-partners {
     background-image: url(../img/partners/partners-bg.jpg);
+}
+.top-banner.banner-price{
+    background-image: url(../img/prices/lady.png);
+    background-position: 0 0;
 }
 .top-banner.banner-main {
     /* background-image: url(../img/main/main-bg.jpg); */
@@ -332,7 +443,15 @@ body.dark section.top-banner .banner-inner {
     margin-left: 3px;
     background: url(../img/arrow_down_big.png) no-repeat;
 }
-
+.top-banner.banner-price .banner-inner{
+    padding: 100px 0 180px;
+}
+.top-banner.banner-price .banner-inner .banner-text{
+    margin-bottom: 50px;
+}
+.top-banner.banner-price .banner-inner .banner-subtext{
+    margin-bottom: 50px;
+}
 /*======================== /TOP_BANNER =========================*/
 
 .content {
@@ -1059,7 +1178,7 @@ footer .footer-wrapper .social-list .social-item:last-child {
     height: 768px;
 }
 }
-	
+
 @media (max-width: 970px) {
 #video_bg {
     width: 960px;
@@ -1101,7 +1220,7 @@ footer .footer-wrapper .social-list .social-item:last-child {
 .more-text-os-3{
 	background:  #f5f7fa;
 	padding: 0 50% 0 5%;
-	margin-bottom: 80px;	
+	margin-bottom: 80px;
 	min-height: 440px;
 }
 
@@ -1350,11 +1469,11 @@ footer .footer-wrapper .social-list .social-item:last-child {
 }
 
 @media (max-width: 1030px) {
-.more-text-bg-1{	
+.more-text-bg-1{
 	background-size: 700px auto;
 	min-width: 700px;
 }
-	
+
 .more-text-bg-2{
 	left: -30%;
 	background-size: 700px auto;
@@ -1383,7 +1502,7 @@ footer .footer-wrapper .social-list .social-item:last-child {
     padding-right: 110px;
 }
 }
-	
+
 @media (max-width: 970px) {
 .more-text-bg-1 {
     right: -34%;
@@ -1575,7 +1694,7 @@ footer .footer-wrapper .social-list .social-item:last-child {
     min-width: 30%;
 }
 }
-	
+
 /*========================= /SFP (Решения от партнёров, всплывашка) ========================*/
 .sfp-close{
 	background: url(../img/integration/integ-close.png) no-repeat;
@@ -1660,7 +1779,7 @@ footer .footer-wrapper .social-list .social-item:last-child {
 .sft-descrip{
 	width: 250px;
 	margin: 0 auto;
-}	
+}
 
 .sfp-button{
 	margin-top: 30px;
@@ -1668,11 +1787,11 @@ footer .footer-wrapper .social-list .social-item:last-child {
     padding-left: 40%;
     padding-right: 38%;
 }
-	
+
 .sft-button{
 	margin: 10px;
 }
-	
+
 .button-green-withoutb {
 	margin: 20px 0 0 0;
 	border: 1px solid #08bf32;
@@ -1704,9 +1823,9 @@ z-index: -1000;
 position: absolute;
 top: 0;
 left: 0;
-min-width: 100%; 
+min-width: 100%;
 min-height: 100%;
-width: auto; height: auto; 
+width: auto; height: auto;
 z-index: -1000;
 }
 
