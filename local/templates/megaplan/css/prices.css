@@ -319,7 +319,7 @@
   text-align: center;
 }
 .big_popup .t_wrapper {
-  width: 1230px;
+  max-width: 1230px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -393,8 +393,8 @@
   color: #b5b5b5;
 }
 @media (max-width: 1332px) {
-  #compare_plans {
-    overflow-x: scroll;
+  .t_wrapper {
+    width: 100%;
   }
 }
 @media (max-width: 1042px) {
@@ -483,6 +483,11 @@
   }
   .wrapper .content .form > div span {
     font-size: 48px;
+  }
+}
+@media (max-width: 695px) {
+  .t_wrapper {
+    position: relative;
   }
 }
 @media (max-width: 600px) {
