@@ -36,37 +36,6 @@
 }
 //-------------------------------------------------------------------------------
 //* * *
-//=================BUTTONS=======================================================
-//a.button{
-//  text-align: center;
-//  padding: 12px 30px;
-//  border-radius: 50px;
-//  border: 1px solid transparent;
-//  font-size: 18px;
-//  font-weight: 300;
-//  text-transform: uppercase;
-//}
-//.sand{
-//  background: #fed456;
-//  color: #414b4d;
-//}
-//.sand:hover{
-//  color: #414b4d;
-//}
-//.transparent{
-//  border-color: #414b4d;
-//  background: transparent;
-//  color: #414b4d;
-//}
-//.transparent:hover{
-//  color: #414b4d;
-//}
-//.green{
-//  background: #08bf32;
-//  color: #FFFFFF;
-//}
-//---------------------------------------------------------------------------------
-//* * *
 //==================INPUT==========================================================
 .input_transparent{
   border: none;
@@ -96,50 +65,65 @@
   }
   .slogan{
     text-align: center;
-    margin: 100px 0 180px 0;
+    margin: 95px 0 180px 0;
+    padding-left: 70px;
     p{
       margin-bottom: 50px;
       font-weight: 400;
       font-size: 60px;
-      line-height: 1;
+      line-height: 1.2;
       text-transform: uppercase;
       text-align: center;
     }
+    a{
+      text-transform: capitalize;
+      padding-left: 45px;
+      padding-right: 45px;
+    }
   }
   .buttons_prices{
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     >div{
       display: flex;
       flex-direction: row;
       justify-content: space-around;
     }
-    .button{
+    a{
       flex-basis: 260px;
     }
   }
   .plans{
     >div{
-      position: relative;
-      padding: 0;
+      //position: relative;
+      //padding: 0;
       height: 615px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
       >div{
+        max-width: 220px;
         position: relative;
         padding: 0;
         .plan{
-          margin-right: -1px;
-          border: 1px solid #b5b5b5;
+          //border-left: 0.5px solid #b5b5b5;
+          box-shadow: 0 0 10px #b5b5b5;
           display: flex;
           flex-direction: column;
           text-align: center;
           background-color: #FFFFFF;
+          transition-property: margin,padding;
+          transition-timing-function: linear;
+          transition-duration: 0.3s;
           .plan_name{
             display: flex;
             height: 120px;
             align-items: center;
             justify-content: center;
             span{
-              font-size: 26px;
-              font-weight: 400;
+              font-size: 32px;
+              font-weight: 600;
+              line-height: 1;
             }
           }
           .plan_price{
@@ -164,12 +148,13 @@
             flex-direction: column;
             font-size: 14px;
             color: #252525;
-            padding: 25px 10px 0 10px;
+            padding: 25px 5px 0 5px;
             max-height: 415px;
             span:first-child{
               flex-basis: 50px;
             }
             ul{
+              min-width: 150px;
               align-self: center;
               text-align: left;
               list-style: url("../img/prices/circle-li.png");
@@ -186,9 +171,9 @@
           }
         }
         .selected_plan{
-          border: 1px solid #b5b5b5;
-          margin: -50px -30px 0 -30px;
-          padding: 50px 30px 0 30px;
+          //border: 1px solid #b5b5b5;
+          margin: -30px -10px 0 -10px;
+          padding: 30px 10px 0 10px;
           z-index: 90;
           position: absolute;
           width: 100%;
@@ -199,9 +184,19 @@
             align-self: stretch;
             display: block;
             visibility: visible;
-            margin-bottom: 45px;
+            margin: 0 25px 45px;
+            a{
+              display: inline-block;
+              width: 100%;
+              height: 35px;
+              padding: 0;
+              text-transform: capitalize;
+            }
           }
         }
+      }
+      >div:first-of-type .plan{
+        //border-left: none;
       }
       .money{
         position: absolute;
@@ -212,8 +207,8 @@
         width: 100px;
         border: none;
         background-color: transparent;
-        top: -145px;
-        right: 0;
+        top: -125px;
+        right: 60px;
         span{
           color: #414b4d;
         }
@@ -222,13 +217,14 @@
   }
   .button_compare{
     >div{
-      margin-top: 45px;
-      margin-bottom: 45px;
+      margin-top: 25px;
+      margin-bottom: 40px;
       display: flex;
       flex-direction: row;
       justify-content: center;
-      .button{
-        width: 300px;
+      a{
+        width: 345px;
+        text-transform: capitalize;
       }
     }
   }
@@ -237,7 +233,8 @@
       display:flex;
       flex-direction: column;
       >div:first-child{
-        margin-bottom: 45px;
+        font-size: 18px;
+        margin-bottom: 35px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -259,6 +256,9 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+        p{
+          font-size: 17px;
+        }
       }
     }
   }
@@ -266,8 +266,9 @@
     >div{
       display: flex;
       height: 500px;
-      margin-top: 50px;
-      margin-bottom: 50px;
+      margin-top: 10px;
+      margin-bottom: 80px;
+      max-width: 1280px;
       color: #FFFFFF;
       text-align: center;
       background: url("../img/prices/form-bg.png")no-repeat;
@@ -276,13 +277,18 @@
       justify-content: flex-start;
       align-items: center;
       span{
-        margin: 50px 0;
+        margin: 60px 0 50px;
         text-transform: uppercase;
-        font-size: 60px;
+        font-size: 44px;
       }
       form{
         display: flex;
         flex-direction: column;
+        p{
+          font-size: 24px;
+          font-weight: 200;
+          line-height: 1.2;
+        }
         .button{
           align-self: center;
           width: 300px;
@@ -290,6 +296,10 @@
         }
         input{
           margin-top: 50px;
+        }
+        input[type=email]{
+          width: 450px;
+          align-self: center;
         }
         input[type=submit]{
           width: 300px;

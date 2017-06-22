@@ -14,15 +14,8 @@ $APPLICATION->SetTitle("Блог");?>
             <a href="" class="button-common button-tr">на вашем сервере</a>
         </div>
     </div>
-    <div class="plans row">
+    <div class="plans clearfix">
         <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-10 col-md-offset-1">
-<!--            <script>-->
-<!--                $(document).ready(function () {-->
-<!--                    $(".plan").hover(function () {-->
-<!--                        $(this).toggleClass("selected_plan");-->
-<!--                    })-->
-<!--                })-->
-<!--            </script>-->
             <div class="col-sm-12 col-md-five">
                 <div class="plan">
                     <div class="plan_name"><span>Старт</span></div>
@@ -157,7 +150,7 @@ $APPLICATION->SetTitle("Блог");?>
 <!--            });-->
 <!--        </script>-->
         <div class="col-md-4 col-md-offset-4">
-            <a href="#" class="button-common button-green">Сравнить все тарифы</a>
+            <a href="#" class="button-common button-green">Выбрать тариф</a>
         </div>
     </div>
     <div class="row text">
@@ -174,8 +167,8 @@ $APPLICATION->SetTitle("Блог");?>
             </div>
         </div>
     </div>
-    <div class="row form">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+    <div class="form clearfix">
+        <div class="center-block">
             <span>Быстрое внедрение Мегаплана</span>
             <form>
                 <p>Настроим систему под вашу специфику работы.</p>
