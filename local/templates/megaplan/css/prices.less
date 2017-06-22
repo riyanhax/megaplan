@@ -60,6 +60,9 @@
   background: url("../img/prices/lady.png") no-repeat ;
   //background-attachment: fixed;
   background-size: contain;
+  >div{
+    margin:0;
+  }
   .slogan{
     text-align: center;
     margin: 95px 0 180px 0;
@@ -300,6 +303,7 @@
         }
         input[type=submit]{
           width: 300px;
+          text-transform: capitalize;
           align-self: center;
         }
       }
@@ -309,10 +313,17 @@
 //---------------------------------------------------------------------------------
 .big_popup{
   //border: 1px solid black;
+  width: 100%;
   position: absolute;
-  top: -2200px;
+  top: -100%;
   z-index: 99;
   background-color: white;
+
+  >a{
+    display: block;
+    margin: 50px auto;
+    width: 300px;
+  }
 
   .close_popup{
     position: absolute;
@@ -320,6 +331,7 @@
     left: 0;
     width: 40px;
     height: 40px;
+    z-index: 10;
     a{
       display: block;
       padding-top: 20px;
@@ -381,11 +393,7 @@
     max-width: 1230px;
     margin-top: 50px;
     margin-bottom: 50px;
-    a{
-      display: block;
-      margin: 50px auto;
-      width: 300px;
-    }
+    overflow-x: scroll;
   }
   .compare_plans_table{
     margin: 0 auto;
@@ -465,6 +473,16 @@
 @media (max-width: 1332px) {
   .t_wrapper{
     width: 100%;
+  }
+}
+@media (max-width: 1189px) {
+  .wrapper >.content{
+    .form{
+      div{
+        height: 575px;
+      }
+
+    }
   }
 }
 @media (max-width: 1042px) {
@@ -555,10 +573,7 @@
     }
   }
 }
-@media (max-width: 790px) {
-  
-}
-@media (max-width: 767px){
+@media (max-width: 768px){
   .wrapper .content{
     .slogan{
       margin-top: 60px;
@@ -594,13 +609,14 @@
     }
   }
 }
-@media (max-width: 695px) {
-  .t_wrapper{
-    position: relative;
-    table{
-
-    }
-  }
+@media (max-width: 755px) {
+  //.t_wrapper{
+  //  height: 1860px;
+  //}
+  //.compare_plans_table{
+  //  position: absolute;
+  //  overflow-x: scroll;
+  //}
 }
 @media (max-width: 600px) {
   .wrapper .content {
@@ -612,6 +628,11 @@
         .button{
           flex-basis: auto;
         }
+      }
+    }
+    .form{
+      div{
+        height: 575px;
       }
     }
   }
@@ -655,7 +676,7 @@
     }
     .form{
       >div{
-        height: 575px;
+        height: 600px;
       }
     }
   }
