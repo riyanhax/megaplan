@@ -157,7 +157,7 @@ else
                             </div>
                         </div>
                         <div> <!--class="col-xs-5 col-sm-4 col-md-4"-->
-                            <div><a href="#">Помошь</a>
+                            <div><a href="#">Помощь</a>
                                 <ul>
                                     <li><a href="#">Инструкции</a></li>
                                     <li><a href="#">Комплексное внедрение</a></li>
