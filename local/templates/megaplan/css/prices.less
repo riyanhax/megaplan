@@ -249,6 +249,165 @@ a.button-common:hover{
     }
   }
 }
+
+.big_popup{
+  //border: 1px solid black;
+  width: 100%;
+  position: absolute;
+  top: -100%;
+  z-index: 99;
+  background-color: white;
+
+  >a{
+    display: block;
+    margin: 50px auto;
+    width: 300px;
+  }
+
+  .close_popup{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    a{
+      display: block;
+      padding-top: 20px;
+      height: 100%;
+    }
+    div{
+      background-color: #414b4d;
+      height: 3px;
+    }
+    div:first-of-type{
+      //margin-top: 20px;
+      -webkit-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+      transform: rotate(135deg);
+    }
+    div:last-of-type{
+      margin-top: -3px;
+      -webkit-transform: rotate(-135deg);
+      -moz-transform: rotate(-135deg);
+      -o-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+    }
+  }
+  .close_popup:hover{
+    cursor: pointer;
+  }
+
+  .header_popup{
+    div{
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    p{
+      text-align: center;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+  }
+
+  .text_popup{
+    >div{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 20px auto;
+    }
+    a{
+      flex-basis: 260px;
+    }
+    p{
+      text-align: center;
+    }
+  }
+
+  .t_wrapper{
+    max-width: 1230px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow-x: scroll;
+  }
+  .compare_plans_table{
+    margin: 0 auto;
+    border: none;
+    tr{
+      border: none;
+      height: 50px;
+    }
+    tr.sub_header{
+      height: 80px;
+      td{
+        text-align: center;
+        vertical-align: middle;
+        font-size: 19px;
+        font-weight: 400;
+        span{
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    td{
+      border: none;
+    }
+
+    td:first-of-type{
+      width: 330px;
+      font-size: 16px;
+      text-align: right;
+      vertical-align: middle;
+    }
+
+    td:not(:first-of-type){
+      width: 180px;
+      font-size: 14px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    td.not_active{
+    }
+
+    thead{
+      tr{
+        height: 210px;
+      }
+      th{
+        padding-top: 70px;
+        text-align: center;
+        vertical-align: top;
+        div:first-of-type{
+          height: 50px;
+          color: black;
+        }
+        .plan_price{
+          display: flex;
+          flex-direction: column;
+          height: 80px;
+          align-items: center;
+          justify-content: center;
+          span:first-child{
+            font-weight: 400;
+            font-size: 48px;
+            color: #ffd451;
+          }
+          span:last-child{
+            font-weight: 100;
+            font-size: 12px;
+            color: #b5b5b5;
+          }
+        }
+      }
+    }
+  }
+}
 //media
 @media screen and (min-width: 320px) and (max-width: 479px){
   .banner-prices{
