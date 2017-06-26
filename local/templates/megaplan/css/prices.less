@@ -1,730 +1,331 @@
-//================BOOTSTRAP_5_COLS===============================================
-.col-xs-five,
-.col-sm-five,
-.col-md-five,
-.col-lg-five {
-  position: relative;
-  min-height: 1px;
-  padding-right: 10px;
-  padding-left: 10px;
+.uppercase{
+  text-transform: uppercase;
+}
+.capitalize{
+  text-transform: capitalize;
+}
+//buttons
+.button-common{
+  text-align: center;
+  padding: 12px 30px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  font-size: 20px;
+  font-weight: 300;
+}
+.button-green {
+  background: #08bf32;
+  color: #fff;
 }
 
-.col-xs-five {
-  width: 20%;
-  float: left;
+.button-white {
+  border: 1px solid #fff;
+  color: #fff;
 }
 
-@media (min-width: 768px) {
-  .col-sm-five {
-    width: 20%;
-    float: left;
-  }
+.button-yellow {
+  background: #ffd451;
+  color: #414b4d;
+}
+.button-tr{
+  border-color: #414b4d;
+  background: transparent;
+  color: #414b4d;
+}
+a.button-common, a.button-common:hover{
+  text-decoration: none;
+}
+a.button:hover span {
+  box-shadow: 0 0 0 50px rgba(0, 0, 0, 0.1) inset;
+}
+a.button-common:hover{
+  color: inherit;
+  box-shadow: 0 0 0 50px rgba(0, 0, 0, 0.1) inset;
 }
 
-@media (min-width: 992px) {
-  .col-md-five {
-    width: 20%;
-    float: left;
-  }
-}
+.banner-prices{
+  min-height: 860px;
+  background-image: url(../img/prices/lady.png);
+  background-position: top left;
 
-@media (min-width: 1200px) {
-  .col-lg-five {
-    width: 20%;
-    float: left;
-  }
-}
-//-------------------------------------------------------------------------------
-//* * *
-//==================INPUT==========================================================
-.input_transparent{
-  border: none;
-  border-bottom: 1px solid #FFFFFF;
-  background-color: transparent;
-}
-
-.placeholder-w::-webkit-input-placeholder{ color: #FFFFFF}
-.placeholder-w::-moz-placeholder{ color: #FFFFFF}
-.placeholder-w:-moz-placeholder{ color: #FFFFFF}
-.placeholder-w:-ms-input-placeholder{ color: #FFFFFF}
-
-.placeholder-w:focus::-webkit-input-placeholder {color: transparent}
-.placeholder-w:focus::-moz-placeholder          {color: transparent}
-.placeholder-w:focus:-moz-placeholder           {color: transparent}
-.placeholder-w:focus:-ms-input-placeholder      {color: transparent}
-//---------------------------------------------------------------------------------
-//===================CONTENT======================================================
-.wrapper > .content {
-  padding-top: 90px;
-  min-height: 780px;
-  background: url("../img/prices/lady.png") no-repeat ;
-  //background-attachment: fixed;
-  background-size: contain;
-  >div{
-    margin:0;
-  }
-  .slogan{
-    text-align: center;
-    margin: 95px 0 180px 0;
+  >div:first-of-type{
+    margin-top: 95px;
+    margin-bottom: 180px;
     padding-left: 70px;
-    p{
-      margin-bottom: 50px;
-      font-weight: 400;
-      font-size: 60px;
-      line-height: 1.2;
-      text-transform: uppercase;
-      text-align: center;
-    }
+    text-align: center;
     a{
-      text-transform: capitalize;
-      padding-left: 45px;
       padding-right: 45px;
+      padding-left: 45px;
     }
   }
-  .buttons_prices{
+
+  >div:last-of-type{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     margin-bottom: 80px;
-    >div{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-    }
     a{
+      font-weight: 400;
+      display: block;
       flex-basis: 260px;
     }
+    div{
+      position: absolute;
+    }
   }
-  .plans{
+
+  p{
+    margin-bottom: 50px;
+
+
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+}
+.plans{
+  >div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  >div:first-of-type{
+    align-items: flex-start;
+    margin-top: -120px;
     >div{
-      //position: relative;
-      //padding: 0;
-      height: 615px;
+      flex-basis: 220px;
+      position: relative;
+      padding: 0;
+      background-color: white;
+    }
+  }
+  >div:last-of-type{
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    p{
+      font-size: 17px;
+    }
+  }
+  .plan{
+    //border-left: 0.5px solid #b5b5b5;
+    box-shadow: 0 0 10px #b5b5b5;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #FFFFFF;
+    transition-property: margin,padding;
+    transition-timing-function: linear;
+    transition-duration: 0.3s;
+    .plan_name{
       display: flex;
-      flex-direction: row;
+      height: 120px;
+      align-items: center;
       justify-content: center;
-      align-items: flex-start;
-      >div{
-        max-width: 220px;
-        position: relative;
-        padding: 0;
-        .plan{
-          //border-left: 0.5px solid #b5b5b5;
-          box-shadow: 0 0 10px #b5b5b5;
-          display: flex;
-          flex-direction: column;
-          text-align: center;
-          background-color: #FFFFFF;
-          transition-property: margin,padding;
-          transition-timing-function: linear;
-          transition-duration: 0.3s;
-          .plan_name{
-            display: flex;
-            height: 120px;
-            align-items: center;
-            justify-content: center;
-            span{
-              font-size: 32px;
-              font-weight: 600;
-              line-height: 1;
-            }
-          }
-          .plan_price{
-            display: flex;
-            flex-direction: column;
-            height: 80px;
-            align-items: center;
-            justify-content: center;
-            span:first-child{
-              font-weight: 400;
-              font-size: 48px;
-              color: #ffd451;
-            }
-            span:last-child{
-              font-weight: 100;
-              font-size: 12px;
-              color: #b5b5b5;
-            }
-          }
-          .plan_description{
-            display: flex;
-            flex-direction: column;
-            font-size: 14px;
-            color: #252525;
-            padding: 25px 5px 0 5px;
-            max-height: 415px;
-            span:first-child{
-              flex-basis: 50px;
-            }
-            ul{
-              min-width: 150px;
-              align-self: center;
-              text-align: left;
-              list-style: url("../img/prices/circle-li.png");
-              padding-left: 10%;
-              margin-bottom: 50px;
-              li{
-                //margin-left: 15%;
-              }
-            }
-          }
-          .choose{
-            display: none;
-            visibility: hidden;
-          }
-        }
-        .selected_plan{
-          //border: 1px solid #b5b5b5;
-          margin: -30px -10px 0 -10px;
-          padding: 30px 10px 0 10px;
-          z-index: 90;
-          position: absolute;
-          width: 100%;
-          box-sizing: content-box;
-          -moz-box-sizing: content-box;
-          -webkit-box-sizing: content-box;
-          .choose{
-            align-self: stretch;
-            display: block;
-            visibility: visible;
-            margin: 0 25px 45px;
-            a{
-              display: inline-block;
-              width: 100%;
-              height: 35px;
-              padding: 0;
-              text-transform: capitalize;
-            }
-          }
-        }
+      span{
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 1;
       }
-      >div:first-of-type .plan{
-        //border-left: none;
+    }
+    .plan_price{
+      display: flex;
+      flex-direction: column;
+      height: 80px;
+      align-items: center;
+      justify-content: center;
+      span:first-child{
+        font-weight: 400;
+        font-size: 48px;
+        color: #ffd451;
       }
-      .money{
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100px;
-        border: none;
-        background-color: transparent;
-        top: -125px;
-        right: 60px;
-        span{
-          color: #414b4d;
+      span:last-child{
+        font-weight: 100;
+        font-size: 12px;
+        color: #b5b5b5;
+      }
+    }
+    .plan_description{
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      color: #252525;
+      padding: 25px 5px 0 5px;
+      max-height: 415px;
+      span:first-child{
+        flex-basis: 50px;
+      }
+      ul{
+        min-width: 150px;
+        align-self: center;
+        text-align: left;
+        list-style: url("../img/prices/circle-li.png");
+        padding-left: 10%;
+        margin-bottom: 50px;
+        li{
+          //margin-left: 15%;
         }
       }
     }
+    .choose{
+      display: none;
+      visibility: hidden;
+    }
   }
-  .button_compare{
-    >div{
-      margin-top: 25px;
-      margin-bottom: 40px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
+  .selected_plan{
+    margin: -30px -10px 0 -10px;
+    padding: 30px 10px 0 10px;
+    z-index: 90;
+    position: absolute;
+    width: 100%;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    .choose{
+      align-self: stretch;
+      display: block;
+      visibility: visible;
+      margin: 0 25px 45px;
       a{
-        width: 345px;
+        display: inline-block;
+        width: 100%;
+        height: 35px;
+        padding: 0;
         text-transform: capitalize;
       }
     }
   }
-  .text{
-    >div{
-      display:flex;
-      flex-direction: column;
-      >div:first-child{
-        font-size: 18px;
-        margin-bottom: 35px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        span{
-          position: relative;
-          text-align: center;
-          flex-basis: 165px;
-        }
-        span:not(:last-child):after{
-          position: absolute;
-          top: 0;
-          right: -20%;
-          display: block;
-          content: url("../img/prices/circle-grey.png");
-        }
-      }
-      >div:last-child{
-        margin-bottom: 45px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        p{
-          font-size: 17px;
-        }
-      }
-    }
-  }
-  .form{
-    >div{
-      display: flex;
-      height: 500px;
-      margin-top: 10px;
-      margin-bottom: 80px;
-      max-width: 1280px;
-      color: #FFFFFF;
-      text-align: center;
-      background: url("../img/prices/form-bg.png")no-repeat;
-      background-size: cover;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      span{
-        margin: 60px 0 50px;
-        text-transform: uppercase;
-        font-size: 44px;
-      }
-      form{
-        display: flex;
-        flex-direction: column;
-        p{
-          font-size: 24px;
-          font-weight: 200;
-          line-height: 1.2;
-        }
-        .button{
-          align-self: center;
-          width: 300px;
-          height: 50px;
-        }
-        input{
-          margin-top: 50px;
-        }
-        input[type=email]{
-          width: 450px;
-          align-self: center;
-        }
-        input[type=submit]{
-          width: 300px;
-          text-transform: capitalize;
-          align-self: center;
-        }
-      }
-    }
-  }
-}
-//---------------------------------------------------------------------------------
-.big_popup{
-  //border: 1px solid black;
-  width: 100%;
-  position: absolute;
-  top: -100%;
-  z-index: 99;
-  background-color: white;
-
-  >a{
-    display: block;
-    margin: 50px auto;
-    width: 300px;
-  }
-
-  .close_popup{
-    position: absolute;
-    top: 25px;
-    left: 0;
-    width: 40px;
-    height: 40px;
-    z-index: 10;
-    a{
-      display: block;
-      padding-top: 20px;
-      height: 100%;
-    }
-    div{
-      background-color: #414b4d;
-      height: 3px;
-    }
-    div:first-of-type{
-      //margin-top: 20px;
-      -webkit-transform: rotate(135deg);
-      -moz-transform: rotate(135deg);
-      -o-transform: rotate(135deg);
-      transform: rotate(135deg);
-    }
-    div:last-of-type{
-      margin-top: -3px;
-      -webkit-transform: rotate(-135deg);
-      -moz-transform: rotate(-135deg);
-      -o-transform: rotate(-135deg);
-      transform: rotate(-135deg);
-    }
-  }
-  .close_popup:hover{
-    cursor: pointer;
-  }
-
-  .header_popup{
-    div{
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
-    p{
-      text-align: center;
-      font-size: 48px;
-      font-weight: 400;
-      line-height: 1;
-      text-transform: uppercase;
-    }
-  }
-
-  .text_popup{
-    >div{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      margin: 20px auto;
-    }
-    a{
-      flex-basis: 260px;
-    }
-    p{
-      text-align: center;
-    }
-  }
-
-  .t_wrapper{
-    max-width: 1230px;
+  .button-compare{
+    display: inline-block;
+    width: 345px;
     margin-top: 50px;
-    margin-bottom: 50px;
-    overflow-x: scroll;
+    margin-bottom: 40px;
   }
-  .compare_plans_table{
-    margin: 0 auto;
-    border: none;
-    tr{
-      border: none;
-      height: 50px;
+}
+.bottom-form{
+  >div{
+    display: flex;
+    height: 500px;
+    margin-top: 10px;
+    margin-bottom: 80px;
+    max-width: 1280px;
+    color: #FFFFFF;
+    text-align: center;
+    background: url("../img/prices/form-bg.png")no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    p{
+      font-size: 24px;
+      font-weight: 200;
+      line-height: 1.2;
     }
-    tr.sub_header{
-      height: 80px;
-      td{
-        text-align: center;
-        vertical-align: middle;
-        font-size: 19px;
-        font-weight: 400;
-        span{
-          text-transform: uppercase;
-        }
+    p:first-of-type{
+      display: inline-block;
+      margin: 60px 0 50px;
+      text-transform: uppercase;
+      font-size: 44px;
+    }
+    form{
+      display: flex;
+      flex-direction: column;
+      input{
+        margin-top: 50px;
+      }
+      input[type=email]{
+        width: 450px;
+        align-self: center;
+      }
+      input[type=submit]{
+        align-self: center;
+        width: 300px;
+        text-transform: capitalize;
+        align-self: center;
+      }
+    }
+  }
+}
+//media
+@media screen and (min-width: 320px) and (max-width: 479px){
+  .banner-prices{
+    >div:first-of-type{
+      padding-left: 15px;
+      a{
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    >div:last-of-type{
+      flex-direction: column;
+      a{
+        margin-bottom: 20px;
+        flex-basis: 50px;
       }
     }
 
-    td{
-      border: none;
-    }
-
-    td:first-of-type{
-      width: 330px;
-      font-size: 16px;
-      text-align: right;
-      vertical-align: middle;
-    }
-
-    td:not(:first-of-type){
-      width: 180px;
-      font-size: 14px;
-      text-align: center;
-      vertical-align: middle;
-    }
-
-    td.not_active{
-    }
-
-    thead{
-      tr{
-        height: 210px;
-      }
-      th{
-        padding-top: 70px;
-        text-align: center;
-        vertical-align: top;
-        div:first-of-type{
-          height: 50px;
-          color: black;
-        }
-        .plan_price{
-          display: flex;
-          flex-direction: column;
-          height: 80px;
-          align-items: center;
-          justify-content: center;
-          span:first-child{
-            font-weight: 400;
-            font-size: 48px;
-            color: #ffd451;
-          }
-          span:last-child{
-            font-weight: 100;
-            font-size: 12px;
-            color: #b5b5b5;
-          }
-        }
-      }
-    }
   }
-}
-//=================MEDIA=========================================================
-@media (max-width: 1332px) {
-  .t_wrapper{
-    width: 100%;
-  }
-}
-@media (max-width: 1189px) {
-  .wrapper >.content{
-    .form{
-      div{
-        height: 575px;
-      }
-
-    }
-  }
-}
-@media (max-width: 1042px) {
-  .wrapper > .content{
-    .slogan{
-      margin-bottom: 60px;
-    }
-    .buttons_prices{
-      margin-bottom: 60px;
-      .button{
-        flex-basis: 240px;
-      }
-    }
-    .plans{
-      >div{
-        height: 730px;
-        >div{
-          .plan{
-            .plan_description{
-              max-height: 530px;
-              ul{
-                padding-left: 15%;
-              }
-            }
-          }
-        }
-        .money{
-          top: -105px;
-          right: 10px;
-        }
-      }
-    }
-    .text{
-      >div{
-        >div:first-child{
-          height: 75px;
-          span:nth-child(1){
-            align-self: flex-start;
-          }
-          span:nth-child(2){
-            align-self: center;
-          }
-          span:nth-child(3){
-            align-self: flex-end;
-          }
-          span:after{
-            display: none;
-            visibility: hidden;
-          }
-        }
-      }
-    }
-    .form{
-      div{
-        height: 525px;
-        form{
-          input[type=submit]{
-            margin-top: 25px;
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 993px) {
-  .wrapper .content{
-    .plans{
-      >div{
-        height: 2400px;
-        >div{
-          .selected_plan{
-            margin: 0;
-            padding: 0;
-            position: relative;
-            background-color: #f9ffa7;
-            .plan_price{
-              span:first-child{
-                color: #414b4d;
-              }
-            }
-          }
-        }
-        .money{
-          top: -105px;
-          right: -90px;
-        }
-      }
-    }
-  }
-}
-@media (max-width: 768px){
-  .wrapper .content{
-    .slogan{
-      margin-top: 60px;
-      p{
-        font-size: 48px;
-      }
-    }
-    .buttons_prices{
-      margin-bottom: 60px;
-    }
-    .plans{
-      >div{
-        height: 2470px;
-        >div{
-          .selected_plan{
-            //margin-top: -25px;
-            //padding-top: 25px;
-          }
-        }
-        .money{
-          top: -45px;
-          right: 40%;
-        }
-      }
-    }
-    .form{
-      >div{
-        height: 490px;
-        span{
-          font-size: 48px;
-        }
-      }
-    }
-  }
-}
-@media (max-width: 755px) {
-  //.t_wrapper{
-  //  height: 1860px;
-  //}
-  //.compare_plans_table{
-  //  position: absolute;
-  //  overflow-x: scroll;
-  //}
-}
-@media (max-width: 600px) {
-  .wrapper .content {
-    .buttons_prices{
+  .plans{
+    >div:first-of-type{
+      margin-top: -90px;
       margin-bottom: 50px;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
       >div{
-        flex-direction: column;
-        height: 150px;
-        .button{
-          flex-basis: auto;
-        }
+        flex-basis: initial;
       }
     }
-    .form{
-      div{
-        height: 575px;
-      }
-    }
+
   }
-}
-@media (max-width: 455px) {
-  .wrapper .content {
-    .slogan{
-      margin-top: 20px;
-      p{
-        margin-bottom: 30px;
-        font-size: 32px;
-      }
-    }
-    .plans {
-      > div {
-        height: 2530px;
-        >div{
-          .selected_plan{
-            .choose{
-              margin-bottom: 25px;
-            }
-          }
-        }
-        .money {
-          top: -50px;
-          right: 100px;
-        }
-      }
-    }
-    .text{
-      >div{
-        >div:first-child{
-          height: auto;
-          flex-direction: column;
-          span:nth-child(1n){
-            align-self: center;
-            flex-basis: auto;
-          }
-        }
-      }
-    }
-    .form{
-      >div{
-        height: 600px;
-      }
-    }
-  }
-}
-@media (max-width: 375px){
-  .wrapper .content{
-    .slogan{
+  .bottom-form{
+    >div{
+      height: auto;
       p{
         font-size: 20px;
       }
+      p:first-of-type{
+        font-size: 38px;
+      }
+      form{
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px){
+  .banner-prices{
+    >div{
+      align-items: center;
       a{
         display: block;
+        width: 325px;
       }
     }
-    .form{
-      >div{
-        height: 600px;
-      }
-    }
-  }
-  .button{
-    font-size: 14px;
   }
 }
-@media (max-width: 325px){
-  .wrapper .content{
-    .plans{
-      >div{
-        height: 2600px;
-        .money{
-          right: 80px;
-        }
+@media screen and (min-width : 768px) and(max-width: 1023px){
+  .banner-prices{
+    >div:last-of-type{
+      flex-direction: row;
+      a{
+        margin-bottom: 0;
+        flex-basis: 260px;
       }
     }
-    .form{
-      margin: 0;
-      >div{
-        align-items: stretch;
-        span{
-          font-size: 32px;
-        }
-        form{
-          .button{
-            width: auto;
-          }
+  }
+  .plans{
+    .selected_plan{
+      .choose{
+        a{
+          display: block;
+          width: 260px;
+          margin: 0 auto;
         }
       }
     }
   }
 }
-//-------------------------------------------------------------------------------

@@ -3,14 +3,20 @@
  */
 $(document).ready(function () {
     $(".plan").hover(function () {
+        var planHeight = $(this).height();
+        if($(this).hasClass("selected_plan") == false){
+            $(this).parent().height(planHeight);
+        }
         $(this).toggleClass("selected_plan");
+        console.log($(this).parent().height());
     });
 
 
     var isPopupOpen = 0;
-    var contentHeight = $(".content").height();
+    var contentHeight = $(".main-content").height();
+    console.log(contentHeight);
     var popupHeight = $("#compare_plans").height();
-    var topPopupHeight = popupHeight - popupHeight * 2;
+    console.log(popupHeight);
     $("#compare_plans .close_popup a").click(function () {
         $("#compare_plans").animate({
             top: "-100%",
@@ -19,10 +25,10 @@ $(document).ready(function () {
         });
         isPopupOpen = 0;
         console.log(isPopupOpen);
-        $(".content>div").css("display","block").css("visibility","visible");
-        $(".content").height("initial").css("background-image","url(/local/templates/megaplan/img/prices/lady.png)").css("background-size","contain").css("background-repeat","no-repeat");
+        $(".main-content>div").css("display","block").css("visibility","visible");
+        $(".main-content").height("initial").css("background-image","url(/local/templates/megaplan/img/prices/lady.png)").css("background-size","contain").css("background-repeat","no-repeat");
     });
-    $(".button_compare a").click(function () {
+    $(".button-compare").click(function () {
         $("#compare_plans").animate({
             top: "90px",
         }, {
@@ -32,7 +38,7 @@ $(document).ready(function () {
         console.log(isPopupOpen);
         console.log(contentHeight);
         console.log(popupHeight);
-        $(".content>div").css("display","none").css("visibility","hidden");
-        $(".content").height(popupHeight).css("background","none");
+        $(".main-content>div").css("display","none").css("visibility","hidden");
+        $(".main-content").height(popupHeight).css("background","none");
     });
-})
+});

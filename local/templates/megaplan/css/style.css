@@ -76,7 +76,6 @@ a:hover, a:focus {
     border: 1px solid transparent;
     font-size: 19px;
     font-weight: 300;
-    text-transform: uppercase;
 }
 .button-green {
     background: #08bf32;

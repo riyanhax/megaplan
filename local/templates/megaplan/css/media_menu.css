@@ -1,38 +1,144 @@
-@media screen and (max-width: 992px) {
-    #menu .social {
-        padding: 0 15%;
-    }
-    #menu .payment_systems {
-        padding: 0 15%;
+@media (max-height: 1080px) and (min-height: 900px){
+    #menu .main_menu > div{
+        font-size: 27px;
     }
 }
-@media screen and (max-width: 767px) {
-    #menu .main_menu {
-        justify-content: space-around;
+@media (max-height: 899px) and (min-height: 800px){
+    #menu .main_menu{
+        height: 60%;
+    }
+    #menu .social{
+        top: 71%;
+        right: 50%;
+        margin-right: -9%;
+    }
+    #menu .payment_systems{
+        top: 77%;
+        right: 50%;
+        margin-right: -7.5%;
     }
 }
-@media screen and (max-width: 640px) {
-    #menu .main_menu {
-        padding: 0 150px;
-        flex-direction: column;
-        align-items: stretch;
+@media (max-height: 624px) and (min-height: 582px){
+    #menu .main_menu > div{
+        font-size: 18px;
+    }
+}
+@media (min-width: 1600px) and (max-width: 1900px) and (min-height: 900px){
+    #menu .main_menu > div{
+        font-size: 25px;
+    }
+    #menu .main_menu > div{
+        font-size: 21px;
+    }
+    #menu .social{
+        top: 79%;
+        right: 50%;
+        margin-right: -9%;
+    }
+    #menu .payment_systems{
+        top: 84%;
+        right: 50%;
+        margin-right: -7.5%;
+    }
+}
+@media (min-width: 1280px) and (max-width: 1599px) and (min-height: 900px){
+    #menu .main_menu{
+        height: 60%;
+    }
+    #menu .main_menu > div{
+        font-size: 21px;
+    }
+    #menu .social{
+        top: 71%;
+        right: 50%;
+        margin-right: -9%;
+    }
+    #menu .payment_systems{
+        top: 77%;
+        right: 50%;
+        margin-right: -7.5%;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1279px) and (min-height: 666px){
+    #menu .main_menu{
+        height: 60%;
+    }
+    #menu .main_menu > div{
+        font-size: 18px;
+        padding: 0;
     }
     #menu .info_menu{
-        flex-direction: column;
-        align-items: center;
+        margin: 0;
     }
-    #menu .info_menu a{
-        display: block;
+    #menu .social{
+        top: 71%;
+        right: 50%;
+        margin-right: -9%;
     }
-    #menu .social {
-        padding: 0 10%;
+    #menu .payment_systems{
+        top: 77%;
+        right: 50%;
+        margin-right: -7.5%;
     }
 }
-@media screen and (max-width: 500px) {
-    #menu .main_menu {
-        padding: 0 100px;
+@media (min-width: 1024px) and (max-width: 1279px) and (max-height: 665px){
+    #menu .main_menu > div{
+        font-size: 15px;
+        padding: 0 5%;
     }
-    #menu .social {
-        padding: 0;
+    #menu .info_menu{
+        margin: 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    #menu .main_menu{
+        margin-top: 5%;
+        height: 65%;
+    }
+    #menu .main_menu > div{
+        font-size: 16px;
+        margin-bottom: 1%;
+    }
+    #menu .info_menu{
+        width: 80%;
+    }
+    #menu .social{
+        width: 50%;
+        top: 79%;
+        right: 50%;
+        margin-right: -25%;
+    }
+    #menu .payment_systems{
+        width: 30%;
+        top: 84%;
+        right: 50%;
+        margin-right: -15%;
+    }
+}
+@media /*(min-width: 481px) and*/ (max-width: 640px){
+    #menu .main_menu{
+        margin-left: 10%;
+        flex-wrap: nowrap;
+    }
+    #menu .info_menu{
+        width: 60%;
+    }
+    #menu .social{
+        position: initial;
+        width: 60%;
+        margin: 1% auto;
+
+    }
+    #menu .payment_systems{
+        position: initial;
+        width: 40%;
+        margin: 1% auto 5%;
+    }
+}
+@media (max-width: 425px) /*and (max-width: 480px)*/{
+    #menu .info_menu{
+        width: 60%;
+        flex-direction: column;
+        text-align: center;
     }
 }
