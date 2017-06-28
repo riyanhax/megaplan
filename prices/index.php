@@ -1,6 +1,6 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("title", "Блог");
-$APPLICATION->SetTitle("Блог");?>
+$APPLICATION->SetPageProperty("title", "Цены");
+$APPLICATION->SetTitle("Цены");?>
 <div class="main-content">
     <div class="top-banner banner-prices">
         <div class="col-xs-12 col-sx-offset-0 col-sm-8 col-sm-offset-4 col-lg-4 col-lg-offset-6">
@@ -124,7 +124,7 @@ $APPLICATION->SetTitle("Блог");?>
             <p>Расскажем фишки и нестандартные возможности работы.</p>
             <p>Укажите эл. почту для уточнения деталей:</p>
             <form action="">
-                <input type="email" name="user_email" id="user_email" placeholder="Почта" class="input_transparent placeholder-w">
+                <input class="input_transparent" type="email" name="user_email" id="user_email" placeholder="Почта" class="input_transparent placeholder-w">
                 <input type="submit" class="button-common button-green" value="Заказать">
             </form>
         </div>

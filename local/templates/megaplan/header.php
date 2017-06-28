@@ -17,6 +17,7 @@ else
     <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400&amp;subset=cyrillic" rel="stylesheet">
 
     <?//$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.mousewheel.js")?>
+    <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery-3.2.1.min.js")?>
     <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.easing.min.js")?>
     <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/prices.js")?>
 
@@ -51,17 +52,17 @@ else
                              <?endif;?>
 
 
-                             console.log(screen.height);
-                             console.log(screen.width);
                              function setMenuHeight() {
                                  $('#menu').css({
                                      height: $(window).height() + 'px'
                                  });
                              }
-                             if(screen.width > 640) /*|| (screen.height > 582)*/{
-                                 setMenuHeight();
-                                 console.log($(window).height());
-//                                 $(window).resize( setMenuHeight );
+                             if(screen.width > 640) {
+                                 if(screen.height >= 768){
+                                     setMenuHeight();
+                                     console.log($(window).height());
+                                     $(window).resize( setMenuHeight );
+                                 }
                              }
                              else {
                                  $('#menu').css("height","auto");
@@ -158,7 +159,7 @@ else
                         <li><a href="#">Коробка/облако</a></li>
                         <li><a href="#">Безопастность данных</a></li>
                         <li><a href="#">CRM</a></li>
-                        <li><a href="#">Управление проэктами</a></li>
+                        <li><a href="#">Управление проектами</a></li>
                         <li><a href="#">Интеграции с почтой</a></li>
                         <li><a href="#">Интеграции с телефонией</a></li>
                         <li><a href="#">Мобильное приложение</a></li>

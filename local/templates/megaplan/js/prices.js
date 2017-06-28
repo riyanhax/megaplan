@@ -6,6 +6,10 @@ $(document).ready(function () {
         var planHeight = $(this).height();
         if($(this).hasClass("selected_plan") == false){
             $(this).parent().height(planHeight);
+            $(this).parent().css("opacity","1");
+        }
+        else{
+            $(this).parent().css("opacity","0.85");
         }
         $(this).toggleClass("selected_plan");
         console.log($(this).parent().height());
@@ -41,4 +45,18 @@ $(document).ready(function () {
         $(".main-content>div").css("display","none").css("visibility","hidden");
         $(".main-content").height(popupHeight).css("background","none");
     });
+
+    var bannerHeight = $(".banner-prices").height() - 35;
+    console.log("bannerHeight = " + bannerHeight);
+    var top = 0;
+    if($(document).width() >= 768){
+        $(window).scroll(function () {
+            if($(this).scrollTop() > bannerHeight){
+                $(".plans > div:first-of-type").css("margin-top","5px");
+            }
+            else {
+                $(".plans > div:first-of-type").css("margin-top","-120px");
+            }
+        })
+    }
 });

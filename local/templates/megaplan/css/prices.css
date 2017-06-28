@@ -40,6 +40,35 @@ a.button-common:hover {
   color: inherit;
   box-shadow: 0 0 0 50px rgba(0, 0, 0, 0.1) inset;
 }
+.input_transparent {
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  background-color: transparent;
+}
+.placeholder-w::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+.placeholder-w::-moz-placeholder {
+  color: #FFFFFF;
+}
+.placeholder-w:-moz-placeholder {
+  color: #FFFFFF;
+}
+.placeholder-w:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.placeholder-w:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.placeholder-w:focus::-moz-placeholder {
+  color: transparent;
+}
+.placeholder-w:focus:-moz-placeholder {
+  color: transparent;
+}
+.placeholder-w:focus:-ms-input-placeholder {
+  color: transparent;
+}
 .banner-prices {
   min-height: 860px;
   background-image: url(../img/prices/lady.png);
@@ -60,7 +89,6 @@ a.button-common:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-bottom: 80px;
 }
 .banner-prices > div:last-of-type a {
   font-weight: 400;
@@ -85,12 +113,19 @@ a.button-common:hover {
 .plans > div:first-of-type {
   align-items: flex-start;
   margin-top: -120px;
+  transition-property: margin;
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
 }
 .plans > div:first-of-type > div {
   flex-basis: 220px;
   position: relative;
   padding: 0;
   background-color: white;
+  opacity: 0.85;
+  transition-property: opacity;
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
 }
 .plans > div:last-of-type {
   margin-bottom: 45px;
@@ -168,6 +203,7 @@ a.button-common:hover {
   z-index: 90;
   position: absolute;
   width: 100%;
+  background-color: #FFFFFF;
   box-sizing: content-box;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
@@ -373,6 +409,7 @@ a.button-common:hover {
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .banner-prices > div:first-of-type {
     padding-left: 15px;
+    margin-bottom: 140px;
   }
   .banner-prices > div:first-of-type a {
     display: block;
@@ -416,6 +453,16 @@ a.button-common:hover {
     display: block;
     width: 325px;
   }
+  .plans > div:first-of-type {
+    margin-top: -90px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  .plans > div:first-of-type > div {
+    flex-basis: initial;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .banner-prices > div:last-of-type {
@@ -424,6 +471,16 @@ a.button-common:hover {
   .banner-prices > div:last-of-type a {
     margin-bottom: 0;
     flex-basis: 260px;
+  }
+  .plans > div:first-of-type {
+    margin-top: -90px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  .plans > div:first-of-type > div {
+    flex-basis: initial;
   }
   .plans .selected_plan .choose a {
     display: block;
