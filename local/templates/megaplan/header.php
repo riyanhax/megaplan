@@ -4,7 +4,7 @@ IncludeTemplateLangFile(__FILE__);
 CJSCore::Init(array("jquery"));
 CJSCore::Init(array("fx"));
 $page = $APPLICATION->GetCurPage();
-if($page=="/contacts/"||$page=="/company/"||$page=="/prices/")
+if($page=="/contacts/"||$page=="/company/"||$page=="/prices/"||$page=="/prices/")
     $theme = "dark";
 else
     $theme = "";
@@ -17,6 +17,7 @@ else
     <link href="https://fonts.googleapis.com/css?family=Exo+2:100,300,400&amp;subset=cyrillic" rel="stylesheet">
 
     <?//$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.mousewheel.js")?>
+    <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery-3.2.1.min.js")?>
     <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.easing.min.js")?>
     <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/prices.js")?>
 	    <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.custom-scroll.js")?>
@@ -52,6 +53,25 @@ else
                              $(".burger span").css("color","#fff");
                              <?endif;?>
 
+
+                             function setMenuHeight() {
+                                 $('#menu').css({
+                                     height: $(window).height() + 'px'
+                                 });
+                             }
+                             if(screen.width > 640) {
+                                 if(screen.height >= 768){
+                                     setMenuHeight();
+                                     console.log($(window).height());
+                                     $(window).resize( setMenuHeight );
+                                 }
+                             }
+                             else {
+                                 $('#menu').css("height","auto");
+                             }
+
+
+
                              var menuIsOpen = 0;
                              $(".burger").click(function () {
                                  $(this).toggleClass("open");
@@ -63,6 +83,7 @@ else
                                      },{
                                          duration:520
                                      });
+//                                     $("html,body").css("overflow-y","hidden");
                                      <?if($theme=="dark"):?>
                                      $(".burger div").css("background-color","#fff");
                                      $("#logo a").html('<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/logo.php"))?>');
@@ -76,6 +97,7 @@ else
                                      }, {
                                          duration: 650
                                      });
+//                                     $("html,body").css("overflow-y","visible");
                                      <?if($theme=="dark"):?>
                                      $(".burger div").delay(300).css("background-color","#414b4d");
                                      $("#logo a").delay(300).html('<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/logo_b.php"))?>');
@@ -132,105 +154,88 @@ else
     </header>
     <div id="menu">
         <div class="menu_wrap">
-            <div class="row">
-                <div class="main_menu col-xs-12 col-sm-8 col-sm-offset-2 col-md-10 col-md-offset-1">
-<!--                    <div class="row">-->
-                        <div> <!--class="col-xs-5 col-sm-4 col-md-4"-->
-                            <div><a href="../more/">Возможности</a>
-                                <ul>
-                                    <li><a href="#">Воронка продаж</a></li>
-                                    <li><a href="../local-internet/">Коробка/облако</a></li>
-                                    <li><a href="../security/">Безопастность данных</a></li>
-                                    <li><a href="#">CRM</a></li>
-                                    <li><a href="#">Управление проэктами</a></li>
-                                    <li><a href="#">Интеграции с почтой</a></li>
-                                    <li><a href="#">Интеграции с телефонией</a></li>
-                                    <li><a href="#">Мобильное приложение</a></li>
-                                </ul>
-                            </div>
-                            <div><a href="../prices/">Цены</a>
-                                <ul>
-                                    <li><a href="#">Выбрать тариф</a></li>
-                                    <li><a href="#">Бесплатный тариф</a></li>
-                                    <li><a href="#">Политика конфиденциальности</a></li>
-                                    <li><a href="#">Лицензированный договор</a></li>
-                                    <li><a href="#">Договор на доступ</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div> <!--class="col-xs-5 col-sm-4 col-md-4"-->
-                            <div><a href="#">Помошь</a>
-                                <ul>
-                                    <li><a href="#">Инструкции</a></li>
-                                    <li><a href="#">Комплексное внедрение</a></li>
-                                    <li><a href="#">Консультанты (партнеры)</a></li>
-                                    <li><a href="#">Частые вопросы</a></li>
-                                    <li><a href="#">Онлайн уроки</a></li>
-                                </ul>
-                            </div>
-                            <div><a href="../partners/">Партнерам</a>
-                                <ul>
-                                    <li><a href="http://out.megaplan.szdl.ru/integration/">API и виджеты</a></li>
-                                    <li><a href="#">Партнерская программа</a></li>
-                                    <li><a href="#">Реферальная программа</a></li>
-                                </ul>
-                            </div>
-                            <div><a href="../company/">О компании</a>
-                                <ul>
-                                    <li><a href="http://out.megaplan.szdl.ru/contacts/">Контакты</a></li>
-                                    <li><a href="#">Команда</a></li>
-                                    <li><a href="#">Квартирники</a></li>
-                                    <li><a href="#">Вакансии</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div> <!--class="col-xs-5 col-sm-4 col-md-4"-->
-                            <div><a href="../blog/">Блог</a>
-                                <ul>
-                                    <li><a href="#">Блог о продажах</a></li>
-                                    <li><a href="#">Блог о бизнесе</a></li>
-                                    <li><a href="#">Полезное чтение</a></li>
-                                    <li><a href="#">Видео блог</a></li>
-                                </ul>
-                            </div>
-                            <div><a href="">Клиентам</a>
-                                <ul>
-                                    <li><a href="#">Личный кабинет</a></li>
-                                    <li><a href="../clients/">Клиенты</a></li>
-                                    <li><a href="#">Кейсы</a></li>
-                                    <li><a href="#">Решения для бизнеса</a></li>
-                                </ul>
-                            </div>
-                        </div>
-<!--                    </div>-->
+            <div class="main_menu"><!--col-xs-12 col-sm-8 col-sm-offset-2 col-md-10 col-md-offset-1-->
+                <div class="capabilities"><a href="#">Возможности</a>
+                    <ul>
+                        <li><a href="#">Воронка продаж</a></li>
+                        <li><a href="#">Коробка/облако</a></li>
+                        <li><a href="#">Безопастность данных</a></li>
+                        <li><a href="#">CRM</a></li>
+                        <li><a href="#">Управление проектами</a></li>
+                        <li><a href="#">Интеграции с почтой</a></li>
+                        <li><a href="#">Интеграции с телефонией</a></li>
+                        <li><a href="#">Мобильное приложение</a></li>
+                    </ul>
+                </div>
+                <div class="prices"><a href="#">Цены</a>
+                    <ul>
+                        <li><a href="#">Выбрать тариф</a></li>
+                        <li><a href="#">Бесплатный тариф</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Лицензионный договор</a></li>
+                        <li><a href="#">Договор на доступ</a></li>
+                    </ul>
+                </div>
+                <div class="help"><a href="#">Помощь</a>
+                    <ul>
+                        <li><a href="#">Инструкции</a></li>
+                        <li><a href="#">Комплексное внедрение</a></li>
+                        <li><a href="#">Консультанты (партнеры)</a></li>
+                        <li><a href="#">Частые вопросы</a></li>
+                        <li><a href="#">Онлайн уроки</a></li>
+                    </ul>
+                </div>
+                <div class="partners"><a href="#">Партнерам</a>
+                    <ul>
+                        <li><a href="#">API и виджеты</a></li>
+                        <li><a href="#">Партнерская программа</a></li>
+                        <li><a href="#">Реферальная программа</a></li>
+                    </ul>
+                </div>
+                <div class="company"><a href="#">О компании</a>
+                    <ul>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Команда</a></li>
+                        <li><a href="#">Квартирники</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                    </ul>
+                </div>
+                <div class="blog"><a href="#">Блог</a>
+                    <ul>
+                        <li><a href="#">Блог о продажах</a></li>
+                        <li><a href="#">Блог о бизнесе</a></li>
+                        <li><a href="#">Полезное чтение</a></li>
+                        <li><a href="#">Видео блог</a></li>
+                    </ul>
+                </div>
+                <div class="clients"><a href="#">Клиентам</a>
+                    <ul>
+                        <li><a href="#">Личный кабинет</a></li>
+                        <li><a href="#">Клиенты</a></li>
+                        <li><a href="#">Кейсы</a></li>
+                        <li><a href="#">Решения для бизнеса</a></li>
+                        <li><a href="www.megaplan.megaplan.ru">Войти в мой Мегаплан</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
-                    <hr>
-                </div>
+            <div class="line"><!--col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1-->
+                <hr>
             </div>
-            <div class="row">
-                <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 info_menu">
-                    <a href="#" title="/">8 800 555-56-37</a>
-                    <a href="#" title="/">info@megaplan.ru</a>
-                </div>
+            <div class="info_menu"><!--col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4-->
+                <a href="#" title="/">8 800 555-56-37</a>
+                <a href="#" title="/">info@megaplan.ru</a>
             </div>
-            <div class="row">
-                <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 social">
-                    <div><a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social-fb-w.png" alt=""></a></div>
-                    <div><a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social-vk-w.png" alt=""></a></div>
-                    <div><a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social-tw-w.png" alt=""></a></div>
-                    <div><a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social-tg-w.png" alt=""></a></div>
-                    <div><a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social-phone-w.png" alt=""></a></div>
-                </div>
+            <div class="social"><!--col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4-->
+                <div><a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social-fb-w.png" alt=""></a></div>
+                <div><a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social-vk-w.png" alt=""></a></div>
+                <div><a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social-tw-w.png" alt=""></a></div>
+                <div><a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social-tg-w.png" alt=""></a></div>
+                <div><a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social-phone-w.png" alt=""></a></div>
             </div>
-            <div class="row">
-                <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-2 col-md-offset-5 payment_systems">
-                    <div><img src="<?=SITE_TEMPLATE_PATH?>/img/mastercard.png" alt=""></div>
-                    <div><img src="<?=SITE_TEMPLATE_PATH?>/img/visa.png" alt=""></div>
-                    <div><img src="<?=SITE_TEMPLATE_PATH?>/img/maestro.png" alt=""></div>
-                </div>
+            <div class="payment_systems"><!--col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-2 col-md-offset-5-->
+                <div><img src="<?=SITE_TEMPLATE_PATH?>/img/mastercard.png" alt=""></div>
+                <div><img src="<?=SITE_TEMPLATE_PATH?>/img/visa.png" alt=""></div>
+                <div><img src="<?=SITE_TEMPLATE_PATH?>/img/maestro.png" alt=""></div>
             </div>
         </div>
     </div>

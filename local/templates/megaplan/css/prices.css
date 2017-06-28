@@ -1,33 +1,44 @@
-.col-xs-five,
-.col-sm-five,
-.col-md-five,
-.col-lg-five {
-  position: relative;
-  min-height: 1px;
-  padding-right: 10px;
-  padding-left: 10px;
+.uppercase {
+  text-transform: uppercase;
 }
-.col-xs-five {
-  width: 20%;
-  float: left;
+.capitalize {
+  text-transform: capitalize;
 }
-@media (min-width: 768px) {
-  .col-sm-five {
-    width: 20%;
-    float: left;
-  }
+.button-common {
+  text-align: center;
+  padding: 12px 30px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  font-size: 20px;
+  font-weight: 300;
 }
-@media (min-width: 992px) {
-  .col-md-five {
-    width: 20%;
-    float: left;
-  }
+.button-green {
+  background: #08bf32;
+  color: #fff;
 }
-@media (min-width: 1200px) {
-  .col-lg-five {
-    width: 20%;
-    float: left;
-  }
+.button-white {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.button-yellow {
+  background: #ffd451;
+  color: #414b4d;
+}
+.button-tr {
+  border-color: #414b4d;
+  background: transparent;
+  color: #414b4d;
+}
+a.button-common,
+a.button-common:hover {
+  text-decoration: none;
+}
+a.button:hover span {
+  box-shadow: 0 0 0 50px rgba(0, 0, 0, 0.1) inset;
+}
+a.button-common:hover {
+  color: inherit;
+  box-shadow: 0 0 0 50px rgba(0, 0, 0, 0.1) inset;
 }
 .input_transparent {
   border: none;
@@ -58,176 +69,170 @@
 .placeholder-w:focus:-ms-input-placeholder {
   color: transparent;
 }
-.wrapper .content.content-prices {
-  padding-top: 90px;
-  min-height: 780px;
-  background: url("../img/prices/lady.png") no-repeat;
-  background-size: contain;
+.banner-prices {
+  min-height: 860px;
+  background-image: url(../img/prices/lady.png);
+  background-position: top left;
 }
-.wrapper > .content .slogan {
-  text-align: center;
-  margin: 100px 0 180px 0;
-}
-.wrapper > .content .slogan p {
-  margin-bottom: 50px;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 1;
-  text-transform: uppercase;
+.banner-prices > div:first-of-type {
+  margin-top: 95px;
+  margin-bottom: 180px;
+  padding-left: 70px;
   text-align: center;
 }
-.wrapper > .content .buttons_prices {
-  margin-bottom: 100px;
+.banner-prices > div:first-of-type a {
+  padding-right: 45px;
+  padding-left: 45px;
 }
-.wrapper > .content .buttons_prices > div {
+.banner-prices > div:last-of-type {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.wrapper > .content .buttons_prices .button {
+.banner-prices > div:last-of-type a {
+  font-weight: 400;
+  display: block;
   flex-basis: 260px;
 }
-.wrapper > .content .plans > div {
+.banner-prices > div:last-of-type div {
+  position: absolute;
+}
+.banner-prices p {
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.plans > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.plans > div:first-of-type {
+  align-items: flex-start;
+  margin-top: -120px;
+  transition-property: margin;
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
+}
+.plans > div:first-of-type > div {
+  flex-basis: 220px;
   position: relative;
   padding: 0;
-  height: 615px;
+  background-color: white;
+  opacity: 0.85;
+  transition-property: opacity;
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
 }
-.wrapper > .content .plans > div > div {
-  position: relative;
-  padding: 0;
+.plans > div:last-of-type {
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
-.wrapper > .content .plans > div > div .plan {
-  margin-right: -1px;
-  border: 1px solid #b5b5b5;
+.plans > div:last-of-type p {
+  font-size: 17px;
+}
+.plans .plan {
+  box-shadow: 0 0 10px #b5b5b5;
   display: flex;
   flex-direction: column;
   text-align: center;
   background-color: #FFFFFF;
+  transition-property: margin,padding;
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
 }
-.wrapper > .content .plans > div > div .plan .plan_name {
+.plans .plan .plan_name {
   display: flex;
   height: 120px;
   align-items: center;
   justify-content: center;
 }
-.wrapper > .content .plans > div > div .plan .plan_name span {
-  font-size: 26px;
-  font-weight: 400;
+.plans .plan .plan_name span {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1;
 }
-.wrapper > .content .plans > div > div .plan .plan_price {
+.plans .plan .plan_price {
   display: flex;
   flex-direction: column;
   height: 80px;
   align-items: center;
   justify-content: center;
 }
-.wrapper > .content .plans > div > div .plan .plan_price span:first-child {
+.plans .plan .plan_price span:first-child {
   font-weight: 400;
   font-size: 48px;
   color: #ffd451;
 }
-.wrapper > .content .plans > div > div .plan .plan_price span:last-child {
+.plans .plan .plan_price span:last-child {
   font-weight: 100;
   font-size: 12px;
   color: #b5b5b5;
 }
-.wrapper > .content .plans > div > div .plan .plan_description {
+.plans .plan .plan_description {
   display: flex;
   flex-direction: column;
   font-size: 14px;
   color: #252525;
-  padding: 25px 10px 0 10px;
+  padding: 25px 5px 0 5px;
   max-height: 415px;
 }
-.wrapper > .content .plans > div > div .plan .plan_description span:first-child {
+.plans .plan .plan_description span:first-child {
   flex-basis: 50px;
 }
-.wrapper > .content .plans > div > div .plan .plan_description ul {
+.plans .plan .plan_description ul {
+  min-width: 150px;
   align-self: center;
   text-align: left;
   list-style: url("../img/prices/circle-li.png");
   padding-left: 10%;
   margin-bottom: 50px;
 }
-.wrapper > .content .plans > div > div .plan .choose {
+.plans .plan .choose {
   display: none;
   visibility: hidden;
 }
-.wrapper > .content .plans > div > div .selected_plan {
-  border: 1px solid #b5b5b5;
-  margin: -50px -30px 0 -30px;
-  padding: 50px 30px 0 30px;
+.plans .selected_plan {
+  margin: -30px -10px 0 -10px;
+  padding: 30px 10px 0 10px;
   z-index: 90;
   position: absolute;
   width: 100%;
+  background-color: #FFFFFF;
   box-sizing: content-box;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
 }
-.wrapper > .content .plans > div > div .selected_plan .choose {
+.plans .selected_plan .choose {
   align-self: stretch;
   display: block;
   visibility: visible;
-  margin-bottom: 45px;
+  margin: 0 25px 45px;
 }
-.wrapper > .content .plans > div .money {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100px;
-  border: none;
-  background-color: transparent;
-  top: -145px;
-  right: 0;
+.plans .selected_plan .choose a {
+  display: inline-block;
+  width: 100%;
+  height: 35px;
+  padding: 0;
+  text-transform: capitalize;
 }
-.wrapper > .content .plans > div .money span {
-  color: #414b4d;
+.plans .button-compare {
+  display: inline-block;
+  width: 345px;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
-.wrapper > .content .button_compare > div {
-  margin-top: 45px;
-  margin-bottom: 45px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.wrapper > .content .button_compare > div .button {
-  width: 300px;
-}
-.wrapper > .content .text > div {
-  display: flex;
-  flex-direction: column;
-}
-.wrapper > .content .text > div > div:first-child {
-  margin-bottom: 45px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.wrapper > .content .text > div > div:first-child span {
-  position: relative;
-  text-align: center;
-  flex-basis: 165px;
-}
-.wrapper > .content .text > div > div:first-child span:not(:last-child):after {
-  position: absolute;
-  top: 0;
-  right: -20%;
-  display: block;
-  content: url("../img/prices/circle-grey.png");
-}
-.wrapper > .content .text > div > div:last-child {
-  margin-bottom: 45px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.wrapper > .content .form > div {
+.bottom-form > div {
   display: flex;
   height: 500px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 80px;
+  max-width: 1280px;
   color: #FFFFFF;
   text-align: center;
   background: url("../img/prices/form-bg.png") no-repeat;
@@ -236,32 +241,44 @@
   justify-content: flex-start;
   align-items: center;
 }
-.wrapper > .content .form > div span {
-  margin: 50px 0;
-  text-transform: uppercase;
-  font-size: 60px;
+.bottom-form > div p {
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 1.2;
 }
-.wrapper > .content .form > div form {
+.bottom-form > div p:first-of-type {
+  display: inline-block;
+  margin: 60px 0 50px;
+  text-transform: uppercase;
+  font-size: 44px;
+}
+.bottom-form > div form {
   display: flex;
   flex-direction: column;
 }
-.wrapper > .content .form > div form .button {
-  align-self: center;
-  width: 300px;
-  height: 50px;
-}
-.wrapper > .content .form > div form input {
+.bottom-form > div form input {
   margin-top: 50px;
 }
-.wrapper > .content .form > div form input[type=submit] {
+.bottom-form > div form input[type=email] {
+  width: 450px;
+  align-self: center;
+}
+.bottom-form > div form input[type=submit] {
   width: 300px;
+  text-transform: capitalize;
   align-self: center;
 }
 .big_popup {
+  width: 100%;
   position: absolute;
-  top: -2200px;
+  top: -100%;
   z-index: 99;
   background-color: white;
+}
+.big_popup > a {
+  display: block;
+  margin: 50px auto;
+  width: 300px;
 }
 .big_popup .close_popup {
   position: absolute;
@@ -269,6 +286,7 @@
   left: 0;
   width: 40px;
   height: 40px;
+  z-index: 10;
 }
 .big_popup .close_popup a {
   display: block;
@@ -322,11 +340,7 @@
   max-width: 1230px;
   margin-top: 50px;
   margin-bottom: 50px;
-}
-.big_popup .t_wrapper a {
-  display: block;
-  margin: 50px auto;
-  width: 300px;
+  overflow-x: scroll;
 }
 .big_popup .compare_plans_table {
   margin: 0 auto;
@@ -392,177 +406,85 @@
   font-size: 12px;
   color: #b5b5b5;
 }
-@media (max-width: 1332px) {
-  .t_wrapper {
-    width: 100%;
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .banner-prices > div:first-of-type {
+    padding-left: 15px;
+    margin-bottom: 140px;
   }
-}
-@media (max-width: 1042px) {
-  .wrapper > .content .slogan {
-    margin-bottom: 60px;
+  .banner-prices > div:first-of-type a {
+    display: block;
+    margin: 0 auto;
   }
-  .wrapper > .content .buttons_prices {
-    margin-bottom: 60px;
+  .banner-prices > div:last-of-type {
+    flex-direction: column;
   }
-  .wrapper > .content .buttons_prices .button {
-    flex-basis: 240px;
+  .banner-prices > div:last-of-type a {
+    margin-bottom: 20px;
+    flex-basis: 50px;
   }
-  .wrapper > .content .plans > div {
-    height: 730px;
-  }
-  .wrapper > .content .plans > div > div .plan .plan_description {
-    max-height: 530px;
-  }
-  .wrapper > .content .plans > div > div .plan .plan_description ul {
-    padding-left: 15%;
-  }
-  .wrapper > .content .plans > div .money {
-    top: -105px;
-    right: 10px;
-  }
-  .wrapper > .content .text > div > div:first-child {
-    height: 75px;
-  }
-  .wrapper > .content .text > div > div:first-child span:nth-child(1) {
-    align-self: flex-start;
-  }
-  .wrapper > .content .text > div > div:first-child span:nth-child(2) {
-    align-self: center;
-  }
-  .wrapper > .content .text > div > div:first-child span:nth-child(3) {
-    align-self: flex-end;
-  }
-  .wrapper > .content .text > div > div:first-child span:after {
-    display: none;
-    visibility: hidden;
-  }
-  .wrapper > .content .form div {
-    height: 525px;
-  }
-  .wrapper > .content .form div form input[type=submit] {
-    margin-top: 25px;
-  }
-}
-@media (max-width: 993px) {
-  .wrapper .content .plans > div {
-    height: 2400px;
-  }
-  .wrapper .content .plans > div > div .selected_plan {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    background-color: #f9ffa7;
-  }
-  .wrapper .content .plans > div > div .selected_plan .plan_price span:first-child {
-    color: #414b4d;
-  }
-  .wrapper .content .plans > div .money {
-    top: -105px;
-    right: -90px;
-  }
-}
-@media (max-width: 767px) {
-  .wrapper .content .slogan {
-    margin-top: 60px;
-  }
-  .wrapper .content .slogan p {
-    font-size: 48px;
-  }
-  .wrapper .content .buttons_prices {
-    margin-bottom: 60px;
-  }
-  .wrapper .content .plans > div {
-    height: 2470px;
-  }
-  .wrapper .content .plans > div .money {
-    top: -45px;
-    right: 40%;
-  }
-  .wrapper .content .form > div {
-    height: 490px;
-  }
-  .wrapper .content .form > div span {
-    font-size: 48px;
-  }
-}
-@media (max-width: 695px) {
-  .t_wrapper {
-    position: relative;
-  }
-}
-@media (max-width: 600px) {
-  .wrapper .content .buttons_prices {
+  .plans > div:first-of-type {
+    margin-top: -90px;
     margin-bottom: 50px;
-  }
-  .wrapper .content .buttons_prices > div {
     flex-direction: column;
-    height: 150px;
+    align-items: stretch;
+    justify-content: flex-start;
   }
-  .wrapper .content .buttons_prices > div .button {
-    flex-basis: auto;
+  .plans > div:first-of-type > div {
+    flex-basis: initial;
   }
-}
-@media (max-width: 455px) {
-  .wrapper .content .slogan {
-    margin-top: 20px;
-  }
-  .wrapper .content .slogan p {
-    margin-bottom: 30px;
-    font-size: 32px;
-  }
-  .wrapper .content .plans > div {
-    height: 2530px;
-  }
-  .wrapper .content .plans > div > div .selected_plan .choose {
-    margin-bottom: 25px;
-  }
-  .wrapper .content .plans > div .money {
-    top: -50px;
-    right: 100px;
-  }
-  .wrapper .content .text > div > div:first-child {
+  .bottom-form > div {
     height: auto;
-    flex-direction: column;
   }
-  .wrapper .content .text > div > div:first-child span:nth-child(1n) {
-    align-self: center;
-    flex-basis: auto;
-  }
-  .wrapper .content .form > div {
-    height: 575px;
-  }
-}
-@media (max-width: 375px) {
-  .wrapper .content .slogan p {
+  .bottom-form > div p {
     font-size: 20px;
   }
-  .wrapper .content .slogan a {
-    display: block;
+  .bottom-form > div p:first-of-type {
+    font-size: 38px;
   }
-  .wrapper .content .form > div {
-    height: 600px;
-  }
-  .button {
-    font-size: 14px;
+  .bottom-form > div form {
+    margin-bottom: 25px;
   }
 }
-@media (max-width: 325px) {
-  .wrapper .content .plans > div {
-    height: 2600px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .banner-prices > div {
+    align-items: center;
   }
-  .wrapper .content .plans > div .money {
-    right: 80px;
+  .banner-prices > div a {
+    display: block;
+    width: 325px;
   }
-  .wrapper .content .form {
-    margin: 0;
-  }
-  .wrapper .content .form > div {
+  .plans > div:first-of-type {
+    margin-top: -90px;
+    margin-bottom: 50px;
+    flex-direction: column;
     align-items: stretch;
+    justify-content: flex-start;
   }
-  .wrapper .content .form > div span {
-    font-size: 32px;
+  .plans > div:first-of-type > div {
+    flex-basis: initial;
   }
-  .wrapper .content .form > div form .button {
-    width: auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .banner-prices > div:last-of-type {
+    flex-direction: row;
+  }
+  .banner-prices > div:last-of-type a {
+    margin-bottom: 0;
+    flex-basis: 260px;
+  }
+  .plans > div:first-of-type {
+    margin-top: -90px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  .plans > div:first-of-type > div {
+    flex-basis: initial;
+  }
+  .plans .selected_plan .choose a {
+    display: block;
+    width: 260px;
+    margin: 0 auto;
   }
 }

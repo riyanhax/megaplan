@@ -3,8 +3,10 @@
 }
 html{
     overflow-x: hidden;
+    width: 100%;
 }
 body {
+    width: 100%;
     min-height: 800px;
     color: #414b4d;
 }
@@ -87,7 +89,6 @@ a:hover, a:focus {
     border: 1px solid transparent;
     font-size: 19px;
     font-weight: 300;
-    text-transform: uppercase;
 }
 .button-green {
     background: #08bf32;
