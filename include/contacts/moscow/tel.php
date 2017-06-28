@@ -1,1 +1,1 @@
-<a class="social-link" href="#" title=""><img src="<?=SITE_TEMPLATE_PATH."/img/social-phone-b.png"?>" alt=""></a>
+<a class="social-link" href="#" title=""><i class="fa fa-phone" aria-hidden="true"></i></a>
