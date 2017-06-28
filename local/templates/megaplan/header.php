@@ -14,14 +14,16 @@ else
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:100,300,400&amp;subset=cyrillic" rel="stylesheet">
 
     <?//$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.mousewheel.js")?>
     <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.easing.min.js")?>
     <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/prices.js")?>
+	    <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.custom-scroll.js")?>
+    <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/script.js")?>
 
     <?$APPLICATION->SetAdditionalCSS("/bitrix/css/main/bootstrap.css");?>
-    <?//$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/font-awesome.min.css");?>
+    <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/font-awesome.min.css");?>
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/style.css");?>
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/media.css");?>
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/menu_style.css");?>
@@ -87,7 +89,7 @@ else
                      <div></div>
                      <span><?=GetMessage('MENU')?></span>
                  </div>
-                 <div class="top-menu hidden-sm">
+                 <div class="top-menu hidden-md">
                      <?
                      $APPLICATION->IncludeComponent("bitrix:menu", "top", Array(
                         "ROOT_MENU_TYPE" => "top",
@@ -134,11 +136,11 @@ else
                 <div class="main_menu col-xs-12 col-sm-8 col-sm-offset-2 col-md-10 col-md-offset-1">
 <!--                    <div class="row">-->
                         <div> <!--class="col-xs-5 col-sm-4 col-md-4"-->
-                            <div><a href="#">Возможности</a>
+                            <div><a href="../more/">Возможности</a>
                                 <ul>
                                     <li><a href="#">Воронка продаж</a></li>
-                                    <li><a href="http://out.megaplan.szdl.ru/local-internet/">Коробка/облако</a></li>
-                                    <li><a href="http://out.megaplan.szdl.ru/security/">Безопастность данных</a></li>
+                                    <li><a href="../local-internet/">Коробка/облако</a></li>
+                                    <li><a href="../security/">Безопастность данных</a></li>
                                     <li><a href="#">CRM</a></li>
                                     <li><a href="#">Управление проэктами</a></li>
                                     <li><a href="#">Интеграции с почтой</a></li>
@@ -146,7 +148,7 @@ else
                                     <li><a href="#">Мобильное приложение</a></li>
                                 </ul>
                             </div>
-                            <div><a href="http://bvd.megaplan.szdl.ru/prices/">Цены</a>
+                            <div><a href="../prices/">Цены</a>
                                 <ul>
                                     <li><a href="#">Выбрать тариф</a></li>
                                     <li><a href="#">Бесплатный тариф</a></li>
@@ -166,14 +168,14 @@ else
                                     <li><a href="#">Онлайн уроки</a></li>
                                 </ul>
                             </div>
-                            <div><a href="http://out.megaplan.szdl.ru/partners/">Партнерам</a>
+                            <div><a href="../partners/">Партнерам</a>
                                 <ul>
                                     <li><a href="http://out.megaplan.szdl.ru/integration/">API и виджеты</a></li>
                                     <li><a href="#">Партнерская программа</a></li>
                                     <li><a href="#">Реферальная программа</a></li>
                                 </ul>
                             </div>
-                            <div><a href="http://out.megaplan.szdl.ru/company/">О компании</a>
+                            <div><a href="../company/">О компании</a>
                                 <ul>
                                     <li><a href="http://out.megaplan.szdl.ru/contacts/">Контакты</a></li>
                                     <li><a href="#">Команда</a></li>
@@ -183,7 +185,7 @@ else
                             </div>
                         </div>
                         <div> <!--class="col-xs-5 col-sm-4 col-md-4"-->
-                            <div><a href="http://out.megaplan.szdl.ru/blog/">Блог</a>
+                            <div><a href="../blog/">Блог</a>
                                 <ul>
                                     <li><a href="#">Блог о продажах</a></li>
                                     <li><a href="#">Блог о бизнесе</a></li>
@@ -194,7 +196,7 @@ else
                             <div><a href="">Клиентам</a>
                                 <ul>
                                     <li><a href="#">Личный кабинет</a></li>
-                                    <li><a href="http://out.megaplan.szdl.ru/clients/">Клиенты</a></li>
+                                    <li><a href="../clients/">Клиенты</a></li>
                                     <li><a href="#">Кейсы</a></li>
                                     <li><a href="#">Решения для бизнеса</a></li>
                                 </ul>

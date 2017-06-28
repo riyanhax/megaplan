@@ -38,6 +38,8 @@ IncludeTemplateLangFile(__FILE__);
         <div class="clear"></div>
     </div>
 </footer>
+<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/partner_solutions.php"));?>
+<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/reg_form.php"));?>
 </div>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetPageProperty("title", "Блог");
 $APPLICATION->SetTitle("Блог");?>
-<div class="content">
+<div class="content content-prices">
     <div class="slogan row">
         <div class="col-xs-8 col-xs-offset-4 col-sm-5 col-sm-offset-6 col-md-4 col-md-offset-6">
             <p>Это <br> того стоит</p>

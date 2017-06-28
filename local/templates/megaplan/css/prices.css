@@ -58,7 +58,7 @@
 .placeholder-w:focus:-ms-input-placeholder {
   color: transparent;
 }
-.wrapper > .content {
+.wrapper .content.content-prices {
   padding-top: 90px;
   min-height: 780px;
   background: url("../img/prices/lady.png") no-repeat;

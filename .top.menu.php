@@ -1,25 +1,25 @@
 <?
 $aMenuLinks = Array(
-	Array(
-		"Возможности", 
-		"/opportunity/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Цены", 
-		"http://bvd.megaplan.szdl.ru/prices/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Решения", 
-		"/solution/", 
-		Array(), 
-		Array(), 
-		"" 
-	)
+    Array(
+        "Возможности",
+        "/more/",
+        Array(),
+        Array(),
+        ""
+    ),
+    Array(
+        "Цены",
+        "/prices/",
+        Array(),
+        Array(),
+        ""
+    ),
+    Array(
+        "Решения для бизнеса",
+        "/solution/",
+        Array(),
+        Array(),
+        ""
+    ),
 );
 ?>

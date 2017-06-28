@@ -1,1 +1,1 @@
-<img class="logo-img" src="<?=SITE_TEMPLATE_PATH."/img/logo-white.png"?>" alt="Мегаплан">
+<img class="logo-img" src="<?=SITE_TEMPLATE_PATH."/img/logo-white.svg"?>" alt="Мегаплан">
