@@ -1,15 +1,37 @@
 /**
  * Created by vladb on 19.06.2017.
  */
+
 $(document).ready(function () {
+
+    function setMenuHeight() {
+        console.log('$(window).height() = ' + window.innerHeight);
+        $('#menu').css({
+            height: window.innerHeight + 'px'
+        });
+    }
+
+    console.log('screen.width = ' + screen.width);
+    console.log('screen.height = ' + screen.height);
+
+    if (screen.width >= 768) {
+        /*if (screen.height >= 768) {*/
+            setMenuHeight();
+            $(window).resize(setMenuHeight);
+        /*}*/
+    }
+    else {
+        $('#menu').css("height", "auto");
+    }
+
     $(".plan").hover(function () {
         var planHeight = $(this).height();
-        if($(this).hasClass("selected_plan") == false){
+        if ($(this).hasClass("selected_plan") === false) {
             $(this).parent().height(planHeight);
-            $(this).parent().css("opacity","1");
+            $(this).parent().css("opacity", "1");
         }
-        else{
-            $(this).parent().css("opacity","0.85");
+        else {
+            $(this).parent().css("opacity", "0.85");
         }
         $(this).toggleClass("selected_plan");
         console.log($(this).parent().height());
@@ -29,8 +51,8 @@ $(document).ready(function () {
         });
         isPopupOpen = 0;
         console.log(isPopupOpen);
-        $(".main-content>div").css("display","block").css("visibility","visible");
-        $(".main-content").height("initial").css("background-image","url(/local/templates/megaplan/img/prices/lady.png)").css("background-size","contain").css("background-repeat","no-repeat");
+        $(".main-content>div").css("display", "block").css("visibility", "visible");
+        $(".main-content").height("initial").css("background-image", "url(/local/templates/megaplan/img/prices/lady.png)").css("background-size", "contain").css("background-repeat", "no-repeat");
     });
     $(".button-compare").click(function () {
         $("#compare_plans").animate({
@@ -42,20 +64,20 @@ $(document).ready(function () {
         console.log(isPopupOpen);
         console.log(contentHeight);
         console.log(popupHeight);
-        $(".main-content>div").css("display","none").css("visibility","hidden");
-        $(".main-content").height(popupHeight).css("background","none");
+        $(".main-content>div").css("display", "none").css("visibility", "hidden");
+        $(".main-content").height(popupHeight).css("background", "none");
     });
 
     var bannerHeight = $(".banner-prices").height() - 35;
     console.log("bannerHeight = " + bannerHeight);
     var top = 0;
-    if($(document).width() >= 768){
+    if ($(document).width() >= 768) {
         $(window).scroll(function () {
-            if($(this).scrollTop() > bannerHeight){
-                $(".plans > div:first-of-type").css("margin-top","5px");
+            if ($(this).scrollTop() > bannerHeight) {
+                $(".plans > div:first-of-type").css("margin-top", "5px");
             }
             else {
-                $(".plans > div:first-of-type").css("margin-top","-120px");
+                $(".plans > div:first-of-type").css("margin-top", "-120px");
             }
         })
     }

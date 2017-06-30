@@ -37,8 +37,10 @@ a.button:hover span {
   box-shadow: 0 0 0 50px rgba(0, 0, 0, 0.1) inset;
 }
 a.button-common:hover {
-  color: inherit;
   box-shadow: 0 0 0 50px rgba(0, 0, 0, 0.1) inset;
+}
+a.hover_w:hover {
+  color: #fff;
 }
 .input_transparent {
   border: none;
@@ -72,7 +74,7 @@ a.button-common:hover {
 .banner-prices {
   min-height: 860px;
   background-image: url(../img/prices/lady.png);
-  background-position: top left;
+  background-position: 0 -6%;
 }
 .banner-prices > div:first-of-type {
   margin-top: 95px;
@@ -90,13 +92,27 @@ a.button-common:hover {
   flex-direction: row;
   justify-content: space-around;
 }
-.banner-prices > div:last-of-type a {
+.banner-prices > div:last-of-type > a {
   font-weight: 400;
   display: block;
   flex-basis: 260px;
 }
 .banner-prices > div:last-of-type div {
   position: absolute;
+  top: 15%;
+  right: -25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+}
+.banner-prices > div:last-of-type div a {
+  display: block;
+}
+.banner-prices > div:last-of-type div span {
+  display: block;
+  text-transform: capitalize;
 }
 .banner-prices p {
   margin-bottom: 50px;
@@ -423,7 +439,7 @@ a.button-common:hover {
     flex-basis: 50px;
   }
   .plans > div:first-of-type {
-    margin-top: -90px;
+    margin-top: -40px;
     margin-bottom: 50px;
     flex-direction: column;
     align-items: stretch;
@@ -444,6 +460,9 @@ a.button-common:hover {
   .bottom-form > div form {
     margin-bottom: 25px;
   }
+  .bottom-form > div form input[type=email] {
+    width: 285px;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .banner-prices > div {
@@ -453,8 +472,15 @@ a.button-common:hover {
     display: block;
     width: 325px;
   }
+  .banner-prices > div:last-of-type {
+    flex-direction: column;
+  }
+  .banner-prices > div:last-of-type a {
+    margin-bottom: 20px;
+    flex-basis: 50px;
+  }
   .plans > div:first-of-type {
-    margin-top: -90px;
+    margin-top: -70px;
     margin-bottom: 50px;
     flex-direction: column;
     align-items: stretch;
@@ -463,15 +489,23 @@ a.button-common:hover {
   .plans > div:first-of-type > div {
     flex-basis: initial;
   }
+  .bottom-form > div {
+    height: auto;
+  }
+  .bottom-form > div form {
+    margin-bottom: 50px;
+  }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 530px) {
   .banner-prices > div:last-of-type {
     flex-direction: row;
   }
-  .banner-prices > div:last-of-type a {
+  .banner-prices > div:last-of-type > a {
     margin-bottom: 0;
     flex-basis: 260px;
   }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .plans > div:first-of-type {
     margin-top: -90px;
     margin-bottom: 50px;

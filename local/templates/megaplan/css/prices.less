@@ -39,8 +39,10 @@ a.button:hover span {
   box-shadow: 0 0 0 50px rgba(0, 0, 0, 0.1) inset;
 }
 a.button-common:hover{
-  color: inherit;
   box-shadow: 0 0 0 50px rgba(0, 0, 0, 0.1) inset;
+}
+a.hover_w:hover{
+  color: #fff;
 }
 
 .input_transparent {
@@ -77,7 +79,7 @@ a.button-common:hover{
 .banner-prices{
   min-height: 860px;
   background-image: url(../img/prices/lady.png);
-  background-position: top left;
+  background-position: 0 -6%;
 
   >div:first-of-type{
     margin-top: 95px;
@@ -96,13 +98,27 @@ a.button-common:hover{
     flex-direction: row;
     justify-content: space-around;
     //margin-bottom: 80px;
-    a{
+    >a{
       font-weight: 400;
       display: block;
       flex-basis: 260px;
     }
     div{
       position: absolute;
+      top: 15%;
+      right: -25%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 15%;
+      a{
+        display: block;
+      }
+      span{
+        display: block;
+        text-transform: capitalize;
+      }
     }
   }
 
@@ -469,7 +485,7 @@ a.button-common:hover{
   }
   .plans{
     >div:first-of-type{
-      margin-top: -90px;
+      margin-top: -40px;
       margin-bottom: 50px;
       flex-direction: column;
       align-items: stretch;
@@ -491,6 +507,9 @@ a.button-common:hover{
       }
       form{
         margin-bottom: 25px;
+        input[type=email]{
+          width: 285px;
+        }
       }
     }
   }
@@ -504,10 +523,17 @@ a.button-common:hover{
         width: 325px;
       }
     }
+    >div:last-of-type{
+      flex-direction: column;
+      a{
+        margin-bottom: 20px;
+        flex-basis: 50px;
+      }
+    }
   }
   .plans{
     >div:first-of-type{
-      margin-top: -90px;
+      margin-top: -70px;
       margin-bottom: 50px;
       flex-direction: column;
       align-items: stretch;
@@ -518,17 +544,27 @@ a.button-common:hover{
     }
 
   }
+  .bottom-form{
+    >div{
+      height: auto;
+      form{
+        margin-bottom: 50px;
+      }
+    }
+  }
 }
-@media screen and (min-width : 768px) and(max-width: 1023px){
+@media screen and (min-width: 530px){
   .banner-prices{
     >div:last-of-type{
       flex-direction: row;
-      a{
+      >a{
         margin-bottom: 0;
         flex-basis: 260px;
       }
     }
   }
+}
+@media screen and (min-width : 768px) and(max-width: 1023px){
   .plans{
     >div:first-of-type{
       margin-top: -90px;
