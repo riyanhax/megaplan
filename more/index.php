@@ -4,12 +4,13 @@ $APPLICATION->SetTitle("Задачи закрываются, клиенты не
 <section class="top-banner banner-more">
 	<div class="container">
 		<div class="col-md-12 banner-inner">
-			<div class="banner-text color-white"><?$APPLICATION->ShowTitle(false)?></div>
+			<!--<div class="banner-text color-white"><?//$APPLICATION->ShowTitle(false)?></div>-->
+			<div class="banner-text color-white">Задачи закрываются,<p></p> клиенты не теряются</div>
 		</div>
 	</div>
 </section>
 <section class="content-crop section-contacts bg-white content-crop-more">
-	<div class="section-wrapper-more bg-white">
+	<div class="section-wrapper section-wrapper-more bg-white">
 		<div class="more-text more-text-os-2">
 			<p class="more-title more-title-bott">Навести порядок</p>
 			<span class="more-text-thin">Мегаплан возьмет на себя монотонную работу, напомнит про задачи, ускорит взаимодействие отделов и покажет вклад каждого сотрудника в результат. Сохранит историю выполнения задач от старта до финиша.</span>

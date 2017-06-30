@@ -5,7 +5,8 @@ $APPLICATION->SetTitle("Мы бережем Ваши данные, как сво
     <section class="top-banner banner-security">
         <div class="container">
             <div class="col-md-12 banner-inner">
-                <div class="banner-text color-white"><?$APPLICATION->ShowTitle(false)?></div>
+                <!--<div class="banner-text color-white"><?//$APPLICATION->ShowTitle(false)?></div>-->
+				<div class="banner-text color-white">Мы бережем<p></p> Ваши данные, как свои</div>
                 <div class="banner-button">
                     <a class="button" href="#" title=""><span class="button-green show-regform-main">2 недели бесплатно</span></a>
                 </div>
@@ -76,7 +77,7 @@ $APPLICATION->SetTitle("Мы бережем Ваши данные, как сво
             <div class="second-block">
 
                 <h2 class="block-title">
-                    Мы относимся к безопасности
+                    Мы относимся к безопасности<p></p>
                     с нездоровой щепетильностью
                 </h2>
 

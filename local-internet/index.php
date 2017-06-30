@@ -112,14 +112,14 @@ $APPLICATION->SetTitle("Интернет или локальная сеть");?>
             <div class="cloud-desc bg-white">
                 <div class="cloud-desc_block">
                     <div class="cloud-button">
-                        <a class="button" href="#" title=""><span class="button-green">Посмотреть цены</span></a>
+                        <a class="button" href="http://out.megaplan.szdl.ru/prices/" title=""><span class="button-green">Посмотреть цены</span></a>
                     </div>
                 </div>
             </div>
             <div class="cloud-desc bg-grey">
                 <div class="cloud-desc_block">
                     <div class="cloud-button">
-                        <a class="button" href="#" title=""><span class="button-yellow">Посмотреть цены</span></a>
+                        <a class="button" href="http://out.megaplan.szdl.ru/prices/" title=""><span class="button-yellow">Посмотреть цены</span></a>
                     </div>
                 </div>
             </div>

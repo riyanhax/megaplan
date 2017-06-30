@@ -7,7 +7,8 @@ $APPLICATION->SetTitle("Дополнить возможности мегапла
 <section class="top-banner banner-integ">
 	<div class="container">
 		<div class="col-md-12 banner-inner">
-			<div class="banner-text color-white"><?$APPLICATION->ShowTitle(false)?></div>
+			<!--<div class="banner-text color-white"><?//$APPLICATION->ShowTitle(false)?></div>-->
+			<div class="banner-text color-white">Дополнить<p></p> возможности мегаплана - просто</div>
 			<div class="banner-button integ">
 				<a class="button" href="#" title=""><span class="button-green">2 недели бесплатно</span></a>
 			</div>

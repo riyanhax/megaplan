@@ -11,7 +11,7 @@ $APPLICATION->SetTitle("Мы заточили мегаплан под вас");?
 	</div>
 </section>
 <section class="content-crop section-contacts bg-white content-crop-more">
-	<div class="section-wrapper-more bg-white">
+	<div class="section-wrapper section-wrapper-more bg-white">
 		<div class="forbuss-block-1 forbuss-block-all forbuss-block-right">
 			<p class="forbuss-block-title">Веб студия</p>
 			<span class="forbuss-block-text-thin">

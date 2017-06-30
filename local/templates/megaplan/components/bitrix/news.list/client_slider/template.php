@@ -39,7 +39,7 @@ $this->setFrameMode(true);
     </div>
 
     <div class="view-more">
-        <a class="button" href="#" title=""><span class="button-green">Начать свою историю с Мегаплан</span></a>
+        <a class="button" href="#" title=""><span class="button-green">Начать свою историю с Мегапланом</span></a>
     </div>
 
 </section>
