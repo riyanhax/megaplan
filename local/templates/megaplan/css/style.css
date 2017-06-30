@@ -68,7 +68,7 @@ a:hover, a:focus {
 }
 
 .bg-white-1 {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 1);
 }
 
 /*.content-crop .section-wrapper.bg-white {
@@ -79,7 +79,7 @@ a:hover, a:focus {
 }
 
 .bg-grey-1/*, .content-crop .section-wrapper.bg-grey*/ {
-    background: rgba(245, 247, 250, 0.9);
+    background: rgba(245, 247, 250, 1);
 }
 
 .button-common{
@@ -701,9 +701,8 @@ section.section-blog .other-posts .blog-item_block .more-link {
     display: block;
     padding: 0 20px 20px;
     color: #08bf32;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 200;
-    text-transform: uppercase;
 }
 
 section.section-blog .other-posts .blog-item_block .more-link:hover {
@@ -826,7 +825,6 @@ section.section-clients_history .other-clients .client-item_block .more-link {
     color: #08bf32;
     font-size: 14px;
     font-weight: 300;
-    text-transform: uppercase;
 }
 
 section.section-clients_history .other-clients .client-item_block .more-link:hover {
@@ -1308,7 +1306,8 @@ section.section-partners-list .more-form .more-div-text-button-footer {
 }
 
 .cloud-text-thin {
-   font-weight: 200;
+    font-weight: 300;
+    font-size: 18px;
 }
 /*========================= /PARTNERS ========================*/
 /*========================== COMPANY =========================*/
@@ -1321,12 +1320,12 @@ section.section-company .company-title {
 
 section.section-company .company-description {
     margin-bottom: 35px;
-    font-size: 19px;
-    font-weight: 100;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 section.section-company_team {
-    padding: 65px 20%;
+    padding: 0 10% 65px;
 }
 
 section.section-company_team .team-block {
@@ -1462,8 +1461,8 @@ section.section-company_vacancy .block-title {
 section.section-company_vacancy .vacancy-text {
     width: 60%;
     margin: 0 auto 50px;
-    font-size: 19px;
-    font-weight: 100;
+    font-size: 18px;
+    font-weight: 300;
     text-align: center;
 }
 
@@ -1482,7 +1481,7 @@ section.section-company_vacancy .vacancy-description {
     margin-bottom: 35px;
     min-height: 100px;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 section.section-company_vacancy .vacancy-item {
@@ -1505,7 +1504,7 @@ section.section-company_vacancy .vacancy-list {
     margin-bottom: 30px;
     padding-left: 20px;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     list-style-type: disc;
     color: #ffd75f;
 }
@@ -1592,18 +1591,18 @@ section.section-contacts .social-list .social-item i {
 /*========================= MAIN ========================*/
 
 .info-block-main {
-    background: url(../img/main/main-icon.png) no-repeat 1px 7px;
-	padding: 0 0 0 35px;
-	color: #fff;
-	background-size: 25px auto;
+    background: url(../img/main/main-icon.png) no-repeat 1px 6px;
+    padding: 0 0 10px 36px;
+    color: #fff;
+    background-size: 29px auto;
     font-weight: 300;
     font-size: 18px;
 }
 
 .info-block-div{
     position: fixed;
-    bottom: 5%;
-    left: 5%;
+    bottom: 3%;
+    left: 4%;
 }
 
 #video_bg {
@@ -1872,13 +1871,13 @@ section.section-contacts .social-list .social-item i {
 	padding-bottom: 10px;
 	margin-top: 38px;
 	color: #000;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .more-small-text{
 	font-size: 14px;
 	color: #414b4d;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .more-reestr{
@@ -1944,7 +1943,7 @@ section.section-contacts .social-list .social-item i {
 	margin-bottom: 5%;
 	text-align: center;
 	width: 80%;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 18px;
 }
 
@@ -2013,7 +2012,7 @@ section.section-contacts .social-list .social-item i {
 
 .integ-geen-text-2{
     color: #08bf32;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 18px;
 }
 
@@ -2135,7 +2134,7 @@ section.section-contacts .social-list .social-item i {
 
 .integ-href {
     color: #414b4d;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 18px;
 }
 
@@ -2144,7 +2143,7 @@ section.section-contacts .social-list .social-item i {
     text-decoration-line: underline;
 }
 .integ-elem-footer-thin {
-    font-weight: 200;
+    font-weight: 300;
 }
 
 /*========================= /SFP (Решения от партнёров, всплывашка) ========================*/
@@ -2283,12 +2282,12 @@ width: auto; height: auto;
 z-index: -1000;
 }
 
- @media (min-aspect-ratio: 16/9) {
+/* @media (min-aspect-ratio: 16/9) {
      #trailer > video { height: 300%; top: -100%; }
  }
  @media (max-aspect-ratio: 16/9) {
      #trailer > video { width: 300%; left: -100%; }
- }
+ }*/
 
  @supports (object-fit: cover) {
      #trailer > video {
