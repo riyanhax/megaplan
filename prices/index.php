@@ -5,12 +5,15 @@ $APPLICATION->SetTitle("Цены");?>
     <div class="top-banner banner-prices">
         <div class="col-xs-12 col-sx-offset-0 col-sm-8 col-sm-offset-4 col-lg-4 col-lg-offset-6">
             <p>Это <br> того стоит</p>
-            <a href="#" class="button-common button-green capitalize">Купить Мегаплан</a>
+            <a href="#" class="button-common button-green capitalize hover_w">Купить Мегаплан</a>
         </div>
         <div class="col-lg-6 col-lg-offset-3">
             <a href="" class="button-common button-yellow uppercase">Цены в облаке</a>
             <a href="" class="button-common button-tr uppercase">на вашем сервере</a>
-            <div></div>
+            <div>
+                <a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/rub.png"></a>
+                <span>рубль</span>
+            </div>
         </div>
     </div>
     <div class="plans clearfix">
@@ -30,7 +33,7 @@ $APPLICATION->SetTitle("Цены");?>
                             <li>сделок</li>
                         </ul>
                     </div>
-                    <div class="choose"><a href="#" class="button-common button-green">выбрать</a></div>
+                    <div class="choose"><a href="#" class="button-common button-green hover_w">выбрать</a></div>
                 </div>
             </div>
             <div>
@@ -45,7 +48,7 @@ $APPLICATION->SetTitle("Цены");?>
                             <li>формирование отчетов</li>
                         </ul>
                     </div>
-                    <div class="choose"><a href="#" class="button-common button-green">выбрать</a></div>
+                    <div class="choose"><a href="#" class="button-common button-green hover_w">выбрать</a></div>
                 </div>
             </div>
             <div>
@@ -63,7 +66,7 @@ $APPLICATION->SetTitle("Цены");?>
                             <li>Больше возможностей в работе сотрудников</li>
                         </ul>
                     </div>
-                    <div class="choose"><a href="#" class="button-common button-green">выбрать</a></div>
+                    <div class="choose"><a href="#" class="button-common button-green hover_w">выбрать</a></div>
                 </div>
             </div>
             <div>
@@ -82,7 +85,7 @@ $APPLICATION->SetTitle("Цены");?>
                             <li>клиентов</li>
                         </ul>
                     </div>
-                    <div class="choose"><a href="#" class="button-common button-green">выбрать</a></div>
+                    <div class="choose"><a href="#" class="button-common button-green hover_w">выбрать</a></div>
                 </div>
             </div>
             <div>
@@ -104,12 +107,12 @@ $APPLICATION->SetTitle("Цены");?>
                             <li>Интеграция с 1С</li>
                         </ul>
                     </div>
-                    <div class="choose"><a href="#" class="button-common button-green">выбрать</a></div>
+                    <div class="choose"><a href="#" class="button-common button-green hover_w">выбрать</a></div>
                 </div>
             </div>
         </div>
         <div class="col-lg-4 col-lg-offset-4">
-            <a href="#" class="button-common button-green button-compare">Выбрать тариф</a>
+            <a href="#" class="button-common button-green button-compare hover_w">Выбрать тариф</a>
         </div>
         <div class="col-lg-6 col-lg-offset-3">
             <p>У нас пять тарифов, у которых различаются цена и функциональные возможности.</p>
@@ -124,8 +127,8 @@ $APPLICATION->SetTitle("Цены");?>
             <p>Расскажем фишки и нестандартные возможности работы.</p>
             <p>Укажите эл. почту для уточнения деталей:</p>
             <form action="">
-                <input class="input_transparent" type="email" name="user_email" id="user_email" placeholder="Почта" class="input_transparent placeholder-w">
-                <input type="submit" class="button-common button-green" value="Заказать">
+                <input class="input_transparent placeholder-w" type="email" name="user_email" id="user_email" placeholder="Почта" class="input_transparent placeholder-w">
+                <input type="submit" class="button-common button-green hover_w" value="Заказать">
             </form>
         </div>
     </div>
@@ -532,7 +535,7 @@ $APPLICATION->SetTitle("Цены");?>
             </tbody>
         </table>
     </div>
-    <a href="#" class="button-common button-green">две недели бесплатно</a>
+    <a href="#" class="button-common button-green hover_w">две недели бесплатно</a>
 </div>
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

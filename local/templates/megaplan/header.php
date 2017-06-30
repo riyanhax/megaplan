@@ -54,23 +54,6 @@ else
                              <?endif;?>
 
 
-                             function setMenuHeight() {
-                                 $('#menu').css({
-                                     height: $(window).height() + 'px'
-                                 });
-                             }
-                             if(screen.width > 640) {
-                                 if(screen.height >= 768){
-                                     setMenuHeight();
-                                     console.log($(window).height());
-                                     $(window).resize( setMenuHeight );
-                                 }
-                             }
-                             else {
-                                 $('#menu').css("height","auto");
-                             }
-
-
 
                              var menuIsOpen = 0;
                              $(".burger").click(function () {
