@@ -17,10 +17,16 @@ $this->setFrameMode(true);
     <div class="container">
         <div class="col-md-12 banner-inner">
             <div class="banner-text color-white">
-                Наши новости и анонсы из первых рук
+                Наши новости<br> и анонсы из первых рук
             </div>
             <div class="banner-subtext">
-                <a class="button" href="#posts" title="">Все рубрики</a>
+                <a class="button" href="#posts" title="" onclick="obRubricList.showList();return false;">Все рубрики</a>
+                <div class="rubric-list" data-rubric-list="1">
+                    <ul>
+                        <li class="rubric-item"><a href="javascript:void(0);">Все рубрики</a></li>
+                        <li class="rubric-item"><a href="javascript:void(0);">Партнёрам</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -36,7 +42,7 @@ $this->setFrameMode(true);
             <div class="blog-item_block col-sm-12 col-md-6">
                 <div class="img-block">
                     <a href="<?=$arResult["FIRST_POST"]["DETAIL_PAGE_URL"]?>#post" title="<?=$arResult["FIRST_POST"]["NAME"]?>">
-                        <img src="/local/templates/megaplan/img/blog/1.png" alt=""><?//=$arItem["DETAIL_PICTURE"]?>
+                        <img src="<?=$arResult["FIRST_POST"]["PREVIEW_PICTURE"]["SRC"]?>" alt="">
                     </a>
                 </div>
             </div>
@@ -73,7 +79,7 @@ $this->setFrameMode(true);
                     </div>
                     <div class="img-block">
                         <a href="<?=$arItem["DETAIL_PAGE_URL"]?>#post" title="<?=$arItem["NAME"]?>">
-                            <img src="/local/templates/megaplan/img/blog/2.png" alt=""><?//=$arItem["PREVIEW_PICTURE"]?>
+                            <img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" alt="">
                         </a>
                     </div>
                     <div class="title bg-grey">

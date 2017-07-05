@@ -5,7 +5,7 @@ $APPLICATION->SetTitle("История Мегаплана в датах, циф�
     <section class="top-banner banner-company">
         <div>
             <div class="banner-inner">
-                <div class="banner-text color-white"><?$APPLICATION->ShowTitle(false)?></div>
+                <div class="banner-text color-white">История Мегаплана <br>в датах, цифрах<br> и лицах</div>
                 <div class="banner-button">
                     <a class="button" href="#" title=""><span class="button-green show-regform-main">2 недели бесплатно</span></a>
                 </div>

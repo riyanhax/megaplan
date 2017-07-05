@@ -13,11 +13,11 @@
 $this->setFrameMode(true);
 ?>
 
-<section class="top-banner banner-blog_detail" style="background-image: url(/local/templates/megaplan/img/security/security-bg.jpg);"><?//=$arResult["DETAIL_PICTURE"]?>
+<section class="top-banner banner-blog_detail" style="background-image: url(/local/templates/megaplan/img/blog/blog-bg.jpg);"><?//=$arResult["DETAIL_PICTURE"]?>
     <div class="container">
         <div class="col-md-12 banner-inner">
             <div class="banner-suptext"><?=$arResult["PROPERTIES"]["RUBRIC"]["VALUE"]?></div>
-            <div class="banner-text color-white">Наши новости и анонсы из первых рук</div>
+            <div class="banner-text color-white">Наши новости<br> и анонсы из первых рук</div>
             <div class="banner-date"><?=$arResult["PROPERTIES"]["DATE"]["VALUE"]?></div>
         </div>
     </div>

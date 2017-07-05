@@ -11,18 +11,37 @@
     .hidden-lg {
         display: none!important;
     }
-    .top-banner .banner-inner {
+    .top-banner .banner-inner,
+    .top-banner.banner-blog .banner-inner {
         height: 600px;
         padding: 100px 0 50px;
+    }
+    .top-banner .banner-inner.banner-with-logo {
+        padding: 30px 0 50px;
+    }
+    .top-banner .banner-inner.banner-with-logo .banner-logo img {
+        width: 200px;
+    }
+    .top-banner.banner-clients .banner-inner .banner-subtext {
+        padding: 0px 0 40px;
+    }
+    .top-banner .banner-inner.banner-with-logo .banner-text{
+        margin-bottom: 2%!important;
     }
     .top-banner .banner-inner .banner-text {
         font-size: 43px;
     }
-    body.dark section.top-banner .banner-inner {
-        padding: 50px 0 50px 40%;
-    }
     .top-banner .banner-inner .banner-text {
         margin-bottom: 5%!important;
+    }
+    .top-banner .banner-inner .main-banner-text{
+        margin-bottom: 50px !important;
+    }
+    .top-banner.banner-partners .banner-inner .banner-text {
+        width: 45%;
+    }
+    body.dark section.top-banner .banner-inner {
+        width: 85%;
     }
 }
 
@@ -60,6 +79,9 @@
 
     section.section-company_team .team-block_item:nth-of-type(6) {
         margin-right: 0;
+    }
+    body.dark section.top-banner .banner-inner {
+        padding: 40px 0 40px 45%;
     }
     .hidden-md {
         display: none!important;
@@ -109,9 +131,15 @@
     section.section-cloud-desc .cloud-row > div:last-of-type {
         padding-right: 40px;
     }
+
     body.dark section.top-banner .banner-inner {
-       /* padding: 200px 0 100px 300px;*/
+        width: 80%;
     }
+
+    body.dark section.top-banner.banner-company .banner-inner .banner-text {
+        font-size: 35px;
+    }
+
     section.section-partners-list .partners-list_item {
         float: left;
         width: 50%;
@@ -127,6 +155,11 @@
     .top-banner .banner-inner {
         padding: 50px 0 50px;
     }
+    .top-banner.banner-partners .banner-inner .banner-text {
+        width: 70%;
+    }
+
+
 }
 
 @media (max-width: 767px) {
@@ -149,8 +182,29 @@
     section.section-company_team {
         padding: 65px 10%;
     }
-    body.dark section.top-banner .banner-inner {
-        padding: 50px 0 50px 30%;
+    body.dark section.top-banner.banner-contacts .banner-inner,
+    body.dark section.top-banner.banner-company .banner-inner {
+        padding: 50px 0 50px 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .top-banner.banner-contacts,
+    .top-banner.banner-company {
+        background-position: right center;
+    }
+
+    section.section-partners-list .partners-img,
+    section.section-partners-list .partners-title,
+    section.section-partners-list .partners-description,
+    section.section-company_vacancy .vacancy-img,
+    section.section-company_vacancy .vacancy-title,
+    section.section-company_vacancy .vacancy-description {
+        text-align: center;
+    }
+    section.section-partners-list .partners-text,
+    section.section-partners-dealers .partners-text,
+    section.section-partners-list .more-form {
+        width: 100%;
     }
 
     .hidden-xs {
@@ -171,9 +225,6 @@
         bottom: 180px;
         left: 93px;
     }
-    body.dark section.top-banner .banner-inner {
-        padding: 200px 0 100px 0;
-    }
     section .block-title {
         padding: 20px 0 50px!important;
         font-size: 30px!important;
@@ -185,9 +236,9 @@
     section.section-blog_detail .post {
         padding: 0;
     }
-    section.section-partners-list {
+    /*section.section-partners-list {
         padding: 0 65px 50px;
-    }
+    }*/
     section.section-partners-list .partners-list_item{
         width: 100%;
         padding: 0;
@@ -198,15 +249,49 @@
     section.section-company_video .video_border:before {
         display: none;
     }
-    body.dark section.top-banner .banner-inner {
-        padding: 50px 0 50px 15%;
+    /*body.dark section.top-banner.banner-company .banner-inner {
+        padding: 10px 0 10px 15%;
         margin: 0 20px;
-    }
+    }*/
     .top-banner .banner-inner .banner-text {
+
         margin-bottom: 50px!important;
     }
+    /*body.dark section.top-banner.banner-company .banner-inner .banner-text{
+        padding: 0 0 0 50%;
+    }
+    body.dark section.top-banner.banner-company .banner-inner .banner-button {
+        text-align: right;
+    }*/
 }
 
+@media (max-width: 550px) {
+    .top-banner .banner-inner.banner-with-logo {
+        padding: 0 0 50px;
+    }
+    /*body.dark section.top-banner.banner-company .banner-inner .banner-text{
+        padding: 0;
+    }
+    body.dark section.top-banner.banner-company .banner-inner {
+        padding: 10px 0;
+        margin: 0 20px;
+    }
+    body.dark section.top-banner.banner-company .banner-inner .banner-button {
+        text-align: center;
+    }*/
+    .top-banner.banner-partners .banner-inner .banner-text {
+        width: 100%;
+    }
+    section.section-company_vacancy .company-button span {
+        padding: 14px 10px;
+    }
+    section.section-clients_history .view-more span {
+        padding: 14px 50px;
+    }
+    section.section-contacts .social-list .social-item {
+        margin-right: 15px;
+    }
+}
 @media (max-width: 1030px) {
 .more-text-bg-1{
 	background-size: 700px auto;
@@ -700,4 +785,106 @@ background-size: 60px auto;
     .top-banner .banner-inner.main-height {
         padding: 130px 0 100px;
     }
+}
+
+/*======Адаптив мобилки=====*/
+@media screen and (max-width: 480px) {
+    /*Главная*/
+    .info-block-div {
+        display: none;
+    }
+    #trailer {
+        display: none;
+    }
+    .top-banner.banner-main {
+        background-image: url(../img/main/mobile.jpg);
+        box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5) inset;
+    }
+    .top-banner .banner-inner.main-height {
+        padding: 200px 0 100px;
+    }
+    /*Безопасность*/
+    .integ-title {
+        font-size: 33px;
+    }
+    .secr-butt-mobile{
+        padding: 10px 8px!important;
+    }
+    /*Интеграция*/
+    .section-wrapper-integ {
+        margin: -210px 0 0 0!important;
+    }
+    .integ-for-dev {
+        height: 415px;
+    }
+    .integ-main {
+        height: 3050px;
+    }
+    .integ-elem-4 {
+         margin-left: 23px;
+         width: 95%;
+     }
+    .integ-add-func {
+        height: 1760px;
+    }
+    .integ-head {
+        width: 100%;
+    }
+    .integ-add-func {
+        padding-left: 0%;
+    }
+    /*Решения от партнёров*/
+    .button-green-withoutb {
+        padding: 10px 15px!important;
+    }
+    .sft-descrip {
+        width: 150px;
+    }
+    .sfp-cell {
+        height: 325px;
+    }
+    /*Решения для бизнеса*/
+    /*Узнать больше*/
+    .more-text-os-2 {
+        padding: 0 10px 0 10px;
+        margin-top: 0;
+        margin-bottom: 200px;
+        margin-left: 0;
+
+    }
+    .more-text-bg-2 {
+        background-size: 400px auto;
+        min-width: 259px;
+        min-height: 215px;
+        display: block;
+        background-position-x: -16px;
+
+        right: -56px;
+        bottom: 255px;
+
+    }
+    .more-text-bg-3 {
+        background-size: 400px auto;
+        min-width: 400px;
+        min-height: 215px;
+        display: none;
+    }
+    .more-text-bg-1 {
+        background-size: 400px auto;
+        min-width: 400px;
+        min-height: 215px;
+        display: none;
+    }
+    .more-apple {
+        background-size: 400px auto;
+        min-width: 400px;
+        min-height: 215px;
+        display: none;
+    }
+    .more-block-white-video {
+        background-size: 400px auto;
+        background-position-y: 110px;
+        display: none;
+    }
+
 }

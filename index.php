@@ -8,7 +8,7 @@ $APPLICATION->SetTitle("Нужен рост - нужен мегаплан");
 <section class="top-banner banner-main">
 	<div class="container">
 		<div class="col-md-12 banner-inner main-height">
-			<div class="banner-text color-white"><?$APPLICATION->ShowTitle(false)?></div>
+			<div class="main-banner-text banner-text color-white "><?$APPLICATION->ShowTitle(false)?></div>
 			<div class="banner-button main">
 				<a class="button" href="#" title=""><span class="button-green">Попробовать бесплатно</span></a><p class="main_p"></p>
 				<a class="button" href="more/" title=""><span class="button-white">Узнать больше</span></a>
@@ -31,4 +31,4 @@ $APPLICATION->SetTitle("Нужен рост - нужен мегаплан");
 
 </div>
 
-<script src="/local/templates/megaplan/js/script.js"></script>
+<script src="/local/templates/megaplan/js/scripts_main.js"></script>
