@@ -64,7 +64,6 @@ else
                                      },{
                                          duration:520
                                      });
-//                                     $("html,body").css("overflow-y","hidden");
                                      <?if($theme=="dark"):?>
                                      $(".burger div").css("background-color","#fff");
                                      $("#logo a").html('<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/logo.php"))?>');
@@ -78,7 +77,6 @@ else
                                      }, {
                                          duration: 650
                                      });
-//                                     $("html,body").css("overflow-y","visible");
                                      <?if($theme=="dark"):?>
                                      $(".burger div").delay(300).css("background-color","#414b4d");
                                      $("#logo a").delay(300).html('<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/logo_b.php"))?>');
@@ -154,7 +152,7 @@ else
                         <li><a href="#">Бесплатный тариф</a></li>
                         <li><a href="#">Политика конфиденциальности</a></li>
                         <li><a href="#">Лицензионный договор</a></li>
-                        <li><a href="#">Договор на доступ</a></li>
+                        <li><a href="#">Договор на доп услуги</a></li>
                     </ul>
                 </div>
                 <div class="help"><a href="#">Помощь</a>
