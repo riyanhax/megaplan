@@ -5,7 +5,7 @@ $APPLICATION->SetTitle("Присоединяйтесь к успеху Мега�
     <section class="top-banner banner-partners">
         <div class="container">
             <div class="col-md-12 banner-inner">
-                <div class="banner-text color-white"><?$APPLICATION->ShowTitle(false)?></div>
+                <div class="banner-text color-white">Присоединяйтесь <br> к успеху Мегаплана!</div>
                 <div class="banner-button">
                     <a class="button" href="#" title=""><span class="button-green show-regform-main">Начать свою историю</span></a>
                 </div>
@@ -117,7 +117,7 @@ $APPLICATION->SetTitle("Присоединяйтесь к успеху Мега�
 
         <div class="dealers">
             <div class="col-sm-12 col-md-6">
-                <img src="<?=SITE_TEMPLATE_PATH?>/img/partners/dealers.png"">
+                <img src="<?=SITE_TEMPLATE_PATH?>/img/partners/dealers.png">
             </div>
             <div class="col-sm-12 col-md-6 right">
                 <h2 class="block-title">
@@ -134,8 +134,156 @@ $APPLICATION->SetTitle("Присоединяйтесь к успеху Мега�
         <p class="partners-text">
             Рефереры продают Мегаплан при помощи рекомендации, не обременяя себя лишними обязательствами. Вы размещаете рекламу, привлекаете клиентов, а мы платим процент с каждой реферальной покупки.
         </p>
-        <div class="partners-button">
-            <a class="button" href="#" title=""><span class="button-yellow">Узнать больше</span></a>
+        <div class="partners-button" data-view-ref="1">
+            <a class="button" href="javascript:void(0);" title="">
+                <span class="button-yellow" onclick="obPartnersList.viewRef(this); return false;">Узнать больше</span>
+            </a>
+        </div>
+
+        <div class="partners-list partners-list-hidden" data-ref-block="1">
+
+            <div class="ref-block">
+                <div class="ref-item_block col-sm-12 col-md-4">
+                    <div class="ref-img">
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/partners/ref_rec.png">
+                    </div>
+                    <div class="ref-title">
+                        Рекомендуйте
+                    </div>
+                    <p class="ref-description">
+                        Вы рекомендуете Мегаплан и даёте ссылку для регистрации потенциальному клиенту.
+                    </p>
+                </div>
+                <div class="ref-item_block col-sm-12 col-md-4">
+                    <div class="ref-img">
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/partners/ref_attr.png">
+                    </div>
+                    <div class="ref-title">
+                        Привлекайте
+                    </div>
+                    <p class="ref-description">
+                        Клиент переходит по вашей ссылке и регистрируется в Мегаплане.
+                    </p>
+                </div>
+                <div class="ref-item_block col-sm-12 col-md-4">
+                    <div class="ref-img">
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/partners/ref_earn.png">
+                    </div>
+                    <div class="ref-title">
+                        Зарабатывайте
+                    </div>
+                    <p class="ref-description">
+                        Клиент оплачивает Мегаплан, а вы получаете доход.
+                    </p>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <h2 class="block-title">
+                Дополнительные возможности
+            </h2>
+
+            <div class="ref-block">
+                <div class="ref-item_block col-xs-12 col-sm-6 col-md-4">
+                    <div class="ref-img">
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/partners/ref_support.png">
+                    </div>
+                    <div class="ref-title">
+                        Оперативная поддержка персонального менеджера
+                    </div>
+                </div>
+                <div class="ref-item_block col-xs-12 col-sm-6 col-md-4">
+                    <div class="ref-img">
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/partners/ref_money.png">
+                    </div>
+                    <div class="ref-title">
+                        Регулярный доход от привлечённых клиентов
+                    </div>
+                </div>
+                <div class="ref-item_block col-xs-12 col-sm-6 col-md-4">
+                    <div class="ref-img">
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/partners/ref_clients.png">
+                    </div>
+                    <div class="ref-title">
+                        Поддержка ваших клиентов от Мегаплана
+                    </div>
+                </div>
+                <div class="ref-item_block col-xs-12 col-sm-6 col-md-4">
+                    <div class="ref-img">
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/partners/ref_lk.png">
+                    </div>
+                    <div class="ref-title">
+                        Личный кабинет партнёра с понятной статистикой
+                    </div>
+                </div>
+                <div class="ref-item_block col-xs-12 col-sm-6 col-md-4">
+                    <div class="ref-img">
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/partners/ref_bank.png">
+                    </div>
+                    <div class="ref-title">
+                        Быстрый перевод средств на банковский счёт
+                    </div>
+                </div>
+                <div class="ref-item_block col-xs-12 col-sm-6 col-md-4">
+                    <div class="ref-img">
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/partners/ref_month.png">
+                    </div>
+                    <div class="ref-title">
+                        Через месяц клиент считается вашим
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <h2 class="block-title">
+                Что нужно сделать?
+            </h2>
+
+            <div class="dealers-participation">
+                <div class="dealers-participation_block col-sm-12 col-md-4">
+                    <div class="dealers-participation_step">
+                        <span class="dealers-participation_number">1</span>
+                        <span class="dealers-participation_title">Пройдите регистрацию</span>
+                    </div>
+                    <p>Для этого используйте специальную форму.</p>
+                </div>
+                <div class="dealers-participation_block col-sm-12 col-md-4">
+                    <div class="dealers-participation_step">
+                        <span class="dealers-participation_number">2</span>
+                        <span class="dealers-participation_title">Получите партнёрскую ссылку</span>
+                    </div>
+                    <p>В личном кабинете. Пароль от кабинета придёт на почту.</p>
+                </div>
+                <div class="dealers-participation_block col-sm-12 col-md-4">
+                    <div class="dealers-participation_step">
+                        <span class="dealers-participation_number">3</span>
+                        <span class="dealers-participation_title">Привлекайте клиентов</span>
+                    </div>
+                    <p>Используйте наши кнопки, ссылки или баннеры на вашем сайте.</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <h2 class="block-title">
+                Стать реферером
+            </h2>
+
+            <div class="more-form">
+                <form>
+                    <input type="text" placeholder="Название вашей компании.megaplan.ru" class="more-input">
+                    <input type="text" placeholder="Почта" class="more-input">
+                    <input type="text" placeholder="Имя и телефон" class="more-input">
+                    <input type="text" placeholder="Телефон" class="more-input">
+                    <span class="more-small-text">Никакого спама, только уведомления по делу</span>
+                    <div class="more-div-text-button-footer partners-button"><a class="button" href="#" title=""><span class="button-green">Отправить заявку</span></a></div>
+                </form>
+            </div>
+
+        </div>
+        <div class="partners-button partners-button-hidden" data-hide-ref="1">
+            <a class="button" href="javascript:void(0);" title="">
+                <span class="button-yellow" onclick="obPartnersList.hideRef(this); return false;">Скрыть</span>
+            </a>
         </div>
 
         <h2 class="block-title decision-title">
@@ -295,7 +443,7 @@ $APPLICATION->SetTitle("Присоединяйтесь к успеху Мега�
         </div>
 
         <h2 class="block-title">
-            Стань партнёром и зарабатываю вместе с нами
+            Стань партнёром<br> и зарабатывай вместе с нами
         </h2>
 
         <div class="more-form">

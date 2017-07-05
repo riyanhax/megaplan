@@ -15,7 +15,8 @@ $this->setFrameMode(true);
 
 <section class="top-banner banner-clients">
     <div class="container">
-        <div class="col-md-12 banner-inner">
+        <div class="col-md-12 banner-inner banner-with-logo">
+            <div class="banner-logo"><img src="<?=SITE_TEMPLATE_PATH?>/img/clients/umi.svg"></div>
             <div class="banner-text color-white">
                 Мегаплан собирает ошибки<br>
                 Мы анализируем и исправляем

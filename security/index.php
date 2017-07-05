@@ -144,7 +144,7 @@ $APPLICATION->SetTitle("Мы бережем Ваши данные, как сво
         <?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/security/questions.php"));?>
 		
 		<div class="secr-div-text-button">
-			<a class="button" href="#" title=""><span class="more-button-green show-regform-main">Попробовать бесплатно</span></a>
+			<a class="button" href="#" title=""><span class="more-button-green show-regform-main secr-butt-mobile">Попробовать бесплатно</span></a>
 		</div>
     </section>
 

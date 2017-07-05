@@ -1,1 +1,1 @@
-info@megaplan.ru
+<a href="mailto:info@megaplan.ru">info@megaplan.ru</a>

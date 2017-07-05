@@ -1,29 +1,6 @@
-$(function() {
-$('.forbuss-block-in-block').customScroll({
-	prefix: 'custom-scroll_',
-
-	/* vertical */
-	barMinHeight: 10,
-	offsetTop: 5,
-	offsetBottom: 5,
-	/* will be added to offsetBottom in case of horizontal scroll */
-	trackWidth: 10,
-
-	/* horizontal */
-	barMinWidth: 10,
-	offsetLeft: 0,
-	offsetRight: 0,
-	/* will be added to offsetRight in case of vertical scroll */
-	trackHeight: 10,
-
-	/* each bar will have custom-scroll_bar-x or y class */
-	barHtml: '<div />',
-
-	/* both vertical or horizontal bar can be disabled */
-	vertical: true,
-	horizontal: false
-});
-});
+if($(window).width() <= 480) {
+	$('meta[name="viewport"]').attr('content', 'width=480');
+}
 
 $(document).ready(function () {
     $(document).scroll(function () {
@@ -81,7 +58,7 @@ $(function() {
 });
 
 $(function() {
-	$('.more-button-yellow').click(function(e) {
+	$('#int_button').click(function(e) {
         e.preventDefault();
 		$('.sfp-main').show("slow");
 	});
@@ -92,23 +69,4 @@ $(function() {
         e.preventDefault();
 		$('.sfp-main').hide("slow");
 	});
-}); 
-
-var vid = document.getElementById("video");
-
-vid.muted = true;
-
-function Mute() { 
-	if(vid.muted == false)
-		{
-		vid.muted = true;
-		$("#mute").removeClass('main-block-unmute');
-		$("#mute").addClass('main-block-mute');
-		}
-	else
-		{
-		vid.muted = false
-		$("#mute").removeClass('main-block-mute');
-		$("#mute").addClass('main-block-unmute');
-		}  
-}
+});
