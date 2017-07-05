@@ -17,7 +17,7 @@ $(document).ready(function () {
     if (screen.width >= 768) {
         /*if (screen.height >= 768) {*/
             setMenuHeight();
-            $(window).resize(setMenuHeight);
+            // $(window).resize(setMenuHeight);
         /*}*/
     }
     else {
@@ -28,10 +28,10 @@ $(document).ready(function () {
         var planHeight = $(this).height();
         if ($(this).hasClass("selected_plan") === false) {
             $(this).parent().height(planHeight);
-            $(this).parent().css("opacity", "1");
+            /*$(this).parent().css("opacity", "1");*/
         }
         else {
-            $(this).parent().css("opacity", "0.85");
+            // $(this).parent().css("opacity", "0.85");
         }
         $(this).toggleClass("selected_plan");
         console.log($(this).parent().height());
@@ -74,11 +74,32 @@ $(document).ready(function () {
     if ($(document).width() >= 768) {
         $(window).scroll(function () {
             if ($(this).scrollTop() > bannerHeight) {
-                $(".plans > div:first-of-type").css("margin-top", "5px");
+                $(".plans > div:first-of-type").css("margin-top", "0px");
             }
             else {
-                $(".plans > div:first-of-type").css("margin-top", "-120px");
+                $(".plans > div:first-of-type").css("margin-top", "-160px");
             }
         })
     }
+    //логика смены цены(я предпологаю, что цены будут тянуться из инфоблока массивом)
+    var cloudPrices =[0,330,430,550,750];/*пример, при интеграции закоментить значения*/
+    var serverPrices =[1000,3300,4300,5500,7500];/*пример, при работе закоментить*/
+    $('#cloud').click(function (e) {
+        e.preventDefault();
+        $(this).css('color','#414b4d');
+
+        var elems = $('.plans .plan_price span:first-of-type');
+        for(var i = 0; i < elems.length; i++){
+            elems[i].innerHTML = cloudPrices[i];
+        }
+    });
+    $('#server').click(function (e) {
+        e.preventDefault();
+        $(this).css('color','#414b4d');
+
+        var elems = $('.plans .plan_price span:first-of-type');
+        for(var i = 0; i < elems.length; i++){
+            elems[i].innerHTML = serverPrices[i];
+        }
+    })
 });
