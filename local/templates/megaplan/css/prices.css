@@ -131,10 +131,15 @@ a.hover_w:hover {
   justify-content: center;
 }
 .plans > div:first-of-type {
-  align-items: flex-start;
+  display: block;
   margin-top: -160px;
 }
 .plans > div:first-of-type > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.plans > div:first-of-type > div > div {
   flex-basis: 220px;
   position: relative;
   padding: 0;
@@ -242,6 +247,14 @@ a.hover_w:hover {
   width: 345px;
   margin-top: 50px;
   margin-bottom: 40px;
+}
+.plans #cloud_prices {
+  display: none;
+  visibility: hidden;
+}
+.plans #server_prices {
+  display: none;
+  visibility: hidden;
 }
 .bottom-form {
   background-color: white;

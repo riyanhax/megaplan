@@ -139,17 +139,18 @@ a.hover_w:hover{
     justify-content: center;
   }
   >div:first-of-type{
-    align-items: flex-start;
+    display: block;
     margin-top: -160px;
     >div{
-      flex-basis: 220px;
-      position: relative;
-      padding: 0;
-      background-color: white;
-      //opacity: 0.85;
-      //transition-property:opacity;
-      //transition-timing-function: linear;
-      //transition-duration: 0.3s;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      >div{
+        flex-basis: 220px;
+        position: relative;
+        padding: 0;
+        background-color: white;
+      }
     }
   }
   >div:last-of-type{
@@ -258,6 +259,14 @@ a.hover_w:hover{
     width: 345px;
     margin-top: 50px;
     margin-bottom: 40px;
+  }
+  #cloud_prices{
+    display: none;
+    visibility: hidden;
+  }
+  #server_prices{
+    display: none;
+    visibility: hidden;
   }
 }
 .bottom-form{

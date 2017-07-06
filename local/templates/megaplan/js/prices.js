@@ -1,7 +1,18 @@
 /**
  * Created by vladb on 19.06.2017.
  */
+// $(document).load(function() {
 
+/*else {
+        questionHash = '#index'; // Если хэша нет, то переходим на якорь index
+    }
+
+    var offsetTop = questionHash === '#' ? 0 : $(questionHash).offset().top - 100;
+
+    $("html,body").stop().animate ({
+        scrollTop: offsetTop
+    }, 10);*/
+// });
 $(document).ready(function () {
 
     function setMenuHeight() {
@@ -70,23 +81,79 @@ $(document).ready(function () {
 
     //логика смены цены(я предпологаю, что цены будут тянуться из инфоблока массивом)
     var cloudPrices =[0,330,430,550,750];/*пример, при интеграции закоментить значения*/
-    var serverPrices =[1000,3300,4300,5500,7500];/*пример, при работе закоментить*/
-    $('#cloud').click(function (e) {
-        e.preventDefault();
-        $(this).css('color','#414b4d');
+    var cloudDescription=['1st','2nd','3rd','4th','5th'];
+    var serverPrices =[5300,7300,9500,12500];
+    var serverDescription = ['1','2','3','4'];/*пример, при работе закоментить*/
+    // $('#cloud').click(function (e) {
+    //     e.preventDefault();
+    //     $(this).css('color','#414b4d');
+    //
+    //     var elems = $('.plans .plan_price span:first-of-type');
+    //     for(var i = 0; i < elems.length; i++){
+    //         elems[i].innerHTML = cloudPrices[i];
+    //     }
+    // });
+    // $('#server').click(function (e) {
+    //     e.preventDefault();
+    //     $(this).css('color','#414b4d');
+    //
+    //     var elems = $('.plans .plan_price span:first-of-type');
+    //     for(var i = 0; i < elems.length; i++){
+    //         elems[i].innerHTML = serverPrices[i];
+    //     }
+    // })
+    // }
+    var questionHash;
+    if (window.location.hash) {
+        questionHash = window.location.hash; // Если ссылка содержит хэш, то переходим на якорь по этому хэшу
+        console.log(questionHash)
+    }
+    else {
+        questionHash = '#';
+    }
+    console.log(window.location.pathname);
+    if(window.location.pathname === '/prices/'){
+        if(questionHash === '#server_prices' || questionHash === '#cloud_prices'){
+            var offsetTop = questionHash === '#' ? 0 : $('#test').offset().top - 160;
 
-        var elems = $('.plans .plan_price span:first-of-type');
-        for(var i = 0; i < elems.length; i++){
-            elems[i].innerHTML = cloudPrices[i];
+            $("html,body").stop().animate ({
+                scrollTop: offsetTop
+            }, 10);
         }
-    });
-    $('#server').click(function (e) {
-        e.preventDefault();
-        $(this).css('color','#414b4d');
+    }
 
-        var elems = $('.plans .plan_price span:first-of-type');
-        for(var i = 0; i < elems.length; i++){
-            elems[i].innerHTML = serverPrices[i];
+    getPlace(questionHash);
+    changePlace();
+    function getPlace(place) {
+        var place = place;
+        if(place === '#'){
+            $('#cloud_prices').css('display','flex').css('visibility','visible');
         }
-    })
+        // else {
+        //     $(place).css('display','flex').css('visibility','visible');
+        // }
+        else if(place === '#cloud_prices'){
+            $('#cloud_prices').css('display','flex').css('visibility','visible');
+            $('#server_prices').css('display','none').css('visibility','hidden');
+        }
+        else if(place === '#server_prices'){
+            $('#server_prices').css('display','flex').css('visibility','visible');
+            $('#cloud_prices').css('display','none').css('visibility','hidden');
+        }
+    }
+    function changePlace() {
+        $('.change_place a').click(function (e) {
+            e.preventDefault();
+            $(this).css('color','#414b4d');
+            var href = $(this).attr('href');
+            if(href === questionHash){
+                console.log('равно');
+                questionHash = 0;
+            }
+            else {
+                getPlace(href);
+                questionHash = 0;
+            }
+        })
+    }
 });

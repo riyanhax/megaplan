@@ -7,107 +7,185 @@ $APPLICATION->SetTitle("Цены");?>
             <p>Это <br> того стоит</p>
             <a href="#" class="button-common button-green capitalize hover_w">Купить Мегаплан</a>
         </div>
-        <div class="col-lg-6 col-lg-offset-3">
-            <a href="#" class="button-common button-yellow uppercase" id="cloud">Цены в облаке</a>
-            <a href="#" class="button-common button-tr uppercase" id="server">на вашем сервере</a>
+        <div class="col-lg-6 col-lg-offset-3 change_place">
+            <a href="#cloud_prices" class="button-common button-yellow uppercase cloud_prices">Цены в облаке</a>
+            <a href="#server_prices" class="button-common button-tr uppercase server_prices">на вашем сервере</a>
             <div>
                 <a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/rub.png"></a>
                 <span>рубль</span>
             </div>
         </div>
     </div>
-    <div class="plans clearfix">
+    <div class="plans clearfix" id="test">
         <div class="col-lg-10 col-lg-offset-1" id="plansBlock">
-            <div>
-                <div class="plan">
-                    <div class="plan_name"><span>Старт</span></div>
-                    <div class="plan_price"><span>0</span><span>навсегда</span></div>
-                    <div class="plan_description">
-                        <span>Все только начинается</span>
-                        <span>Одновременно</span>
-                        <ul>
-                            <li>10 сотрудников</li>
-                            <li>50 задач</li>
-                            <li>100 событий</li>
-                            <li>1000 клиентов</li>
-                            <li>сделок</li>
-                        </ul>
+            <div id="cloud_prices">
+                <div>
+                    <div class="plan">
+                        <div class="plan_name"><span>Старт</span></div>
+                        <div class="plan_price"><span>0</span><span>навсегда</span></div>
+                        <div class="plan_description">
+                            <span>Все только начинается</span>
+                            <span>Одновременно</span>
+                            <ul>
+                                <li>10 сотрудников</li>
+                                <li>50 задач</li>
+                                <li>100 событий</li>
+                                <li>1000 клиентов</li>
+                                <li>сделок</li>
+                            </ul>
+                        </div>
+                        <div class="choose"><a href="#" class="button-common button-green hover_w">выбрать</a></div>
                     </div>
-                    <div class="choose"><a href="#" class="button-common button-green hover_w">выбрать</a></div>
+                </div>
+                <div>
+                    <div class="plan">
+                        <div class="plan_name"><span>Совместная работа</span></div>
+                        <div class="plan_price"><span>330</span><span>за пользователя в месяц</span></div>
+                        <div class="plan_description"><span>Порядок в делах</span>
+                            <ul>
+                                <li>Неограниченные возможности в работе с задачами и поручениями</li>
+                                <li>Работа с проектами</li>
+                                <li>контроль сотрудников</li>
+                                <li>формирование отчетов</li>
+                            </ul>
+                        </div>
+                        <div class="choose"><a href="#" class="button-common button-green hover_w">выбрать</a></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="plan">
+                        <div class="plan_name"><span>Совместная работа+</span></div>
+                        <div class="plan_price"><span>430</span><span>за пользователя в месяц</span></div>
+                        <div class="plan_description"><span>Идеальный порядок в делах</span>
+                            <ul>
+                                <li>Неограниченные возможности в работе с задачами и поручениями</li>
+                                <li>Работа с проектами</li>
+                                <li>контроль сотрудников</li>
+                                <li>формирование отчетов</li>
+                                <li>Согласование документов</li>
+                                <li>Департаменты</li>
+                                <li>Больше возможностей в работе сотрудников</li>
+                            </ul>
+                        </div>
+                        <div class="choose"><a href="#" class="button-common button-green hover_w">выбрать</a></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="plan">
+                        <div class="plan_name"><span>Клиенты и продажи</span></div>
+                        <div class="plan_price"><span>550</span><span>за пользователя в месяц</span></div>
+                        <div class="plan_description"><span>Большие продажи</span>
+                            <ul>
+                                <li>Неограниченные возможности в работе с задачами и поручениями</li>
+                                <li>Работа с проектами</li>
+                                <li>контроль сотрудников</li>
+                                <li>формирование отчетов</li>
+                                <li>Согласование документов</li>
+                                <li>Департаменты</li>
+                                <li>Больше возможностей в работе сотрудников</li>
+                                <li>клиентов</li>
+                            </ul>
+                        </div>
+                        <div class="choose"><a href="#" class="button-common button-green hover_w">выбрать</a></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="plan">
+                        <div class="plan_name"><span>Клиенты и продажи+</span></div>
+                        <div class="plan_price"><span>750</span><span>за пользователя в месяц</span></div>
+                        <div class="plan_description"><span>Большие продажи и контроль денег</span>
+                            <ul>
+                                <li>Неограниченные возможности в работе с задачами и поручениями</li>
+                                <li>Работа с проектами</li>
+                                <li>контроль сотрудников</li>
+                                <li>формирование отчетов</li>
+                                <li>Согласование документов</li>
+                                <li>Департаменты</li>
+                                <li>Больше возможностей в работе сотрудников</li>
+                                <li>клиентов</li>
+                                <li>Учет денег по проектам</li>
+                                <li>Учет денег по клиентам</li>
+                                <li>Интеграция с 1С</li>
+                            </ul>
+                        </div>
+                        <div class="choose"><a href="#" class="button-common button-green hover_w">выбрать</a></div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div class="plan">
-                    <div class="plan_name"><span>Совместная работа</span></div>
-                    <div class="plan_price"><span>330</span><span>за пользователя в месяц</span></div>
-                    <div class="plan_description"><span>Порядок в делах</span>
-                        <ul>
-                            <li>Неограниченные возможности в работе с задачами и поручениями</li>
-                            <li>Работа с проектами</li>
-                            <li>контроль сотрудников</li>
-                            <li>формирование отчетов</li>
-                        </ul>
+            <div id="server_prices">
+                <div>
+                    <div class="plan">
+                        <div class="plan_name"><span>Совместная работа</span></div>
+                        <div class="plan_price"><span>5300</span><span>за пользователя в месяц</span></div>
+                        <div class="plan_description"><span>Порядок в делах</span>
+                            <ul>
+                                <li>Неограниченные возможности в работе с задачами и поручениями</li>
+                                <li>Работа с проектами</li>
+                                <li>контроль сотрудников</li>
+                                <li>формирование отчетов</li>
+                            </ul>
+                        </div>
+                        <div class="choose"><a href="#" class="button-common button-green hover_w">выбрать</a></div>
                     </div>
-                    <div class="choose"><a href="#" class="button-common button-green hover_w">выбрать</a></div>
                 </div>
-            </div>
-            <div>
-                <div class="plan">
-                    <div class="plan_name"><span>Совместная работа+</span></div>
-                    <div class="plan_price"><span>430</span><span>за пользователя в месяц</span></div>
-                    <div class="plan_description"><span>Идеальный порядок в делах</span>
-                        <ul>
-                            <li>Неограниченные возможности в работе с задачами и поручениями</li>
-                            <li>Работа с проектами</li>
-                            <li>контроль сотрудников</li>
-                            <li>формирование отчетов</li>
-                            <li>Согласование документов</li>
-                            <li>Департаменты</li>
-                            <li>Больше возможностей в работе сотрудников</li>
-                        </ul>
+                <div>
+                    <div class="plan">
+                        <div class="plan_name"><span>Совместная работа+</span></div>
+                        <div class="plan_price"><span>7300</span><span>за пользователя в месяц</span></div>
+                        <div class="plan_description"><span>Идеальный порядок в делах</span>
+                            <ul>
+                                <li>Неограниченные возможности в работе с задачами и поручениями</li>
+                                <li>Работа с проектами</li>
+                                <li>контроль сотрудников</li>
+                                <li>формирование отчетов</li>
+                                <li>Согласование документов</li>
+                                <li>Департаменты</li>
+                                <li>Больше возможностей в работе сотрудников</li>
+                            </ul>
+                        </div>
+                        <div class="choose"><a href="#" class="button-common button-green hover_w">выбрать</a></div>
                     </div>
-                    <div class="choose"><a href="#" class="button-common button-green hover_w">выбрать</a></div>
                 </div>
-            </div>
-            <div>
-                <div class="plan">
-                    <div class="plan_name"><span>Клиенты и продажи</span></div>
-                    <div class="plan_price"><span>550</span><span>за пользователя в месяц</span></div>
-                    <div class="plan_description"><span>Большие продажи</span>
-                        <ul>
-                            <li>Неограниченные возможности в работе с задачами и поручениями</li>
-                            <li>Работа с проектами</li>
-                            <li>контроль сотрудников</li>
-                            <li>формирование отчетов</li>
-                            <li>Согласование документов</li>
-                            <li>Департаменты</li>
-                            <li>Больше возможностей в работе сотрудников</li>
-                            <li>клиентов</li>
-                        </ul>
+                <div>
+                    <div class="plan">
+                        <div class="plan_name"><span>Клиенты и продажи</span></div>
+                        <div class="plan_price"><span>9500</span><span>за пользователя в месяц</span></div>
+                        <div class="plan_description"><span>Большие продажи</span>
+                            <ul>
+                                <li>Неограниченные возможности в работе с задачами и поручениями</li>
+                                <li>Работа с проектами</li>
+                                <li>контроль сотрудников</li>
+                                <li>формирование отчетов</li>
+                                <li>Согласование документов</li>
+                                <li>Департаменты</li>
+                                <li>Больше возможностей в работе сотрудников</li>
+                                <li>клиентов</li>
+                            </ul>
+                        </div>
+                        <div class="choose"><a href="#" class="button-common button-green hover_w">выбрать</a></div>
                     </div>
-                    <div class="choose"><a href="#" class="button-common button-green hover_w">выбрать</a></div>
                 </div>
-            </div>
-            <div>
-                <div class="plan">
-                    <div class="plan_name"><span>Клиенты и продажи+</span></div>
-                    <div class="plan_price"><span>750</span><span>за пользователя в месяц</span></div>
-                    <div class="plan_description"><span>Большие продажи и контроль денег</span>
-                        <ul>
-                            <li>Неограниченные возможности в работе с задачами и поручениями</li>
-                            <li>Работа с проектами</li>
-                            <li>контроль сотрудников</li>
-                            <li>формирование отчетов</li>
-                            <li>Согласование документов</li>
-                            <li>Департаменты</li>
-                            <li>Больше возможностей в работе сотрудников</li>
-                            <li>клиентов</li>
-                            <li>Учет денег по проектам</li>
-                            <li>Учет денег по клиентам</li>
-                            <li>Интеграция с 1С</li>
-                        </ul>
+                <div>
+                    <div class="plan">
+                        <div class="plan_name"><span>Клиенты и продажи+</span></div>
+                        <div class="plan_price"><span>12500</span><span>за пользователя в месяц</span></div>
+                        <div class="plan_description"><span>Большие продажи и контроль денег</span>
+                            <ul>
+                                <li>Неограниченные возможности в работе с задачами и поручениями</li>
+                                <li>Работа с проектами</li>
+                                <li>контроль сотрудников</li>
+                                <li>формирование отчетов</li>
+                                <li>Согласование документов</li>
+                                <li>Департаменты</li>
+                                <li>Больше возможностей в работе сотрудников</li>
+                                <li>клиентов</li>
+                                <li>Учет денег по проектам</li>
+                                <li>Учет денег по клиентам</li>
+                                <li>Интеграция с 1С</li>
+                            </ul>
+                        </div>
+                        <div class="choose"><a href="#" class="button-common button-green hover_w">выбрать</a></div>
                     </div>
-                    <div class="choose"><a href="#" class="button-common button-green hover_w">выбрать</a></div>
                 </div>
             </div>
         </div>
@@ -133,7 +211,7 @@ $APPLICATION->SetTitle("Цены");?>
         </div>
     </div>
 </div>
-<div class="col-md-12 col-xl-10 col-xl-offset-1 big_popup" id="compare_plans">
+<!--<div class="col-md-12 col-xl-10 col-xl-offset-1 big_popup" id="compare_plans">
     <div class="close_popup">
         <a href="#">
             <div></div>
@@ -148,7 +226,7 @@ $APPLICATION->SetTitle("Цены");?>
                 </div>
             </div>
             <div class="row text_popup">
-                <div>
+                <div class="change_place">
                     <a href="" class="button-common button-yellow">цены в облаке</a>
                     <a href="" class="button-common button-tr">на вашем сервере</a>
                 </div>
@@ -215,109 +293,109 @@ $APPLICATION->SetTitle("Цены");?>
             <tr>
                 <td>Контроль задачи и сроков исполнения</td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
             </tr>
             <tr>
                 <td>Рабочий стол</td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
             </tr>
             <tr>
                 <td>Отчеты</td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
             </tr>
             <tr>
                 <td>Гибкая настройка прав сотрудников</td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
             </tr>
             <tr>
                 <td>Обмен документами</td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
             </tr>
             <tr>
                 <td>Бизнес-чат</td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
             </tr>
             <tr>
@@ -359,13 +437,13 @@ $APPLICATION->SetTitle("Цены");?>
             <tr>
                 <td>Количество клиентов</td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt="">
                 </td>
                 <td>
                     <span>неограниченно</span>
@@ -377,37 +455,37 @@ $APPLICATION->SetTitle("Цены");?>
             <tr>
                 <td>Воронка продаж</td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
             </tr>
             <tr>
                 <td>Управление финансами</td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt="">
                 </td>
                 <td>
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt="">
+                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
                 </td>
             </tr>
             <tr class="sub_header">
@@ -417,67 +495,67 @@ $APPLICATION->SetTitle("Цены");?>
             </tr>
             <tr>
                 <td class="not_active"><span>Мобильное приложение</span></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
             </tr>
             <tr>
                 <td class="not_active"><span>Расширенные поля в клиентах</span></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
             </tr>
             <tr>
                 <td class="not_active"><span>Поля в задачах и проектах</span></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
             </tr>
             <tr>
                 <td class="not_active"><span>Департаменты</span></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
             </tr>
             <tr>
                 <td class="not_active"><span>Согласование документов</span></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
             </tr>
             <tr>
                 <td class="not_active"><span>Опросы в модуле</span></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
             </tr>
             <tr>
                 <td class="not_active"><span>Общение</span></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
             </tr>
             <tr>
                 <td class="not_active"><span>Оценка задач и проектов</span></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
             </tr>
             <tr class="sub_header">
                 <td colspan="6" class="not_active">
@@ -486,56 +564,56 @@ $APPLICATION->SetTitle("Цены");?>
             </tr>
             <tr>
                 <td class="not_active"><span>API</span></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
             </tr>
             <tr>
                 <td class="not_active"><span>ActiveDirectory</span></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
             </tr>
             <tr>
                 <td class="not_active"><span>Интеграция с почтой</span></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
             </tr>
             <tr>
                 <td class="not_active"><span>Встроенная телефония</span></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
             </tr>
             <tr>
                 <td class="not_active"><span>Интеграция с 1С</span></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
             </tr>
             <tr>
                 <td class="not_active"><span>Интеграция с Октелл</span></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
+                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
             </tr>
             </tbody>
         </table>
     </div>
     <a href="#" class="button-common button-green hover_w">две недели бесплатно</a>
-</div>
+</div>-->
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
