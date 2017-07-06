@@ -8,11 +8,11 @@ $APPLICATION->SetTitle("Нужен рост - нужен мегаплан");
 <section class="top-banner banner-main">
 	<div class="container">
 		<div class="col-md-12 banner-inner main-height">
-			<div class="main-banner-text banner-text color-white "><?$APPLICATION->ShowTitle(false)?></div>
-			<div class="banner-button main">
+			<div class="main-banner-text banner-text color-white "><?//$APPLICATION->ShowTitle(false)?></div>
+			<!--<div class="banner-button main">
 				<a class="button" href="#" title=""><span class="button-green">Попробовать бесплатно</span></a><p class="main_p"></p>
 				<a class="button" href="more/" title=""><span class="button-white">Узнать больше</span></a>
-			</div>
+			</div>-->
 			<div class="info-block-div">
 				<div class="info-block-main">Простой интерфейс</div>
 				<div class="info-block-main">Гибкие настройки</div>
@@ -23,6 +23,14 @@ $APPLICATION->SetTitle("Нужен рост - нужен мегаплан");
 		</div>
 	</div>
 </section>
+
+<div class="main-center-f">
+<div class="main-title-f"><?$APPLICATION->ShowTitle(false)?></div>
+<div class="main-buttons-f">
+				<a class="button" href="#" title=""><span class="button-green-f">Попробовать бесплатно</span></a><p class="main_p"></p>
+				<a class="button" href="more/" title=""><span class="button-white-f">Узнать больше</span></a>
+</div>
+				</div>
 
 <div id="trailer" class="is_overlay">
 <video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">

@@ -4,6 +4,11 @@ function more(id) {
 	$("#"+id).addClass('forbuss-block-more-open-1');
 	$("#more-"+id).addClass('forbuss-hidden');
 	
+	if($(window).width() <= 480) {
+		$("#"+id+"-"+id).addClass('forbuss-block-mobile-'+id);
+		$("#"+id).removeClass('forbuss-block-more-open-1');
+}
+	
 $(function() {
 $('.forbuss-block-more-open-1').customScroll({
 	prefix: 'custom-scroll_',
@@ -37,6 +42,11 @@ function more2(id) {
 	$("#"+id).removeClass('forbuss-height-'+id);
 	$("#"+id).addClass('forbuss-block-more-open-2');
 	$("#more-"+id).addClass('forbuss-hidden');
+	
+	if($(window).width() <= 480) {
+		$("#"+id+"-"+id).addClass('forbuss-block-mobile-'+id);
+		$("#"+id).removeClass('forbuss-block-more-open-2');
+}
 	
 $(function() {
 $('.forbuss-block-more-open-2').customScroll({
