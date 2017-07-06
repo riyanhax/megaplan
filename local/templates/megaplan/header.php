@@ -138,14 +138,14 @@ else
             <div class="main_menu">
                 <div class="capabilities"><a href="#">Возможности</a>
                     <ul>
-                        <li><a href="#">Воронка продаж</a></li>
-                        <li><a href="#">Коробка/облако</a></li>
-                        <li><a href="#">Безопасность данных</a></li>
+                        <li><a href="http://bvd.megaplan.szdl.ru/more/">Воронка продаж</a></li>
+                        <li><a href="http://bvd.megaplan.szdl.ru/local-internet/">Коробка/облако</a></li>
+                        <li><a href="http://bvd.megaplan.szdl.ru/security/">Безопасность данных</a></li>
                         <li><a href="#">CRM</a></li>
                         <li><a href="#">Управление проектами</a></li>
-                        <li><a href="#">Интеграции с почтой</a></li>
-                        <li><a href="#">Интеграции с телефонией</a></li>
-                        <li><a href="#">Мобильное приложение</a></li>
+                        <li><a href="http://bvd.megaplan.szdl.ru/integration/">Интеграции с почтой</a></li>
+                        <li><a href="http://bvd.megaplan.szdl.ru/integration/">Интеграции с телефонией</a></li>
+                        <li><a href="http://bvd.megaplan.szdl.ru/more/">Мобильное приложение</a></li>
                     </ul>
                 </div>
                 <div class="prices"><a href="#">Цены</a>
@@ -161,39 +161,39 @@ else
                     <ul>
                         <li><a href="#">Инструкции</a></li>
                         <li><a href="#">Комплексное внедрение</a></li>
-                        <li><a href="#">Консультанты (партнеры)</a></li>
+                        <li><a href="http://out.megaplan.szdl.ru/partners/">Консультанты (партнеры)</a></li>
                         <li><a href="#">Частые вопросы</a></li>
                         <li><a href="#">Онлайн уроки</a></li>
                     </ul>
                 </div>
-                <div class="partners"><a href="#">Партнерам</a>
+                <div class="partners"><a href="http://bvd.megaplan.szdl.ru/partners/">Партнерам</a>
                     <ul>
-                        <li><a href="#">API и виджеты</a></li>
-                        <li><a href="#">Партнерская программа</a></li>
-                        <li><a href="#">Реферальная программа</a></li>
+                        <li><a href="http://bvd.megaplan.szdl.ru/integration/">API и виджеты</a></li>
+                        <li><a href="http://bvd.megaplan.szdl.ru/partners/">Партнерская программа</a></li>
+                        <li><a href="https://megaplan.ru/stanpartnerom/index.html">Реферальная программа</a></li>
                     </ul>
                 </div>
-                <div class="company"><a href="#">О компании</a>
+                <div class="company"><a href="http://bvd.megaplan.szdl.ru/company/">О компании</a>
                     <ul>
-                        <li><a href="#">Контакты</a></li>
-                        <li><a href="#">Команда</a></li>
-                        <li><a href="#">Квартирники</a></li>
-                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="http://bvd.megaplan.szdl.ru/contacts/">Контакты</a></li>
+                        <li><a href="http://bvd.megaplan.szdl.ru/company/">Команда</a></li>
+                        <li><a href="https://megaplan.ru/megakvartirnik/">Квартирники</a></li>
+                        <li><a href="http://bvd.megaplan.szdl.ru/company/">Вакансии</a></li>
                     </ul>
                 </div>
-                <div class="blog"><a href="#">Блог</a>
+                <div class="blog"><a href="http://bvd.megaplan.szdl.ru/blog/%20">Блог</a>
                     <ul>
-                        <li><a href="#">Блог о продажах</a></li>
-                        <li><a href="#">Блог о бизнесе</a></li>
-                        <li><a href="#">Полезное чтение</a></li>
-                        <li><a href="#">Видео блог</a></li>
+                        <li><a href="https://megaplan.ru/letters/category/sales">Блог о продажах</a></li>
+                        <li><a href="https://megaplan.ru/letters/category/management">Блог о бизнесе</a></li>
+                        <li><a href="https://megaplan.ru/letters/">Полезное чтение</a></li>
+                        <li><a href="https://www.youtube.com/c/TheMegaplan">Видео блог</a></li>
                     </ul>
                 </div>
                 <div class="clients"><a href="#">Клиентам</a>
                     <ul>
                         <li><a href="#">Личный кабинет</a></li>
-                        <li><a href="#">Клиенты</a></li>
-                        <li><a href="#">Кейсы</a></li>
+                        <li><a href="http://bvd.megaplan.szdl.ru/clients/">Клиенты</a></li>
+                        <li><a href="http://bvd.megaplan.szdl.ru/clients/">Кейсы</a></li>
                         <li><a href="#">Решения для бизнеса</a></li>
                         <li><a href="www.megaplan.megaplan.ru">Войти в мой Мегаплан</a></li>
                     </ul>
