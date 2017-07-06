@@ -11,8 +11,8 @@ $APPLICATION->SetTitle("Мы заточили мегаплан под вас");?
 	</div>
 </section>
 <section class="content-crop section-contacts bg-white content-crop-more">
-	<div class="section-wrapper section-wrapper-more bg-white">
-		<div class="forbuss-block-1 forbuss-block-all forbuss-block-right">
+	<div class="section-wrapper section-wrapper-more bg-white forbuss-mobile">
+		<div class="forbuss-block-1 forbuss-block-all forbuss-block-right" id="more1-more1">
 			<p class="forbuss-block-title">Веб студия</p>
 			<div class="forbuss-block-more-close-1 forbuss-height-more1" id="more1">
 				<span class="forbuss-block-text-thin">
@@ -35,7 +35,7 @@ $APPLICATION->SetTitle("Мы заточили мегаплан под вас");?
 			<a href="javascript:void(0);" onclick="more2('more1')"><p class="forbuss-block-text-thin forbuss-block-readmore" id="more-more1">Подробнее...</p></a>
 			<div class="forbuss-bigpic-1"></div>
 		</div>
-		<div class="forbuss-block-2 forbuss-block-all forbuss-block-gray forbuss-block-left">
+		<div class="forbuss-block-2 forbuss-block-all forbuss-block-gray forbuss-block-left" id="more2-more2">
 			<p class="forbuss-block-title forbuss-block-title-padding-1">Для производства</p>
 			<div class="forbuss-block-more-close-1 forbuss-height-more2" id="more2">
 			<p class="forbuss-block-text-thin">Контролирует выполнение заказов от замера до монтажа, наводит порядок в заказах, сохраняет макеты, эскизы и чертежи всех проектов для согласования, совместной работы над ними и последующего использования. Удобная CRM для промышленных компаний позволяет утверждать техзадания и согласовывать условия с клиентом онлайн 24/7.</p>
@@ -68,7 +68,7 @@ $APPLICATION->SetTitle("Мы заточили мегаплан под вас");?
 			<a href="javascript:void(0);" onclick="more('more2')"><p class="forbuss-block-text-thin forbuss-block-readmore" id="more-more2">Подробнее...</p></a>
 			<div class="forbuss-bigpic-2"></div>
 		</div>
-		<div class="forbuss-block-3 forbuss-block-all forbuss-block-right forbuss-block-margin-top">
+		<div class="forbuss-block-3 forbuss-block-all forbuss-block-right forbuss-block-margin-top" id="more3-more3">
 			<p class="forbuss-block-title">Для юристов</p>
 			<div class="forbuss-block-more-close-1 forbuss-height-more3" id="more3">
 				<p class="forbuss-block-text-thin">Налаживает контроль за работой: ведет учет дел, хранит документы и историю переговоров с клиентами, показывает результаты каждого юриста, следит за сроками и напоминает о звонке, встрече или судебном заседании. Эффективная CRM для юридической фирмы гарантирует безопасность базы клиентов и конфиденциальность всех данных.</p>
@@ -95,7 +95,7 @@ $APPLICATION->SetTitle("Мы заточили мегаплан под вас");?
 			<a href="javascript:void(0);" onclick="more2('more3')"><p class="forbuss-block-text-thin forbuss-block-readmore" id="more-more3">Подробнее...</p></a>
 			<div class="forbuss-bigpic-3"></div>
 		</div>
-		<div class="forbuss-block-4 forbuss-block-all forbuss-block-gray forbuss-block-left forbuss-block-margin-top-1">
+		<div class="forbuss-block-4 forbuss-block-all forbuss-block-gray forbuss-block-left forbuss-block-margin-top-1" id="more4-more4">
 			<p class="forbuss-block-title forbuss-block-title-padding-1">Для строительства</p>
 			<div class="forbuss-block-more-close-1 forbuss-height-more4" id="more4">
 				<p class="forbuss-block-text-thin">Мегаплан следит за выполнением плана строительства объектов в реальном времени, координирует  работу специалистов и подрядчиков, ведет учет клиентов и заказов. CRM для строительства контролирует сроки проектов и фиксирует договоренности с заказчиками.</p>
@@ -122,7 +122,7 @@ $APPLICATION->SetTitle("Мы заточили мегаплан под вас");?
 			<a href="javascript:void(0);" onclick="more('more4')"><p class="forbuss-block-text-thin forbuss-block-readmore" id="more-more4">Подробнее...</p></a>
 			<div class="forbuss-bigpic-4"></div>
 		</div>
-		<div class="forbuss-block-5 forbuss-block-all forbuss-block-right forbuss-block-margin-top">
+		<div class="forbuss-block-5 forbuss-block-all forbuss-block-right forbuss-block-margin-top" id="more5-more5">
 			<p class="forbuss-block-title">Для сферы услуг</p>
 			<div class="forbuss-block-more-close-1 forbuss-height-more5" id="more5">
 				<p class="forbuss-block-text-thin">В предоставлении услуг главную роль играет сервис. Мегаплан поможет довести его до идеала. Он хранит информацию о прежних заказах, напоминает о договоренностях и планирует запись на точное время в онлайн-календаре специалиста. Если клиент оставит заявку на сайте, СRM для сферы услуг создаст карточку, запланирует звонок администратора. Мегаплан отправит напоминание клиенту о предстоящем визите и напоминание администратору о запланированном звонке.</p>
@@ -147,7 +147,7 @@ $APPLICATION->SetTitle("Мы заточили мегаплан под вас");?
 			<a href="javascript:void(0);" onclick="more2('more5')"><p class="forbuss-block-text-thin forbuss-block-readmore" id="more-more5">Подробнее...</p></a>
 			<div class="forbuss-bigpic-5"></div>
 		</div>
-		<div class="forbuss-block-6 forbuss-block-all forbuss-block-gray forbuss-block-left forbuss-block-margin-top-2">
+		<div class="forbuss-block-6 forbuss-block-all forbuss-block-gray forbuss-block-left forbuss-block-margin-top-2" id="more6-more6">
 			<p class="forbuss-block-title forbuss-block-title-padding-2">Для продаж</p>
 			<div class="forbuss-block-more-close-1 forbuss-height-more6" id="more6">
 				<p class="forbuss-block-text-thin">Ведет клиентов и сделки, следит за сроками, ставит задачи менеджерам и контролирует результаты. CRM для продаж готовит отчеты о работе каждого менеджера, формирует воронку продаж и  ускоряет цикл сделки от заявки до оплаты.
