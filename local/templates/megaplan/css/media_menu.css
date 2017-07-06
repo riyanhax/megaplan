@@ -137,12 +137,42 @@
     }
 }
 @media (max-width: 425px){
+    #menu .main_menu{
+        width: 100%;
+        margin-left: 0;
+        align-self: flex-start;
+    }
     #menu .main_menu>div{
-        margin-bottom: 5%;
+        padding:  0 15px;
+        margin-bottom: 20px;
+    }
+    #menu .main_menu > div > a{
+        margin-bottom: 5px;
+    }
+    #menu .main_menu > div >  ul li{
+        margin-bottom: 5px;
+    }
+    #menu .main_menu > div >  ul li a{
+        line-height: 1;
+    }
+    #menu .line{
+        width: 100%;
     }
     #menu .info_menu{
         width: 60%;
         flex-direction: column;
         text-align: center;
+        margin-bottom: 20px;
+    }
+    #menu .info_menu a{
+        margin-top: 5px;
+    }
+    #menu .social{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    #menu .payment_systems{
+        width: 70%;
+        margin-bottom: 20px;
     }
 }

@@ -135,12 +135,12 @@ else
     </header>
     <div id="menu">
         <div class="menu_wrap">
-            <div class="main_menu"><!--col-xs-12 col-sm-8 col-sm-offset-2 col-md-10 col-md-offset-1-->
+            <div class="main_menu">
                 <div class="capabilities"><a href="#">Возможности</a>
                     <ul>
                         <li><a href="#">Воронка продаж</a></li>
                         <li><a href="#">Коробка/облако</a></li>
-                        <li><a href="#">Безопастность данных</a></li>
+                        <li><a href="#">Безопасность данных</a></li>
                         <li><a href="#">CRM</a></li>
                         <li><a href="#">Управление проектами</a></li>
                         <li><a href="#">Интеграции с почтой</a></li>
@@ -199,10 +199,10 @@ else
                     </ul>
                 </div>
             </div>
-            <div class="line"><!--col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1-->
+            <div class="line">
                 <hr>
             </div>
-            <div class="info_menu"><!--col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4-->
+            <div class="info_menu"
                 <a href="#" title="/">8 800 555-56-37</a>
                 <a href="#" title="/">info@megaplan.ru</a>
             </div>

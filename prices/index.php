@@ -8,8 +8,8 @@ $APPLICATION->SetTitle("Цены");?>
             <a href="#" class="button-common button-green capitalize hover_w">Купить Мегаплан</a>
         </div>
         <div class="col-lg-6 col-lg-offset-3">
-            <a href="" class="button-common button-yellow uppercase">Цены в облаке</a>
-            <a href="" class="button-common button-tr uppercase">на вашем сервере</a>
+            <a href="#" class="button-common button-yellow uppercase" id="cloud">Цены в облаке</a>
+            <a href="#" class="button-common button-tr uppercase" id="server">на вашем сервере</a>
             <div>
                 <a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/prices/rub.png"></a>
                 <span>рубль</span>
@@ -21,7 +21,7 @@ $APPLICATION->SetTitle("Цены");?>
             <div>
                 <div class="plan">
                     <div class="plan_name"><span>Старт</span></div>
-                    <div class="plan_price"><span>0р</span><span>навсегда</span></div>
+                    <div class="plan_price"><span>0</span><span>навсегда</span></div>
                     <div class="plan_description">
                         <span>Все только начинается</span>
                         <span>Одновременно</span>
@@ -39,7 +39,7 @@ $APPLICATION->SetTitle("Цены");?>
             <div>
                 <div class="plan">
                     <div class="plan_name"><span>Совместная работа</span></div>
-                    <div class="plan_price"><span>330р</span><span>за пользователя в месяц</span></div>
+                    <div class="plan_price"><span>330</span><span>за пользователя в месяц</span></div>
                     <div class="plan_description"><span>Порядок в делах</span>
                         <ul>
                             <li>Неограниченные возможности в работе с задачами и поручениями</li>
@@ -54,7 +54,7 @@ $APPLICATION->SetTitle("Цены");?>
             <div>
                 <div class="plan">
                     <div class="plan_name"><span>Совместная работа+</span></div>
-                    <div class="plan_price"><span>430р</span><span>за пользователя в месяц</span></div>
+                    <div class="plan_price"><span>430</span><span>за пользователя в месяц</span></div>
                     <div class="plan_description"><span>Идеальный порядок в делах</span>
                         <ul>
                             <li>Неограниченные возможности в работе с задачами и поручениями</li>
@@ -72,7 +72,7 @@ $APPLICATION->SetTitle("Цены");?>
             <div>
                 <div class="plan">
                     <div class="plan_name"><span>Клиенты и продажи</span></div>
-                    <div class="plan_price"><span>550р</span><span>за пользователя в месяц</span></div>
+                    <div class="plan_price"><span>550</span><span>за пользователя в месяц</span></div>
                     <div class="plan_description"><span>Большие продажи</span>
                         <ul>
                             <li>Неограниченные возможности в работе с задачами и поручениями</li>
@@ -91,7 +91,7 @@ $APPLICATION->SetTitle("Цены");?>
             <div>
                 <div class="plan">
                     <div class="plan_name"><span>Клиенты и продажи+</span></div>
-                    <div class="plan_price"><span>750р</span><span>за пользователя в месяц</span></div>
+                    <div class="plan_price"><span>750</span><span>за пользователя в месяц</span></div>
                     <div class="plan_description"><span>Большие продажи и контроль денег</span>
                         <ul>
                             <li>Неограниченные возможности в работе с задачами и поручениями</li>

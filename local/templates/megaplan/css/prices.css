@@ -75,10 +75,11 @@ a.hover_w:hover {
   min-height: 860px;
   background-image: url(../img/prices/lady.png);
   background-position: 0 -6%;
+  box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.1) inset;
 }
 .banner-prices > div:first-of-type {
   margin-top: 95px;
-  margin-bottom: 180px;
+  margin-bottom: 155px;
   padding-left: 70px;
   text-align: center;
 }
@@ -105,7 +106,7 @@ a.hover_w:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 15%;
+  width: 100px;
 }
 .banner-prices > div:last-of-type div a {
   display: block;
@@ -120,6 +121,9 @@ a.hover_w:hover {
   font-size: 60px;
   line-height: 1.2;
   text-transform: uppercase;
+}
+.plans {
+  background-color: white;
 }
 .plans > div {
   display: flex;
@@ -138,10 +142,6 @@ a.hover_w:hover {
   position: relative;
   padding: 0;
   background-color: white;
-  opacity: 0.85;
-  transition-property: opacity;
-  transition-timing-function: linear;
-  transition-duration: 0.3s;
 }
 .plans > div:last-of-type {
   margin-bottom: 45px;
@@ -184,6 +184,9 @@ a.hover_w:hover {
   font-weight: 400;
   font-size: 48px;
   color: #ffd451;
+}
+.plans .plan .plan_price span:first-child:after {
+  content: 'p';
 }
 .plans .plan .plan_price span:last-child {
   font-weight: 100;
@@ -242,6 +245,9 @@ a.hover_w:hover {
   width: 345px;
   margin-top: 50px;
   margin-bottom: 40px;
+}
+.bottom-form {
+  background-color: white;
 }
 .bottom-form > div {
   display: flex;
@@ -424,15 +430,27 @@ a.hover_w:hover {
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .banner-prices > div:first-of-type {
+    margin-top: 45px;
     padding-left: 15px;
     margin-bottom: 140px;
   }
+  .banner-prices > div:first-of-type p {
+    font-size: 26px;
+    margin-bottom: 60px;
+  }
+  .banner-prices > div:first-of-type p br {
+    display: none;
+  }
   .banner-prices > div:first-of-type a {
+    height: 40px;
+    width: 250px;
     display: block;
     margin: 0 auto;
+    font-size: 18px;
+    line-height: 0.7;
   }
   .banner-prices > div:last-of-type {
-    flex-direction: column;
+    flex-direction: row;
   }
   .banner-prices > div:last-of-type a {
     margin-bottom: 20px;
