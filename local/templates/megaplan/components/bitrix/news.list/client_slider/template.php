@@ -28,7 +28,7 @@ $this->setFrameMode(true);
         <div class="item">
             <div class="client-item_block" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
                 <div class="img-block">
-                    <img src="/local/templates/megaplan/img/clients/client.png" alt=""><?//=$arItem["PREVIEW_PICTURE"]?>
+                    <img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" alt="">
                 </div>
                 <p class="preview-text"><?=$arItem["PREVIEW_TEXT"]?></p>
                 <div class="name-block"><?=$arItem["NAME"]?></div>
@@ -39,7 +39,7 @@ $this->setFrameMode(true);
     </div>
 
     <div class="view-more">
-        <a class="button" href="#" title=""><span class="button-green">Начать свою историю с Мегаплан</span></a>
+        <a class="button" href="#" title=""><span class="button-green">Начать свою историю с Мегапланом</span></a>
     </div>
 
 </section>

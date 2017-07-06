@@ -13,7 +13,7 @@
 $this->setFrameMode(true);
 ?>
 
-<section class="top-banner banner-blog_detail" style="background-image: url(/local/templates/megaplan/img/security/security-bg.jpg);"><?//=$arResult["DETAIL_PICTURE"]?>
+<section class="top-banner banner-clients">
     <div class="container">
         <div class="col-md-12 banner-inner">
             <div class="banner-suptext"><?=$arResult["PROPERTIES"]["COMPANY_SPHERE"]["VALUE"]?></div>

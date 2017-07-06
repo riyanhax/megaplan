@@ -14,15 +14,17 @@ else
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:100,300,400&amp;subset=cyrillic" rel="stylesheet">
 
     <?//$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.mousewheel.js")?>
     <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery-3.2.1.min.js")?>
     <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.easing.min.js")?>
     <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/prices.js")?>
+	    <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.custom-scroll.js")?>
+    <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/script.js")?>
 
     <?$APPLICATION->SetAdditionalCSS("/bitrix/css/main/bootstrap.css");?>
-    <?//$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/font-awesome.min.css");?>
+    <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/font-awesome.min.css");?>
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/style.css");?>
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/media.css");?>
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/menu_style.css");?>
@@ -90,7 +92,7 @@ else
                      <div></div>
                      <span><?=GetMessage('MENU')?></span>
                  </div>
-                 <div class="top-menu hidden-sm">
+                 <div class="top-menu hidden-md">
                      <?
                      $APPLICATION->IncludeComponent("bitrix:menu", "top", Array(
                         "ROOT_MENU_TYPE" => "top",

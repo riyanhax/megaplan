@@ -5,16 +5,17 @@ $APPLICATION->SetTitle("Мы бережем Ваши данные, как сво
     <section class="top-banner banner-security">
         <div class="container">
             <div class="col-md-12 banner-inner">
-                <div class="banner-text color-white"><?$APPLICATION->ShowTitle(false)?></div>
+                <!--<div class="banner-text color-white"><?//$APPLICATION->ShowTitle(false)?></div>-->
+				<div class="banner-text color-white">Мы бережем<p></p> Ваши данные, как свои</div>
                 <div class="banner-button">
-                    <a class="button" href="#" title=""><span class="button-green">2 недели бесплатно</span></a>
+                    <a class="button" href="#" title=""><span class="button-green show-regform-main">2 недели бесплатно</span></a>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="content-crop section-security bg-white">
-        <div class="section-wrapper bg-white">
+        <div class="section-wrapper bg-white section-wrapper-sec">
             <div class="first-block">
                 <div class="security-item_block col-xs-12 col-sm-6 col-md-4">
                     <div class="security-img">
@@ -76,7 +77,7 @@ $APPLICATION->SetTitle("Мы бережем Ваши данные, как сво
             <div class="second-block">
 
                 <h2 class="block-title">
-                    Мы относимся к безопасности
+                    Мы относимся к безопасности<p></p>
                     с нездоровой щепетильностью
                 </h2>
 
@@ -104,7 +105,7 @@ $APPLICATION->SetTitle("Мы бережем Ваши данные, как сво
                         <?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/security/server.php"));?>
                     </p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4 sec-block-padding">
                     <div class="security-title">
                         Раздельное копирование баз данных и файлов
                     </div>
@@ -112,7 +113,7 @@ $APPLICATION->SetTitle("Мы бережем Ваши данные, как сво
                         <?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/security/sep_cp.php"));?>
                     </p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4 sec-block-padding">
                     <div class="security-title">
                         Отдельные базы данных для каждого клиента
                     </div>
@@ -120,7 +121,7 @@ $APPLICATION->SetTitle("Мы бережем Ваши данные, как сво
                         <?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/security/sep_db.php"));?>
                     </p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4 sec-block-padding">
                     <div class="security-title">
                         Шифрование пароля и соединения
                     </div>
@@ -136,12 +137,15 @@ $APPLICATION->SetTitle("Мы бережем Ваши данные, как сво
 
     <section class="content bg-grey section-security-question">
 
-        <h2 class="block-title">
+        <h2 class="block-title secr-title-padd">
             Вопросы о безопасности Мегаплана
         </h2>
 
         <?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/security/questions.php"));?>
-
+		
+		<div class="secr-div-text-button">
+			<a class="button" href="#" title=""><span class="more-button-green show-regform-main secr-butt-mobile">Попробовать бесплатно</span></a>
+		</div>
     </section>
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

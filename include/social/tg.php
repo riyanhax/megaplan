@@ -1,1 +1,1 @@
-<a class="social-link" href="#" title="Telegram"><img src="<?=SITE_TEMPLATE_PATH."/img/social-tg.png"?>" alt="Telegram"></a>
+<a class="social-link" href="#" title="Telegram"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>

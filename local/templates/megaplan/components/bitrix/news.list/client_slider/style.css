@@ -8,11 +8,11 @@
 }
 
 .owl-carousel.owl-theme .owl-nav .owl-prev {
-    left: -50px;
+    left: -35px;
 }
 
 .owl-carousel.owl-theme .owl-nav .owl-next {
-    right: -50px;
+    right: -35px;
 }
 
 .owl-carousel.owl-theme .owl-nav .owl-prev:hover,

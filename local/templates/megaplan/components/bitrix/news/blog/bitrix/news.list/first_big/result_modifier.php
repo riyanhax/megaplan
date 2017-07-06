@@ -7,3 +7,8 @@ foreach($arResult["ITEMS"] as $num => $arItem) {
 $arFirstPost = array_shift($arResult["ITEMS"]);
 $arResult["FIRST_POST"] = $arFirstPost;
 
+$property_enums = CIBlockPropertyEnum::GetList(Array("ID"=>"ASC", "SORT"=>"ASC"), Array("IBLOCK_ID"=>1, "CODE"=>"RUBRIC"));
+while ($enum_fields = $property_enums->GetNext()) {
+    $arRubrics[$enum_fields["ID"]] = $enum_fields["VALUE"];
+}
+$arResult["RUBRICS"] = $arRubrics;
