@@ -5,14 +5,29 @@ if($(window).width() <= 480) {
 $(document).ready(function () {
     $(document).scroll(function () {
         var offset = $(document).scrollTop();
-        var div = $(".content-crop .section-wrapper");
-        var scrolled = div.offset().top;
-        var margin_top = +div.css("margin-top").replace("px", "");
+        console.log('offset = '+offset);
+        if($("div").is(".section-wrapper")){
+            var div = $(".content-crop .section-wrapper");
+            var scrolled = div.offset().top;
+            var margin_top = +div.css("margin-top").replace("px", "");
 
-        if(margin_top < -210)
-            div.css("margin-top", -210+"px");
-        if ((offset > scrolled && margin_top < 0) || (offset < scrolled && margin_top > -210))
-            div.css("margin-top", margin_top+offset-scrolled+"px");
+            if(margin_top < -210)
+                div.css("margin-top", -210+"px");
+            if ((offset > scrolled && margin_top < 0) || (offset < scrolled && margin_top > -210))
+                div.css("margin-top", margin_top+offset-scrolled+"px");
+        }
+        else if($('div').is("#plansBlock")){
+            var div2 = $("#plansBlock");
+            var scrolled = div2.offset().top;
+            console.log('srolled = '+scrolled);
+            var margin_top = +div2.css("margin-top").replace("px", "");
+            console.log('margintop = '+margin_top);
+
+            if(margin_top < -160)
+                div2.css("margin-top", -160+"px");
+            if ((offset > scrolled && margin_top < 0) || (offset < scrolled && margin_top > -160))
+                div2.css("margin-top", margin_top+offset-scrolled+"px");
+        }
 
     });
     $('a').click(function(){

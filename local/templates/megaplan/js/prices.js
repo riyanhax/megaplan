@@ -68,19 +68,6 @@ $(document).ready(function () {
         $(".main-content").height(popupHeight).css("background", "none");
     });
 
-    var bannerHeight = $(".banner-prices").height() - 35;
-    console.log("bannerHeight = " + bannerHeight);
-    var top = 0;
-    if ($(document).width() >= 768) {
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > bannerHeight) {
-                $(".plans > div:first-of-type").css("margin-top", "0px");
-            }
-            else {
-                $(".plans > div:first-of-type").css("margin-top", "-160px");
-            }
-        })
-    }
     //логика смены цены(я предпологаю, что цены будут тянуться из инфоблока массивом)
     var cloudPrices =[0,330,430,550,750];/*пример, при интеграции закоментить значения*/
     var serverPrices =[1000,3300,4300,5500,7500];/*пример, при работе закоментить*/

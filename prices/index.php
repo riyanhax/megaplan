@@ -17,7 +17,7 @@ $APPLICATION->SetTitle("Цены");?>
         </div>
     </div>
     <div class="plans clearfix">
-        <div class="col-lg-10 col-lg-offset-1">
+        <div class="col-lg-10 col-lg-offset-1" id="plansBlock">
             <div>
                 <div class="plan">
                     <div class="plan_name"><span>Старт</span></div>
