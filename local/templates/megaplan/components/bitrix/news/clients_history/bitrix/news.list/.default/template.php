@@ -21,7 +21,7 @@ $this->setFrameMode(true);
                 Мегаплан собирает ошибки<br>
                 Мы анализируем и исправляем
             </div>
-            <div class="banner-subtext">История компании «Юмисофт»</div>
+            <div class="banner-subtext"><a href="#" title="">История компании «Юмисофт»</a></div>
             <div class="banner-button">
                 <a class="button" href="#" title=""><span class="button-green">Стать клиентом Мегаплана</span></a>
             </div>

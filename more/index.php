@@ -10,7 +10,7 @@ $APPLICATION->SetTitle("Задачи закрываются, клиенты не
 	</div>
 </section>
 <section class="content-crop section-contacts bg-white content-crop-more">
-	<div class="section-wrapper section-wrapper-more bg-white">
+	<div class="section-wrapper section-wrapper-more bg-white more-mobile">
 		<div class="more-text more-text-os-2">
 			<p class="more-title more-title-bott">Навести порядок</p>
 			<span class="more-text-thin">Мегаплан возьмет на себя монотонную работу, напомнит про задачи, ускорит взаимодействие отделов и покажет вклад каждого сотрудника в результат. Сохранит историю выполнения задач от старта до финиша.</span>
@@ -22,7 +22,7 @@ $APPLICATION->SetTitle("Задачи закрываются, клиенты не
 		<div class="more-text more-text-os-3">
 			<p class="more-title more-title-bott more-title-top">Принимать верные решения</p>
 			<span class="more-text-thin">Мегаплан формирует отчетность для анализа данных, которая помогает управлять бизнесом. Хранит большой объем информации и обеспечивает удобный доступ к ней. У вас не только появится увереннось в принятых решених, но и останется больше времени на личные дела.</span>
-			<div class="more-div-text-button">
+			<div class="more-div-text-button mobile-butt-1">
 				<a class="button" href="#" title=""><span class="more-button-yellow">2 недели бесплатно</span></a>
 			</div>
 			<div class="more-text-bg-3"></div>
@@ -30,7 +30,7 @@ $APPLICATION->SetTitle("Задачи закрываются, клиенты не
 		<div class="more-text more-text-os-1">
 			<p class="more-title more-title-bott">Продавать</p>
 			<span class="more-text-thin">Мегаплан контролирует каждый этап сделки: хранит историю переговоров, звонков и переписки в одной карточке, вовремя связывается с клиентом и оперативно информирует его о заказе. Освободит отдел продаж от рутины для эффективной работы с клиентской базой.</span>		
-			<div class="more-div-text-button">
+			<div class="more-div-text-button mobile-butt-2">
 				<a class="button" href="#" title=""><span class="more-button-green">2 недели бесплатно</span></a>
 			</div>
 			<div class="more-text-bg-1"></div>
@@ -47,8 +47,9 @@ $APPLICATION->SetTitle("Задачи закрываются, клиенты не
 			<p class="more-title more-title-bott">ДОСТУП 24/7</p>
 			<span class="more-text-thin">Мегаплан увеличивает мобильность как руководителей, так и сотрудников. Приложения для iOS и Android позволяют работать со смартфона. Вы можете выбрать серверное хранение данных либо облачное — с безлимитным объемом и ежедневным резервным копированием. Мы бережно храним ваши данные и гарантируем конфиденциальность.</span>
 		</div>
-		<div class="more-block-white more-block-white-video">
+		<div class="more-block-white more-block-white-video more-mobile-bottmarg">
 			<p class="more-title more-title-bott">Мегаплан - уникальная CRM система</p>
+			<div class="more-mobile-video"></div>
 			<div class="more-div-button">
 				<a class="button" href="#" title=""><span class="more-button-yellow">2 недели бесплатно</span></a>
 			</div>
@@ -84,7 +85,7 @@ $APPLICATION->SetTitle("Задачи закрываются, клиенты не
 					<input type="text" placeholder="Имя и телефон" class="more-input">
 					<input type="text" placeholder="Телефон" class="more-input">
 					<span class="more-small-text">Никакого спама, только уведомления по делу</span>
-					<div class="more-div-text-button-footer"><a class="button" href="#" title=""><span class="more-button-green">Попробовать бесплатно</span></a></div>
+					<div class="more-div-text-button-footer"><a class="button" href="#" title=""><span class="more-button-green more-button-green-bottom">Попробовать бесплатно</span></a></div>
 				</form>
 				<div class="more-reestr"></div>
 			</div>

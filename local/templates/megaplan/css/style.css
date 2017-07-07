@@ -15,6 +15,7 @@ body .wrapper {
     position: relative;
     font-size: 18px;
     font-family: 'Exo 2', sans-serif;
+    font-weight:400;
     padding: 0;
 }
 
@@ -297,13 +298,13 @@ body.dark section.top-banner .banner-text {
 }
 
 body.dark section.top-banner .banner-inner {
-    padding: 60px 9% 60px 44%;
+    padding: 120px 9% 0 44%;
     margin: 0 80px;
     width: 90%;
 } 
 body.dark section.top-banner.banner-contacts .banner-inner {
     width: 90%!important;
-    padding: 80px 0 80px 40%;
+    padding: 170px 0 80px 40%;
 }
 
 /*======================== TOP_BANNER =========================*/
@@ -311,7 +312,7 @@ body.dark section.top-banner.banner-contacts .banner-inner {
 .top-banner {
     width: 100%;
     padding-top: 90px;
-    background-attachment: fixed !important;
+    /*background-attachment: fixed !important;*/
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -335,7 +336,7 @@ body:not(.dark) .top-banner {
 }
 .top-banner.banner-company {
     background-image: url(../img/company/company-bg.jpg);
-    background-position: center top;
+    background-position: center;
 }
 .top-banner.banner-cloud {
     background-image: url(../img/cloud/cloud-bg.png);
@@ -357,11 +358,11 @@ body:not(.dark) .top-banner {
 }
 .top-banner.banner-more {
     background-image: url(../img/more/more-bg.jpg);
-	box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5) inset
+	box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5) inset!important;
 }
 .top-banner.banner-integ {
     background-image: url(../img/integration/integ-bg.jpg);
-	box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5) inset
+	box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5) inset;
 }
 
 .top-banner.banner-forbuss {
@@ -600,7 +601,6 @@ section.section-security-question .question-block .question-text {
 
 .secr-div-text-button {
     margin: 35px auto;
-    margin: 0 auto;
     text-align: center;
 }
 
@@ -1222,12 +1222,19 @@ section.section-partners .partners-title {
 
 section.section-partners .partners-description {
     margin-bottom: 35px;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 300;
+}
+section.section-partners .partners-description.no-margin {
+    margin-bottom: 0;
 }
 
 section.section-partners-list {
     padding: 0 10% 50px;
+}
+
+section.section-partners-list.partners-margin {
+    margin-top: -20px;
 }
 
 section.section-partners-list.padding-top {
@@ -2100,6 +2107,10 @@ border-radius: 50px!important;
     font-size: 18px;
 }
 
+.more-mobile-video{
+    display: none;
+}
+
 @-moz-document url-prefix() {
     .more-elem-use {
         padding-right: 35px;
@@ -2593,7 +2604,7 @@ z-index: -1000;
     position: absolute;
     min-width: 1017px;
     min-height: 591px;
-    top: -190px;
+    top: -140px;
     right: -35%;
 }
 
@@ -2742,145 +2753,7 @@ z-index: -1000;
     display: none;
 }
 
-/*========================= /forbusiness (адаптив 1024) ========================*/
-
-@media (max-width: 1030px) {
-    .forbuss-block-right {
-        padding-left: 50px;
-    }
-
-    .forbuss-block-title-padding-1 {
-        padding-top: 90px;
-        padding-left: 10px;
-    }
-
-    .forbuss-bigpic-1 {
-        bottom: -7px;
-        right: -55%;
-    }
-
-    .forbuss-bigpic-2 {
-        left: -70%;
-    }
-
-    .forbuss-bigpic-3 {
-        bottom: -11%;
-        right: -64%;
-    }
-
-    .forbuss-bigpic-4 {
-        left: -71%;
-    }
-
-    .forbuss-bigpic-5 {
-        bottom: 10%;
-        right: -55%;
-    }
-
-    .forbuss-bigpic-6 {
-        left: -57%;
-    }
-
-    .forbuss-icon-main {
-        margin-top: 0px;
-    }
-
-    .forbuss-icon-margin-adapt-1{
-        margin-left: 60px;
-        margin-top: 15px;
-    }
-
-    .forbuss-icon-margin-adapt-2{
-        margin-left: 46px;
-        margin-top: 15px;
-    }
-
-    .forbuss-button {
-        padding: 10px 6px;
-    }
-
-    .forbuss-block-margin-top {
-        margin-top: 100px;
-    }
-}
-
-/*========================= /forbusiness (адаптив 640) ========================*/
-
-@media (max-width: 650px) {
-    .forbuss-block-right {
-        padding-top: 40%;
-        padding-left: 4%;
-        padding-right: 0%;
-    }
-
-    .forbuss-block-left {
-        padding-left: 4%;
-        padding-top: 15%;
-        padding-bottom: 4%;
-    }
-
-    .forbuss-bigpic-1 {
-        bottom: 15px;
-        right: -508px;
-        background-size: 500px auto;
-    }
-
-    .forbuss-bigpic-2 {
-        bottom: 25%;
-        left: -36px;
-        background-size: 500px auto;
-    }
-
-    .forbuss-bigpic-3 {
-        bottom: 5%;
-        right: -121%;
-        background-size: 500px auto;
-    }
-
-    .forbuss-bigpic-4 {
-        bottom: 10%;
-        left: -9%;
-        background-size: 500px auto;
-    }
-
-    .forbuss-bigpic-5 {
-        bottom: 26%;
-        right: -97%;
-        background-size: 500px auto;
-    }
-
-    .forbuss-bigpic-6 {
-        bottom: 75px;
-        left: -48px;
-        background-size: 500px auto;
-    }
-
-    .forbuss-block-in-block {
-        margin-right: 10px;
-    }
-
-    .forbuss-icon-margin-adapt-1 {
-        margin-left: 90px;
-    }
-
-    .forbuss-icon-margin-adapt-2 {
-        margin-left: 74px;
-    }
-
-    .forbuss-button-block {
-        text-align: center;
-    }
-
-    .forbuss-button {
-        padding: 10px 20px;
-    }
-
-    .forbuss-block-title-padding-1 {
-        padding-left: 0px;
-    }
-}
-
-/*========================= Стили скрола для "Решения для бизнеса" ========================*/
+/*========================= Стили скрола для "Решения для бизнеса" (правый) ========================*/
 
 .custom-scroll_container {
     overflow: hidden !important;
@@ -2945,7 +2818,7 @@ z-index: -1000;
     transition: opacity .2s, visibility step-end .3s;
 }
 
-/*========================= Стили скрола для "Решения для бизнеса" ========================*/
+/*========================= Стили скрола для "Решения для бизнеса" (левый) ========================*/
 
 .custom-scroll-2_container {
     overflow: hidden !important;
