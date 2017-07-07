@@ -211,409 +211,409 @@ $APPLICATION->SetTitle("Цены");?>
         </div>
     </div>
 </div>
-<!--<div class="col-md-12 col-xl-10 col-xl-offset-1 big_popup" id="compare_plans">
-    <div class="close_popup">
-        <a href="#">
-            <div></div>
-            <div></div>
-        </a>
-    </div>
-    <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-            <div class="row header_popup">
-                <div class="col-xs-10 col-xs-offset-1">
-                    <p>сравнение тарифов</p>
-                </div>
-            </div>
-            <div class="row text_popup">
-                <div class="change_place">
-                    <a href="" class="button-common button-yellow">цены в облаке</a>
-                    <a href="" class="button-common button-tr">на вашем сервере</a>
-                </div>
-                <div>
-                    <p>Мегаплан в облаке работает везде, где есть интернет. Ничего не нужно устанавливать.
-                        Сотрудники входят по логинам и паролям, как в почте.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="center-block t_wrapper">
-        <table class="table compare_plans_table">
-            <thead>
-            <tr>
-                <th></th>
-                <th>
-                    <div class="plan_name">
-                        <span>Старт</span>
-                    </div>
-                    <div class="plan_price">
-                        <span>0</span>
-                        <span>навсегда</span>
-                    </div>
-                </th>
-                <th>
-                    <div class="plan_name">
-                        <span>Совместная работа</span>
-                    </div>
-                    <div class="plan_price">
-                        <span>330</span>
-                        <span>за пользователя в месяц</span>
-                    </div>
-                </th>
-                <th>
-                    <div class="plan_name">
-                        <span>Совместная работа+</span>
-                    </div>
-                    <div class="plan_price">
-                        <span>430</span>
-                        <span>за пользователя в месяц</span>
-                    </div>
-                </th>
-                <th>
-                    <div class="plan_name">
-                        <span>Клиенты и продажи</span>
-                    </div>
-                    <div class="plan_price">
-                        <span>550</span>
-                        <span>за пользователя в месяц</span>
-                    </div>
-                </th>
-                <th>
-                    <div class="plan_name">
-                        <span>Клиенты и продажи+</span>
-                    </div>
-                    <div class="plan_price">
-                        <span>750</span>
-                        <span>за пользователя в месяц</span>
-                    </div>
-                </th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Контроль задачи и сроков исполнения</td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-            </tr>
-            <tr>
-                <td>Рабочий стол</td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-            </tr>
-            <tr>
-                <td>Отчеты</td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-            </tr>
-            <tr>
-                <td>Гибкая настройка прав сотрудников</td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-            </tr>
-            <tr>
-                <td>Обмен документами</td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-            </tr>
-            <tr>
-                <td>Бизнес-чат</td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-            </tr>
-            <tr>
-                <td>Дисковое пространство</td>
-                <td>
-                    <span>неограниченно</span>
-                </td>
-                <td>
-                    <span>неограниченно</span>
-                </td>
-                <td>
-                    <span>неограниченно</span>
-                </td>
-                <td>
-                    <span>неограниченно</span>
-                </td>
-                <td>
-                    <span>неограниченно</span>
-                </td>
-            </tr>
-            <tr>
-                <td>Количество сотрудников</td>
-                <td>
-                    <span>неограниченно</span>
-                </td>
-                <td>
-                    <span>неограниченно</span>
-                </td>
-                <td>
-                    <span>неограниченно</span>
-                </td>
-                <td>
-                    <span>неограниченно</span>
-                </td>
-                <td>
-                    <span>неограниченно</span>
-                </td>
-            </tr>
-            <tr>
-                <td>Количество клиентов</td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt="">
-                </td>
-                <td>
-                    <span>неограниченно</span>
-                </td>
-                <td>
-                    <span>неограниченно</span>
-                </td>
-            </tr>
-            <tr>
-                <td>Воронка продаж</td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-            </tr>
-            <tr>
-                <td>Управление финансами</td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt="">
-                </td>
-                <td>
-                    <img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt="">
-                </td>
-            </tr>
-            <tr class="sub_header">
-                <td colspan="6" class="not_active">
-                    <span>Дополнительные возможности</span>
-                </td>
-            </tr>
-            <tr>
-                <td class="not_active"><span>Мобильное приложение</span></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-            </tr>
-            <tr>
-                <td class="not_active"><span>Расширенные поля в клиентах</span></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-            </tr>
-            <tr>
-                <td class="not_active"><span>Поля в задачах и проектах</span></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-            </tr>
-            <tr>
-                <td class="not_active"><span>Департаменты</span></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-            </tr>
-            <tr>
-                <td class="not_active"><span>Согласование документов</span></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-            </tr>
-            <tr>
-                <td class="not_active"><span>Опросы в модуле</span></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-            </tr>
-            <tr>
-                <td class="not_active"><span>Общение</span></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-            </tr>
-            <tr>
-                <td class="not_active"><span>Оценка задач и проектов</span></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-            </tr>
-            <tr class="sub_header">
-                <td colspan="6" class="not_active">
-                    <span>Интеграция</span>
-                </td>
-            </tr>
-            <tr>
-                <td class="not_active"><span>API</span></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-            </tr>
-            <tr>
-                <td class="not_active"><span>ActiveDirectory</span></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-            </tr>
-            <tr>
-                <td class="not_active"><span>Интеграция с почтой</span></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-            </tr>
-            <tr>
-                <td class="not_active"><span>Встроенная телефония</span></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-            </tr>
-            <tr>
-                <td class="not_active"><span>Интеграция с 1С</span></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-            </tr>
-            <tr>
-                <td class="not_active"><span>Интеграция с Октелл</span></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/not-check.png" alt=""></td>
-                <td><img src="<?/*=SITE_TEMPLATE_PATH*/?>/img/prices/check.png" alt=""></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    <a href="#" class="button-common button-green hover_w">две недели бесплатно</a>
-</div>-->
+<!--<div class="col-md-12 col-xl-10 col-xl-offset-1 big_popup" id="compare_plans">-->
+<!--    <div class="close_popup">-->
+<!--        <a href="#">-->
+<!--            <div></div>-->
+<!--            <div></div>-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    <div class="row">-->
+<!--        <div class="col-md-6 col-md-offset-3">-->
+<!--            <div class="row header_popup">-->
+<!--                <div class="col-xs-10 col-xs-offset-1">-->
+<!--                    <p>сравнение тарифов</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="row text_popup">-->
+<!--                <div class="change_place">-->
+<!--                    <a href="" class="button-common button-yellow">цены в облаке</a>-->
+<!--                    <a href="" class="button-common button-tr">на вашем сервере</a>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <p>Мегаплан в облаке работает везде, где есть интернет. Ничего не нужно устанавливать.-->
+<!--                        Сотрудники входят по логинам и паролям, как в почте.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="center-block t_wrapper">-->
+<!--        <table class="table compare_plans_table">-->
+<!--            <thead>-->
+<!--            <tr>-->
+<!--                <th></th>-->
+<!--                <th>-->
+<!--                    <div class="plan_name">-->
+<!--                        <span>Старт</span>-->
+<!--                    </div>-->
+<!--                    <div class="plan_price">-->
+<!--                        <span>0</span>-->
+<!--                        <span>навсегда</span>-->
+<!--                    </div>-->
+<!--                </th>-->
+<!--                <th>-->
+<!--                    <div class="plan_name">-->
+<!--                        <span>Совместная работа</span>-->
+<!--                    </div>-->
+<!--                    <div class="plan_price">-->
+<!--                        <span>330</span>-->
+<!--                        <span>за пользователя в месяц</span>-->
+<!--                    </div>-->
+<!--                </th>-->
+<!--                <th>-->
+<!--                    <div class="plan_name">-->
+<!--                        <span>Совместная работа+</span>-->
+<!--                    </div>-->
+<!--                    <div class="plan_price">-->
+<!--                        <span>430</span>-->
+<!--                        <span>за пользователя в месяц</span>-->
+<!--                    </div>-->
+<!--                </th>-->
+<!--                <th>-->
+<!--                    <div class="plan_name">-->
+<!--                        <span>Клиенты и продажи</span>-->
+<!--                    </div>-->
+<!--                    <div class="plan_price">-->
+<!--                        <span>550</span>-->
+<!--                        <span>за пользователя в месяц</span>-->
+<!--                    </div>-->
+<!--                </th>-->
+<!--                <th>-->
+<!--                    <div class="plan_name">-->
+<!--                        <span>Клиенты и продажи+</span>-->
+<!--                    </div>-->
+<!--                    <div class="plan_price">-->
+<!--                        <span>750</span>-->
+<!--                        <span>за пользователя в месяц</span>-->
+<!--                    </div>-->
+<!--                </th>-->
+<!--            </tr>-->
+<!--            </thead>-->
+<!--            <tbody>-->
+<!--            <tr>-->
+<!--                <td>Контроль задачи и сроков исполнения</td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>Рабочий стол</td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>Отчеты</td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>Гибкая настройка прав сотрудников</td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>Обмен документами</td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>Бизнес-чат</td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>Дисковое пространство</td>-->
+<!--                <td>-->
+<!--                    <span>неограниченно</span>-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <span>неограниченно</span>-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <span>неограниченно</span>-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <span>неограниченно</span>-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <span>неограниченно</span>-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>Количество сотрудников</td>-->
+<!--                <td>-->
+<!--                    <span>неограниченно</span>-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <span>неограниченно</span>-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <span>неограниченно</span>-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <span>неограниченно</span>-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <span>неограниченно</span>-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>Количество клиентов</td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <span>неограниченно</span>-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <span>неограниченно</span>-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>Воронка продаж</td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>Управление финансами</td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt="">-->
+<!--                </td>-->
+<!--                <td>-->
+<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt="">-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--            <tr class="sub_header">-->
+<!--                <td colspan="6" class="not_active">-->
+<!--                    <span>Дополнительные возможности</span>-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td class="not_active"><span>Мобильное приложение</span></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td class="not_active"><span>Расширенные поля в клиентах</span></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td class="not_active"><span>Поля в задачах и проектах</span></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td class="not_active"><span>Департаменты</span></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td class="not_active"><span>Согласование документов</span></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td class="not_active"><span>Опросы в модуле</span></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td class="not_active"><span>Общение</span></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td class="not_active"><span>Оценка задач и проектов</span></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--            </tr>-->
+<!--            <tr class="sub_header">-->
+<!--                <td colspan="6" class="not_active">-->
+<!--                    <span>Интеграция</span>-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td class="not_active"><span>API</span></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td class="not_active"><span>ActiveDirectory</span></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td class="not_active"><span>Интеграция с почтой</span></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td class="not_active"><span>Встроенная телефония</span></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td class="not_active"><span>Интеграция с 1С</span></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td class="not_active"><span>Интеграция с Октелл</span></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/not-check.png" alt=""></td>-->
+<!--                <td><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/prices/check.png" alt=""></td>-->
+<!--            </tr>-->
+<!--            </tbody>-->
+<!--        </table>-->
+<!--    </div>-->
+<!--    <a href="#" class="button-common button-green hover_w">две недели бесплатно</a>-->
+<!--</div>-->
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
