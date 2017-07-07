@@ -15,7 +15,7 @@ $APPLICATION->SetTitle("Присоединяйтесь к успеху Мега�
 
     <section class="content-crop section-partners bg-white">
         <div class="section-wrapper bg-white">
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-sm-12 col-md-4">
                 <div class="partners-title">
                     9 лет
                 </div>
@@ -23,7 +23,7 @@ $APPLICATION->SetTitle("Присоединяйтесь к успеху Мега�
                     Работаем с 2008 года. С тех пор мы реализовали множество проектов и теперь развиваем партнерскую сеть.
                 </p>
             </div>
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-sm-12 col-md-4">
                 <div class="partners-title">
                     15 тысяч
                 </div>
@@ -31,11 +31,11 @@ $APPLICATION->SetTitle("Присоединяйтесь к успеху Мега�
                     Мегапланом пользуются более 15 000 компаний различного масштаба из разных сфер бизнеса.
                 </p>
             </div>
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-sm-12 col-md-4">
                 <div class="partners-title">
                     9 стран
                 </div>
-                <p class="partners-description">
+                <p class="partners-description no-margin">
                     Представительства работают в России, Белоруссии, Украине, Казахстане, Молдове, Чехии, Азербайджане и Кыргызстане.
                 </p>
             </div>
@@ -44,7 +44,7 @@ $APPLICATION->SetTitle("Присоединяйтесь к успеху Мега�
     </section>
 
 
-    <section class="content bg-white section-partners-list">
+    <section class="content bg-white section-partners-list partners-margin">
 
         <h2 class="block-title">
             Уже работают с нами
