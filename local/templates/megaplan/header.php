@@ -27,8 +27,9 @@ else
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/font-awesome.min.css");?>
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/style.css");?>
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/media.css");?>
-    <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/menu_style.css");?>
-    <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/media_menu.css");?>
+<!--    --><?//$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/menu_style.css");?>
+    <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/menu_style_new.css");?>
+<!--    --><?//$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/media_menu.css");?>
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/prices.css");?>
 
 
@@ -134,89 +135,78 @@ else
          </div>
     </header>
     <div id="menu">
-        <div class="menu_wrap">
-            <div class="main_menu">
-                <div class="capabilities"><a href="#">Возможности</a>
-                    <ul>
-                        <li><a href="http://bvd.megaplan.szdl.ru/more/">Воронка продаж</a></li>
-                        <li><a href="http://bvd.megaplan.szdl.ru/local-internet/">Коробка/облако</a></li>
-                        <li><a href="http://bvd.megaplan.szdl.ru/security/">Безопасность данных</a></li>
-                        <li><a href="#">CRM</a></li>
-                        <li><a href="#">Управление проектами</a></li>
-                        <li><a href="http://bvd.megaplan.szdl.ru/integration/">Интеграции с почтой</a></li>
-                        <li><a href="http://bvd.megaplan.szdl.ru/integration/">Интеграции с телефонией</a></li>
-                        <li><a href="http://bvd.megaplan.szdl.ru/more/">Мобильное приложение</a></li>
-                    </ul>
+        <div class="menu-container">
+            <div class="menu-main">
+                <div class="menu-column col-1">
+                    <div class="menu-block capabilities"><a href="#">Возможности</a>
+                        <ul>
+                            <li><a href="http://bvd.megaplan.szdl.ru/more/">Воронка продаж</a></li>
+                            <li><a href="http://bvd.megaplan.szdl.ru/local-internet/">Коробка/облако</a></li>
+                            <li><a href="http://bvd.megaplan.szdl.ru/security/">Безопасность данных</a></li>
+                            <li><a href="#">CRM</a></li>
+                            <li><a href="#">Управление проектами</a></li>
+                            <li><a href="http://bvd.megaplan.szdl.ru/integration/">Интеграции с почтой</a></li>
+                            <li><a href="http://bvd.megaplan.szdl.ru/integration/">Интеграции с телефонией</a></li>
+                            <li><a href="http://bvd.megaplan.szdl.ru/more/">Мобильное приложение</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-block prices"><a href="http://bvd.megaplan.szdl.ru/prices/">Цены</a>
+                        <ul>
+                            <li><a href="#">Выбрать тариф</a></li>
+                            <li><a href="#">Бесплатный тариф</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Лицензионный договор</a></li>
+                            <li><a href="#">Договор на доп услуги</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="prices"><a href="#">Цены</a>
-                    <ul>
-                        <li><a href="#">Выбрать тариф</a></li>
-                        <li><a href="#">Бесплатный тариф</a></li>
-                        <li><a href="#">Политика конфиденциальности</a></li>
-                        <li><a href="#">Лицензионный договор</a></li>
-                        <li><a href="#">Договор на доп услуги</a></li>
-                    </ul>
+                <div class="menu-column col-2">
+                    <div class="menu-block help"><a href="#">Помощь</a>
+                        <ul>
+                            <li><a href="#">Инструкции</a></li>
+                            <li><a href="#">Комплексное внедрение</a></li>
+                            <li><a href="http://out.megaplan.szdl.ru/partners/">Консультанты (партнеры)</a></li>
+                            <li><a href="#">Частые вопросы</a></li>
+                            <li><a href="#">Онлайн уроки</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-block partners"><a href="http://bvd.megaplan.szdl.ru/partners/">Партнерам</a>
+                        <ul>
+                            <li><a href="http://bvd.megaplan.szdl.ru/integration/">API и виджеты</a></li>
+                            <li><a href="http://bvd.megaplan.szdl.ru/partners/">Партнерская программа</a></li>
+                            <li><a href="https://megaplan.ru/stanpartnerom/index.html">Реферальная программа</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-block company"><a href="http://bvd.megaplan.szdl.ru/company/">О компании</a>
+                        <ul>
+                            <li><a href="http://bvd.megaplan.szdl.ru/contacts/">Контакты</a></li>
+                            <li><a href="http://bvd.megaplan.szdl.ru/company/">Команда</a></li>
+                            <li><a href="https://megaplan.ru/megakvartirnik/">Квартирники</a></li>
+                            <li><a href="http://bvd.megaplan.szdl.ru/company/">Вакансии</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="help"><a href="#">Помощь</a>
-                    <ul>
-                        <li><a href="#">Инструкции</a></li>
-                        <li><a href="#">Комплексное внедрение</a></li>
-                        <li><a href="http://out.megaplan.szdl.ru/partners/">Консультанты (партнеры)</a></li>
-                        <li><a href="#">Частые вопросы</a></li>
-                        <li><a href="#">Онлайн уроки</a></li>
-                    </ul>
+                <div class="menu-column col-3">
+                    <div class="menu-block blog"><a href="http://bvd.megaplan.szdl.ru/blog/%20">Блог</a>
+                        <ul>
+                            <li><a href="https://megaplan.ru/letters/category/sales">Блог о продажах</a></li>
+                            <li><a href="https://megaplan.ru/letters/category/management">Блог о бизнесе</a></li>
+                            <li><a href="https://megaplan.ru/letters/">Полезное чтение</a></li>
+                            <li><a href="https://www.youtube.com/c/TheMegaplan">Видео блог</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-block clients"><a href="#">Клиентам</a>
+                        <ul>
+                            <li><a href="#">Личный кабинет</a></li>
+                            <li><a href="http://bvd.megaplan.szdl.ru/clients/">Клиенты</a></li>
+                            <li><a href="http://bvd.megaplan.szdl.ru/clients/">Кейсы</a></li>
+                            <li><a href="#">Решения для бизнеса</a></li>
+                            <li><a href="www.megaplan.megaplan.ru">Войти в мой Мегаплан</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="partners"><a href="http://bvd.megaplan.szdl.ru/partners/">Партнерам</a>
-                    <ul>
-                        <li><a href="http://bvd.megaplan.szdl.ru/integration/">API и виджеты</a></li>
-                        <li><a href="http://bvd.megaplan.szdl.ru/partners/">Партнерская программа</a></li>
-                        <li><a href="https://megaplan.ru/stanpartnerom/index.html">Реферальная программа</a></li>
-                    </ul>
-                </div>
-                <div class="company"><a href="http://bvd.megaplan.szdl.ru/company/">О компании</a>
-                    <ul>
-                        <li><a href="http://bvd.megaplan.szdl.ru/contacts/">Контакты</a></li>
-                        <li><a href="http://bvd.megaplan.szdl.ru/company/">Команда</a></li>
-                        <li><a href="https://megaplan.ru/megakvartirnik/">Квартирники</a></li>
-                        <li><a href="http://bvd.megaplan.szdl.ru/company/">Вакансии</a></li>
-                    </ul>
-                </div>
-                <div class="blog"><a href="http://bvd.megaplan.szdl.ru/blog/%20">Блог</a>
-                    <ul>
-                        <li><a href="https://megaplan.ru/letters/category/sales">Блог о продажах</a></li>
-                        <li><a href="https://megaplan.ru/letters/category/management">Блог о бизнесе</a></li>
-                        <li><a href="https://megaplan.ru/letters/">Полезное чтение</a></li>
-                        <li><a href="https://www.youtube.com/c/TheMegaplan">Видео блог</a></li>
-                    </ul>
-                </div>
-                <div class="clients"><a href="#">Клиентам</a>
-                    <ul>
-                        <li><a href="#">Личный кабинет</a></li>
-                        <li><a href="http://bvd.megaplan.szdl.ru/clients/">Клиенты</a></li>
-                        <li><a href="http://bvd.megaplan.szdl.ru/clients/">Кейсы</a></li>
-                        <li><a href="#">Решения для бизнеса</a></li>
-                        <li><a href="www.megaplan.megaplan.ru">Войти в мой Мегаплан</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="line">
-                <hr>
-            </div>
-            <div class="info_menu"
-                <a href="#" title="/">8 800 555-56-37</a>
-                <a href="#" title="/">info@megaplan.ru</a>
-            </div>
-            <div class="social"><!--col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4-->
-                <div><a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social-fb-w.png" alt=""></a></div>
-                <div><a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social-vk-w.png" alt=""></a></div>
-                <div><a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social-tw-w.png" alt=""></a></div>
-                <div><a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social-tg-w.png" alt=""></a></div>
-                <div><a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social-phone-w.png" alt=""></a></div>
-            </div>
-            <div class="payment_systems"><!--col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-2 col-md-offset-5-->
-                <div><img src="<?=SITE_TEMPLATE_PATH?>/img/mastercard.png" alt=""></div>
-                <div><img src="<?=SITE_TEMPLATE_PATH?>/img/visa.png" alt=""></div>
-                <div><img src="<?=SITE_TEMPLATE_PATH?>/img/maestro.png" alt=""></div>
             </div>
         </div>
+        <div class="menu-footer"></div>
+    </div>
     </div>
