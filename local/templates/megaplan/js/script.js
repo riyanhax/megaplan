@@ -5,10 +5,13 @@ if($(window).width() <= 480) {
 $(document).ready(function () {
     $(document).scroll(function () {
         var offset = $(document).scrollTop();
+        // console.log('offset = '+offset);
         if($("div").is(".section-wrapper")){
             var div = $(".content-crop .section-wrapper");
             var scrolled = div.offset().top;
+            // console.log('scrolled = '+scrolled);
             var margin_top = +div.css("margin-top").replace("px", "");
+            // console.log('margin_top = '+(+margin_top));
 
             if(margin_top < -210)
                 div.css("margin-top", -210+"px");
@@ -17,16 +20,18 @@ $(document).ready(function () {
         }
         else if($('div').is("#plansBlock")){
             // if(window.innerWidth > 480){
-                console.log('1');
+            //     console.log('1');
                 var div2 = $("#plansBlock");
                 var scrolled = div2.offset().top;
+                // console.log('scrolled = '+scrolled);
 
                 var margin_top = +div2.css("margin-top").replace("px", "");
+                // console.log('margin_top = '+margin_top);
 
             if(window.innerWidth > 480){
-                if(margin_top < -160)
-                    div2.css("margin-top", -160+"px");
-                if ((offset > scrolled && margin_top < 0) || (offset < scrolled && margin_top > -160))
+                if(margin_top < -165)
+                    div2.css("margin-top", -165+"px");
+                if ((offset > scrolled && margin_top < 0) || (offset < scrolled && margin_top > -165))
                     div2.css("margin-top", margin_top+offset-scrolled+"px");
             }
             else {
@@ -40,10 +45,12 @@ $(document).ready(function () {
     });
     $('a').click(function(){
         var div = $(".content-crop .section-wrapper");
+        var div2 = $("#plansBlock");
         var href = $(this).attr("href"),
             offsetTop = href === "#" ? 0 : $(href).offset().top;
         if(offsetTop==0)
             div.css("margin-top", -210+"px");
+            div2.css("margin-top", -165+"px");
     });
 
     $('.video_border').click(function(){

@@ -1,39 +1,7 @@
 /**
  * Created by vladb on 19.06.2017.
  */
-// $(document).load(function() {
-
-/*else {
- questionHash = '#index'; // Если хэша нет, то переходим на якорь index
- }
-
- var offsetTop = questionHash === '#' ? 0 : $(questionHash).offset().top - 100;
-
- $("html,body").stop().animate ({
- scrollTop: offsetTop
- }, 10);*/
-// });
 $(document).ready(function () {
-
-    function setMenuHeight() {
-        //console.log('$(window).height() = ' + window.innerHeight);
-        $('#menu').css({
-            height: window.innerHeight + 'px'
-        });
-    }
-
-    //console.log('screen.width = ' + screen.width);
-    //console.log('screen.height = ' + screen.height);
-
-    if (window.innerWidth >= 768) {
-        /*if (screen.height >= 768) {*/
-        setMenuHeight();
-        // $(window).resize(setMenuHeight);
-        /*}*/
-    }
-    else {
-        $('#menu').css("height", "auto");
-    }
 
     $(".plan").hover(function () {
         var planHeight = $(this).height();
@@ -47,11 +15,12 @@ $(document).ready(function () {
 
 
     var isPopupOpen = 0;
-    var contentHeight = $(".main-content").height();
-    //console.log(contentHeight);
+    var contentHeight = $('.prices').height();
+    console.log('contentHeight ='+contentHeight);
     var popupHeight = $("#compare_plans").height();
-    //console.log(popupHeight);
-    $("#compare_plans .close_popup a").click(function () {
+    console.log('popupHeight ='+popupHeight);
+    $("#compare_plans .close-popup").click(function () {
+        $("#plansBlock").css("margin-top", -165+"px");
         $("#compare_plans").animate({
             top: "-100%",
         }, {
@@ -59,37 +28,42 @@ $(document).ready(function () {
         });
         isPopupOpen = 0;
         //console.log(isPopupOpen);
-        $(".main-content>div").css("display", "block").css("visibility", "visible");
-        $(".main-content").height("initial").css("background-image", "url(/local/templates/megaplan/img/prices/lady.png)").css("background-size", "contain").css("background-repeat", "no-repeat");
+        $(".prices>div").css("display", "block").css("visibility", "visible");
+        $(".prices").height("initial")/*.css("background-image", "url(/local/templates/megaplan/img/prices/lady-prices.png)").css("background-size", "contain").css("background-repeat", "no-repeat")*/;
+        // console.log('isPopupOpen = '+isPopupOpen);
+        // console.log('contentHeight ='+contentHeight);
+        // console.log('popupHeight ='+popupHeight);
     });
-    $(".button-compare").click(function () {
+    $(".button-compare").click(function (e) {
+        e.preventDefault();
         $("#compare_plans").animate({
             top: "90px",
         }, {
             duration: 520
         });
         isPopupOpen = 1;
-        //console.log(isPopupOpen);
-        //console.log(contentHeight);
-        //console.log(popupHeight);
-        $(".main-content>div").css("display", "none").css("visibility", "hidden");
-        $(".main-content").height(popupHeight).css("background", "none");
+        $(".prices>div").css("display", "none").css("visibility", "hidden");
+        $(".prices").height(popupHeight)/*.css("background", "none")*/;
+        // console.log('isPopupOpen = '+isPopupOpen);
+        console.log('contentHeight ='+contentHeight);
+        console.log('popupHeight ='+popupHeight);
     });
 
     var questionHash;
     if (window.location.hash) {
         questionHash = window.location.hash; // Если ссылка содержит хэш, то переходим на якорь по этому хэшу
-        //console.log(questionHash)
+        // console.log('questionHash = '+questionHash)
     }
     else {
         questionHash = '#';
+        // console.log('questionHash = '+questionHash)
     }
     //console.log(window.location.pathname);
     if (window.location.pathname === '/prices/') {
         if (questionHash === '#server_prices' || questionHash === '#cloud_prices') {
-            var offsetTop = questionHash === '#' ? 0 : $('#test').offset().top - 160;
+            var offsetTop = questionHash === '#' ? 0 : $('#plansBlock').offset().top - 165;
 
-            $("html,body").stop().animate({
+            $("body").stop().animate({
                 scrollTop: offsetTop
             }, 10);
         }
@@ -97,27 +71,34 @@ $(document).ready(function () {
 
     getPlace(questionHash);
     changePlace();
-    cloneChangePlaceButtons();
+    // cloneChangePlaceButtons();
 
     function getPlace(place) {
         var place = place;
         if (place === '#') {
+            $('.prices-content-buttons-choose > a:first-of-type').addClass('button-yellow').removeClass('button-tr');
             $('#cloud_prices').css('display', 'flex').css('visibility', 'visible');
+            $('#compare_plans_table')
+            // $('#server_prices').css('display', 'none').css('visibility', 'hidden');
         }
         else if (place === '#cloud_prices') {
+            $('.prices-content-buttons-choose > a:first-of-type').addClass('button-yellow').removeClass('button-tr');
             $('#cloud_prices').css('display', 'flex').css('visibility', 'visible');
             $('#server_prices').css('display', 'none').css('visibility', 'hidden');
         }
         else if (place === '#server_prices') {
+            $('.prices-content-buttons-choose > a:last-of-type').addClass('button-yellow').removeClass('button-tr');
             $('#server_prices').css('display', 'flex').css('visibility', 'visible');
             $('#cloud_prices').css('display', 'none').css('visibility', 'hidden');
         }
     }
 
     function changePlace() {
-        $('.change_place a').click(function (e) {
+        $('.prices-content-buttons-choose > a').click(function (e) {
             e.preventDefault();
+            $('.prices-content-buttons-choose > a').addClass('button-tr').removeClass('button-yellow');
             $(this).css('color', '#414b4d');
+            $(this).addClass('button-yellow');
             var href = $(this).attr('href');
             if (href === questionHash) {
                 //console.log('равно');
@@ -129,11 +110,11 @@ $(document).ready(function () {
             }
         })
     }
-    function cloneChangePlaceButtons() {
-        console.log(window.innerWidth);
-        if(window.innerWidth <=480){
-            console.log('2');
-            $('.banner-prices .change_place').prependTo('#plansBlock > div');
-        }
-    }
+    // function cloneChangePlaceButtons() {
+    //     console.log(window.innerWidth);
+    //     if(window.innerWidth <=480){
+    //         console.log('2');
+    //         $('.banner-prices .change_place').prependTo('#plansBlock > div');
+    //     }
+    // }
 });
