@@ -30,7 +30,8 @@ else
 <!--    --><?//$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/menu_style.css");?>
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/menu_style_new.css");?>
 <!--    --><?//$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/media_menu.css");?>
-    <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/prices.css");?>
+<!--    --><?//$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/prices.css");?>
+    <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/prices_style.css");?>
 
 
     <?$APPLICATION->ShowHead();?>
@@ -67,10 +68,32 @@ else
                                      },{
                                          duration:520
                                      });
+
                                      <?if($theme=="dark"):?>
                                      $(".burger div").css("background-color","#fff");
                                      $("#logo a").html('<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/logo.php"))?>');
                                      <?endif;?>
+
+
+                                     function setMenuHeight() {
+                                         console.log('$(window).height() = ' + window.innerHeight);
+                                         $('#menu').css({
+                                             height: window.innerHeight + 'px'
+                                         });
+                                     }
+
+                                     //console.log('screen.width = ' + screen.width);
+                                     //console.log('screen.height = ' + screen.height);
+
+                                     if (window.innerWidth >= 768) {
+                                         setMenuHeight();
+                                         $(window).resize(setMenuHeight);
+                                         $('html').css('overflow-y','hidden');
+                                     }
+                                     else {
+                                         $('#menu').css("height", "auto");
+                                         $('.menu-container').css('height', '100%');
+                                     }
                                      menuIsOpen = 1;
                                  }
                                  else {
@@ -80,6 +103,7 @@ else
                                      }, {
                                          duration: 650
                                      });
+                                     $('html').css('overflow-y','auto');
                                      <?if($theme=="dark"):?>
                                      $(".burger div").delay(300).css("background-color","#414b4d");
                                      $("#logo a").delay(300).html('<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."include/logo_b.php"))?>');
@@ -137,7 +161,7 @@ else
     <div id="menu">
         <div class="menu-container">
             <div class="menu-main">
-                <div class="menu-column col-1">
+                <div class="menu-column menu-col-1">
                     <div class="menu-block capabilities"><a href="#">Возможности</a>
                         <ul>
                             <li><a href="http://bvd.megaplan.szdl.ru/more/">Воронка продаж</a></li>
@@ -150,7 +174,7 @@ else
                             <li><a href="http://bvd.megaplan.szdl.ru/more/">Мобильное приложение</a></li>
                         </ul>
                     </div>
-                    <div class="menu-block prices"><a href="http://bvd.megaplan.szdl.ru/prices/">Цены</a>
+                    <div class="menu-block menu-prices"><a href="http://bvd.megaplan.szdl.ru/prices/">Цены</a>
                         <ul>
                             <li><a href="#">Выбрать тариф</a></li>
                             <li><a href="#">Бесплатный тариф</a></li>
@@ -160,7 +184,7 @@ else
                         </ul>
                     </div>
                 </div>
-                <div class="menu-column col-2">
+                <div class="menu-column menu-col-2">
                     <div class="menu-block help"><a href="#">Помощь</a>
                         <ul>
                             <li><a href="#">Инструкции</a></li>
@@ -186,7 +210,7 @@ else
                         </ul>
                     </div>
                 </div>
-                <div class="menu-column col-3">
+                <div class="menu-column menu-col-3">
                     <div class="menu-block blog"><a href="http://bvd.megaplan.szdl.ru/blog/%20">Блог</a>
                         <ul>
                             <li><a href="https://megaplan.ru/letters/category/sales">Блог о продажах</a></li>
@@ -206,7 +230,23 @@ else
                     </div>
                 </div>
             </div>
+            <div class="menu-footer">
+                <div class="menu-info">
+                    <p>8 800 555-56-37</p>
+                    <p><a href="#">info@megaplan.ru</a></p>
+                </div>
+                <div class="menu-social">
+                    <a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social-fb-w.png" alt=""></a>
+                    <a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social-vk-w.png" alt=""></a>
+                    <a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social-tw-w.png" alt=""></a>
+                    <a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social-tg-w.png" alt=""></a>
+                    <a href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/social-phone-w.png" alt=""></a>
+                </div>
+                <div class="menu-payment-sys">
+                    <img src="<?=SITE_TEMPLATE_PATH?>/img/mastercard.png" alt="">
+                    <img src="<?=SITE_TEMPLATE_PATH?>/img/visa.png" alt="">
+                    <img src="<?=SITE_TEMPLATE_PATH?>/img/maestro.png" alt="">
+                </div>
+            </div>
         </div>
-        <div class="menu-footer"></div>
-    </div>
     </div>
