@@ -20,17 +20,14 @@ else
     <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery-3.2.1.min.js")?>
     <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.easing.min.js")?>
     <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/prices.js")?>
-	    <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.custom-scroll.js")?>
+    <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.custom-scroll.js")?>
     <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/script.js")?>
 
     <?$APPLICATION->SetAdditionalCSS("/bitrix/css/main/bootstrap.css");?>
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/font-awesome.min.css");?>
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/style.css");?>
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/media.css");?>
-<!--    --><?//$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/menu_style.css");?>
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/menu_style_new.css");?>
-<!--    --><?//$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/media_menu.css");?>
-<!--    --><?//$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/prices.css");?>
     <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/prices_style.css");?>
 
 
@@ -228,6 +225,9 @@ else
                             <li><a href="www.megaplan.megaplan.ru">Войти в мой Мегаплан</a></li>
                         </ul>
                     </div>
+                </div>
+                <div class="menu-column menu-col-4">
+
                 </div>
             </div>
             <div class="menu-footer">

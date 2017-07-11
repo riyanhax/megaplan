@@ -259,7 +259,7 @@ $APPLICATION->SetTitle("Цены");?>
         </div>
     </div>
     <div class="center-block t_wrapper">
-        <table class="table" id="compare_plans_table">
+        <table id="compare_plans_table">
             <thead>
             <tr>
                 <th></th>
