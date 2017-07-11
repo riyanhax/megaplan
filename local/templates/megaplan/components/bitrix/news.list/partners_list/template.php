@@ -30,7 +30,7 @@ $this->setFrameMode(true);
 
 <div class="partners-button" data-view-partners="1">
     <a class="button" href="javascript:void(0);" title="">
-        <span class="button-yellow" onclick="obPartnersList.viewMore(this); return false;">Каталог партнёров</span>
+        <span class="button-yellow" onclick="obPartnersList.viewCatalog(this); return false;">Каталог партнёров</span>
     </a>
 </div>
 
@@ -50,7 +50,7 @@ $this->setFrameMode(true);
 
 <div class="partners-button partners-button-hidden" data-hide-partners="1">
     <a class="button" href="javascript:void(0);" title="">
-        <span class="button-yellow" onclick="obPartnersList.hideMore(this); return false;">Скрыть</span>
+        <span class="button-yellow" onclick="obPartnersList.hideCatalog(this); return false;">Скрыть</span>
     </a>
 </div>
 

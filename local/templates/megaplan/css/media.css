@@ -20,10 +20,11 @@
         padding: 30px 0 50px;
     }
     .top-banner .banner-inner.banner-with-logo .banner-logo img {
-        width: 200px;
+        max-width: 200px;
+        max-height: 70px;
     }
     .top-banner.banner-clients .banner-inner .banner-subtext {
-        padding: 0px 0 40px;
+        padding: 0 0 40px;
     }
     .top-banner .banner-inner.banner-with-logo .banner-text{
         margin-bottom: 2%!important;
@@ -41,7 +42,14 @@
         width: 45%;
     }
     body.dark section.top-banner .banner-inner {
-        width: 85%;
+        width: 90%!important;
+    }
+    body.dark section.top-banner.banner-contacts .banner-inner {
+        padding: 100px 0 80px 40%;
+    }
+    body.dark section.top-banner.banner-company .banner-inner {
+        padding: 60px 5% 0 40%;
+        width: 100%!important;
     }
 }
 
@@ -82,6 +90,9 @@
     }
     body.dark section.top-banner .banner-inner {
         padding: 40px 0 40px 45%;
+    }
+    section.section-partners .partners-title {
+        font-size: 40px;
     }
     .hidden-md {
         display: none!important;
@@ -159,7 +170,7 @@
         width: 70%;
     }
     body.dark section.top-banner.banner-contacts .banner-inner {
-        padding: 80px 0 80px 30%;
+        padding: 100px 0 80px 30%;
     }
 
 
@@ -187,7 +198,7 @@
     }
     body.dark section.top-banner.banner-contacts .banner-inner,
     body.dark section.top-banner.banner-company .banner-inner {
-        padding: 50px 0 50px 0;
+        padding: 80px 15px 50px 15px;
         width: 90%;
         margin: 0 auto;
     }
@@ -295,74 +306,6 @@
         margin-right: 15px;
     }
 }
-@media (max-width: 1030px) {
-.more-text-bg-1{
-	background-size: 700px auto;
-	min-width: 700px;
-	right: -28%;
-}
-
-.more-text-bg-2{
-    right: -32%;
-	background-size: 700px auto;
-	min-width: 700px;
-}
-
-.more-text-bg-3{
-    left: -74%;
-}
-
-.more-apple{
-	left: -48%;
-    bottom: -20%;
-}
-.more-block-white-video {
-	min-height: 600px;
-}
-.more-elem-use {
-    margin: 0 1.5%;
-}
-.more-rt {
-    left: 430px;
-}
-.more-elem-use {
-    padding-right: 110px;
-}
-    .more-elem-use-pic-1{
-background-size: 35px auto;
-    }
-    .more-elem-use-pic-2{
-        background-size: 125px auto;
-    }
-    .more-elem-use-pic-3{
-background-size: 60px auto;
-    }
-    .more-elem-use-pic-4{
-background-size: 140px auto;
-    }
-    .more-elem-use-pic-5{
-background-size: 45px auto;
-    }
-    .more-elem-use-pic-6{
-background-size: 125px auto;
-
-    }
-    .more-elem-use-pic-7{
-background-size: 60px auto;
-    }
-    .integ-small-block {
-        min-width: 28%;
-    }
-    .more-block-white-video {
-        background-position-x: 60%;
-    }
-    .more-text-os-2 {
-        margin-left: 35px;
-    }
-    .more-text-os-3 {
-        min-height: 525px;
-    }
-}
 
 @media (max-width: 970px) {
 	.top-banner .banner-inner.main-height {
@@ -425,8 +368,8 @@ background-size: 60px auto;
     }
 }
 @media (min-width: 1650px) {
-    body.dark section.top-banner .banner-inner {
-        padding: 80px 12% 80px 47%;
+    body.dark section.top-banner.banner-company .banner-inner {
+        padding: 140px 12% 0px 47%;
     }
 }
 
@@ -778,9 +721,485 @@ background-size: 60px auto;
 }
 
 
-/*========================= Главная (адаптив 640) ========================*/
 
+/*========================= /forbusiness (адаптив 640) ========================*/
+
+@media (max-width: 650px) {
+
+}
+/*==========top==========*/
+@media screen and (max-width: 1224px) {
+    /*Узнать больше*/
+    .more-text-bg-2 {
+        right: -44%;
+    }
+
+    .more-text-bg-3 {
+        left: -70%;
+    }
+
+    .more-text-bg-1 {
+        right: -48%;
+    }
+
+    .more-apple {
+        bottom: -50%;
+        left: -45%;
+    }
+    .more-block-white-video {
+        background-position-x: 75%;
+    }
+    .more-text-os-3 {
+        min-height: 495px;
+    }
+    .more-elem-use-pic-1 {
+        background: url(../img/more/more-use-1.png) no-repeat 0;
+        padding-right: 90px;
+    }
+    .more-elem-use-pic-2 {
+        background: url(../img/more/more-use-2.png) no-repeat 0;
+        padding-right: 145px;
+    }
+    .more-elem-use-pic-3 {
+        background: url(../img/more/more-use-3.png) no-repeat 0;
+        padding-right: 90px;
+    }
+    .more-elem-use-pic-4 {
+        background: url(../img/more/more-use-4.png) no-repeat 0;
+        padding-right: 145px;
+    }
+    .more-elem-use-pic-5 {
+        background: url(../img/more/more-use-5.png) no-repeat 0;
+        padding-right: 90px;
+        min-width: 70px;
+    }
+    .more-elem-use-pic-6 {
+        background: url(../img/more/more-use-6.png) no-repeat 0;
+        padding-right: 145px;
+    }
+    .more-elem-use-pic-7 {
+        background: url(../img/more/more-use-7.png) no-repeat 0;
+        padding-right: 90px;
+    }
+    /*Решения для бизнеса*/
+    .forbuss-bigpic-1 {
+        top: -138px;
+        right: -495px;
+    }
+    .forbuss-height-more1 {
+        height: 215px;
+    }
+    .forbuss-button {
+        padding: 10px 2px!important;
+    }
+    .forbuss-bigpic-2 {
+        left: -72%;
+    }
+    .forbuss-height-more2 {
+        height: 240px;
+    }
+    .forbuss-icon-margin {
+        margin-left: 2px;
+    }
+    .forbuss-bigpic-3 {
+        right: -61%;
+    }
+    .forbuss-height-more3 {
+        height: 240px;
+    }
+    .forbuss-bigpic-4 {
+        left: -72%;
+    }
+    .forbuss-bigpic-5 {
+        right: -49%;
+    }
+    .forbuss-height-more5 {
+        height: 290px;
+    }
+    .forbuss-bigpic-6 {
+        left: -58%;
+    }
+    .forbuss-height-more6 {
+        height: 240px;
+    }
+}
+@media screen and (min-width: 1680px) {
+    .top-banner {
+        padding-top: 105px;
+    }
+}
+
+/*==========desktop==========*/
+@media screen and (max-width: 1024px) {
+    /*Узнать больше*/
+    .more-text-bg-1{
+        background-size: 700px auto;
+        min-width: 700px;
+        right: -28%;
+    }
+
+    .more-text-bg-2{
+        right: -32%;
+        background-size: 700px auto;
+        min-width: 700px;
+    }
+
+    .more-text-bg-3{
+        left: -74%;
+    }
+
+    .more-apple{
+        left: -48%;
+        bottom: -20%;
+    }
+    .more-block-white-video {
+        min-height: 600px;
+    }
+    .more-elem-use {
+        margin: 0 1.5%;
+    }
+    .more-rt {
+        left: 430px;
+    }
+    .more-elem-use {
+        padding-right: 110px;
+    }
+    .more-elem-use-pic-1{
+        background-size: 35px auto;
+    }
+    .more-elem-use-pic-2{
+        background-size: 125px auto;
+    }
+    .more-elem-use-pic-3{
+        background-size: 60px auto;
+    }
+    .more-elem-use-pic-4{
+        background-size: 140px auto;
+    }
+    .more-elem-use-pic-5{
+        background-size: 45px auto;
+    }
+    .more-elem-use-pic-6{
+        background-size: 125px auto;
+
+    }
+    .more-elem-use-pic-7{
+        background-size: 60px auto;
+    }
+    .integ-small-block {
+        min-width: 28%;
+    }
+    .more-block-white-video {
+        background-position-x: 60%;
+    }
+    .more-text-os-2 {
+        margin-left: 35px;
+    }
+    .more-text-os-3 {
+        min-height: 525px;
+    }
+    /*Решения для бизнеса*/
+    .forbuss-block-right {
+        padding-left: 50px;
+    }
+
+    .forbuss-block-title-padding-1 {
+        padding-top: 90px;
+        padding-left: 10px;
+    }
+
+    .forbuss-height-more1 {
+        height: 218px;
+    }
+
+    .forbuss-height-more2 {
+        height: 264px;
+    }
+
+    .forbuss-height-more3 {
+        height: 240px;
+    }
+
+    .forbuss-height-more5 {
+        height: 288px;
+    }
+
+    .forbuss-height-more6 {
+        height: 240px;
+    }
+
+    .forbuss-bigpic-1 {
+        bottom: -7px;
+        right: -63%;
+    }
+
+    .forbuss-bigpic-2 {
+        left: -75%;
+    }
+
+    .forbuss-bigpic-3 {
+        bottom: -11%;
+        right: -66%;
+    }
+
+    .forbuss-bigpic-4 {
+        left: -75%;
+    }
+
+    .forbuss-bigpic-5 {
+        bottom: -10%;
+        right: -55%;
+    }
+
+    .forbuss-bigpic-6 {
+        left: -60%;
+    }
+
+    .forbuss-icon-main {
+        margin-top: 0px;
+    }
+
+    .forbuss-icon-margin-adapt-1{
+        margin-left: 60px;
+        margin-top: 15px;
+    }
+
+    .forbuss-icon-margin-adapt-2{
+        margin-left: 46px;
+        margin-top: 15px;
+    }
+
+    .forbuss-button {
+        padding: 10px 6px!important;
+        font-size: 15px;
+    }
+
+    .forbuss-block-margin-top {
+        margin-top: 100px;
+    }
+}
+
+/*==========laptop==========*/
+@media screen and (max-width: 992px) {
+    /*Главная*/
+    .main-center-f {
+        width: 800px;
+        margin-left: -400px;
+    }
+    /*Узнать больше*/
+    .more-text-bg-2 {
+        right: -300px;
+    }
+    .more-text-bg-3 {
+        left: -650px;
+    }
+    .more-text-bg-1 {
+        right: -300px;
+    }
+    .more-apple {
+        left: -420px;
+    }
+    /*Решения дл бизнеса*/
+    .forbuss-bigpic-1 {
+        right: -70%;
+    }
+    .forbuss-bigpic-2 {
+        left: -83%;
+    }
+    .forbuss-bigpic-3 {
+        right: -73%;
+    }
+    .forbuss-button {
+        padding: 10px 2px!important;
+        font-size: 12px;
+    }
+    .forbuss-bigpic-4 {
+        left: -84%;
+    }
+    .forbuss-height-more4 {
+        height: 215px;
+    }
+    .forbuss-bigpic-5 {
+        right: -61%;
+    }
+    .forbuss-bigpic-6 {
+        left: -68%;
+    }
+}
+
+/*==========tablets==========*/
+@media screen and (max-width: 768px) {
+    /*Главная*/
+    .main-center-f {
+        width: 800px;
+        margin-left: -400px;
+    }
+    /*Узнать больше*/
+    .content-crop .more-mobile{
+        padding: 30px 5px;
+        padding-bottom: 0;
+    }
+    .more-text-os-2 {
+        padding: 0 0 0 30px;
+    }
+    .more-text-os-3 {
+        padding: 0 0 0 30px;
+        height: 995px;
+    }
+    .more-text-os-1 {
+        padding: 0 0 0 30px;
+        margin-bottom: 80px;
+    }
+    .more-div-text-button {
+        margin-top: 350px;
+        text-align: center;
+    }
+    .more-text-bg-2 {
+        min-height: 350px;
+        bottom: 38px;
+        background-size: 815px auto;
+        background-position-x: -19px;
+        right: -153px;
+    }
+    .more-text-bg-3 {
+        left: -468px;
+        bottom: 94px;
+        background-position-y: 55px;
+    }
+    .more-text-bg-1 {
+        background-size: 773px auto;
+        min-width: 760px;
+        right: -229px;
+        bottom: 38px;
+        background-position-y: 128px;
+    }
+    .mobile-butt-1{
+        margin-top: 620px;
+    }
+    .mobile-butt-2{
+        margin-top: 450px;
+    }
+    .more-block-comfort {
+        padding: 400px 0 0 30px;
+    }
+    .more-apple{
+        left: -228px;
+        bottom: 237px;
+    }
+    .more-app {
+        margin-left: 30%;
+    }
+    .more-block-gray {
+        padding: 50px 30px 50px 30px;
+    }
+    .more-mobile-bottmarg{
+        margin-bottom: 70px;
+    }
+    .more-mobile-video {
+        display: block;
+        background: url(../img/more/more-pic-video-mobile.png) no-repeat center;
+        background-size: 768px auto;
+        min-width: 768px;
+        min-height: 480px;
+        position: absolute;
+        right: 0;
+    }
+    .more-block-white-video {
+        background-size: 0px auto;
+    }
+    .more-div-button {
+        margin: 355px auto 0;
+    }
+    .more-mobile-bottmarg{
+        margin-bottom: 70px;
+    }
+    .more-elem-pic-1{
+        float: initial;
+    }
+    .more-elem-pic-2{
+        float: initial;
+    }
+    .more-elem-pic-3{
+        float: initial;
+        margin-left: 0px;
+    }
+    .more-elem-pic-4{
+        float: initial;
+    }
+    .more-elem-pic-5{
+        float: initial;
+    }
+    .more-elem {
+        margin-bottom: 40px !important;
+    }
+    .more-block-gray-form {
+        margin-right: 0px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: -0px;
+        width: 480px;
+    }
+    .more-block-gray-footer-form {
+        padding-top: 45px;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-bottom: 50px;
+    }
+    .more-button-green-bottom {
+        padding: 14px 82px!important;
+        border-radius: 50px;
+    }
+    .more-reestr {
+        background: url(../img/more/more-pic-rest-mobile.png) no-repeat center;
+        width: 100%;
+        height: 160px;
+    }
+    .more-elem-use {
+        margin: 0;
+    }
+    .more-elem-use-pic-2 {
+        min-width: 150px;
+    }
+    .more-elem-use-pic-3 {
+        min-width: 74px;
+    }
+    .more-elem-use-pic-7 {
+        min-width: 90px;
+    }
+    .more-elem {
+        display: block;
+        max-width: 180px;
+        padding-top: 100px;
+        float: inherit;;
+    }
+    .more-rt {
+        display: none;
+    }
+    .more-form {
+        width: 100%;
+    }
+    .more-block-gray-form {;
+        width: 100%;
+    }
+    .more-div-text-button-footer {
+        text-align: center;
+    }
+    .more-elem-use-main {
+        display: block;
+        height: 130px;
+        margin: 0 auto;
+    }
+    .more-elem-use {
+        display: block;
+        float: left;
+    }
+    /*Решения для бизнеса*/
+
+}
+
+/*==========640==========*/
 @media (max-width: 670px) {
+    /*Главная*/
     .main_p{
         display: inherit;
         margin-bottom: 35px;
@@ -793,17 +1212,101 @@ background-size: 60px auto;
     }
 
     .main-block-mute {
-    display: none;
+        display: none;
     }
 
     .top-banner .banner-inner.main-height {
         padding: 130px 0 100px;
     }
+    .info-block-div{
+        display: none;
+    }
+    .main-center-f {
+        width: 600px;
+        margin-left: -300px;
+    }
+    /*Решения для бизнеса*/
+    .forbuss-block-right {
+        padding-top: 40%;
+        padding-left: 4%;
+        padding-right: 0%;
+    }
+
+    .forbuss-block-left {
+        padding-left: 4%;
+        padding-top: 15%;
+        padding-bottom: 4%;
+    }
+
+    .forbuss-bigpic-1 {
+        bottom: 15px;
+        right: -508px;
+        background-size: 500px auto;
+    }
+
+    .forbuss-bigpic-2 {
+        bottom: 25%;
+        left: -36px;
+        background-size: 500px auto;
+    }
+
+    .forbuss-bigpic-3 {
+        bottom: 5%;
+        right: -121%;
+        background-size: 500px auto;
+    }
+
+    .forbuss-bigpic-4 {
+        bottom: 10%;
+        left: -9%;
+        background-size: 500px auto;
+    }
+
+    .forbuss-bigpic-5 {
+        bottom: 26%;
+        right: -97%;
+        background-size: 500px auto;
+    }
+
+    .forbuss-bigpic-6 {
+        bottom: 75px;
+        left: -48px;
+        background-size: 500px auto;
+    }
+
+    .forbuss-block-in-block {
+        margin-right: 10px;
+    }
+
+    .forbuss-icon-margin-adapt-1 {
+        margin-left: 90px;
+    }
+
+    .forbuss-icon-margin-adapt-2 {
+        margin-left: 74px;
+    }
+
+    .forbuss-button-block {
+        text-align: center;
+    }
+
+    .forbuss-button {
+        padding: 10px 20px;
+    }
+
+    .forbuss-block-title-padding-1 {
+        padding-left: 0px;
+    }
 }
 
-/*======Адаптив мобилки=====*/
+
+/*==========phones==========*/
 @media screen and (max-width: 480px) {
     /*Главная*/
+    body:not(.dark) .top-banner {
+        box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0) inset;
+    }
+
     .info-block-div {
         display: none;
     }
@@ -840,6 +1343,7 @@ background-size: 60px auto;
     .secr-butt-mobile{
         padding: 10px 8px!important;
     }
+
     /*Интеграция*/
     .section-wrapper-integ {
         margin: -210px 0 0 0!important;
@@ -853,7 +1357,7 @@ background-size: 60px auto;
     .integ-elem-4 {
          margin-left: 23px;
          width: 95%;
-     }
+    }
     .integ-add-func {
         height: 1760px;
     }
@@ -863,6 +1367,7 @@ background-size: 60px auto;
     .integ-add-func {
         padding-left: 0%;
     }
+
     /*Решения от партнёров*/
     .button-green-withoutb {
         padding: 10px 15px!important;
@@ -873,6 +1378,7 @@ background-size: 60px auto;
     .sfp-cell {
         height: 325px;
     }
+
     /*Решения для бизнеса*/
     .forbuss-block-right {
         padding: 0;
@@ -882,7 +1388,6 @@ background-size: 60px auto;
     .forbuss-block-left {
         padding-top: 45px;
     }
-
     .content-crop .forbuss-mobile{
         padding: 25px 10px;
     }
@@ -902,7 +1407,6 @@ background-size: 60px auto;
         left: -20px;
         right: 0;
     }
-
     .forbuss-bigpic-2{
         background: url(../img/forbusiness/forbuss-pic-2.png) no-repeat;
         background-size: 760px auto;
@@ -963,7 +1467,6 @@ background-size: 60px auto;
         left: -20px;
         right: 0;
     }
-
     .forbuss-block-more-open-2{
         height: 100%;
         transition: 1s;
@@ -974,40 +1477,30 @@ background-size: 60px auto;
     .forbuss-block-mobile-more2{
         height: 1440px!important;
     }
-
     .forbuss-block-mobile-more3{
         height: 1515px!important;
     }
     .forbuss-block-mobile-more4{
         height: 1570px!important;
     }
-
     .forbuss-block-mobile-more5{
         height: 1350px!important;
     }
     .forbuss-block-mobile-more6{
         height: 1245px!important;
     }
-
-
-
     .forbuss-button-block {
        text-align: center;
     }
-
     .forbuss-button-block-1 {
         text-align: center;
     }
-
     .forbuss-height-more1 {
         height: 205px;
     }
-
     .forbuss-height-more2 {
         height: 306px;
     }
-
-
     .forbuss-block-title-padding-1 {
         padding-top: 0px;
     }
@@ -1021,65 +1514,230 @@ background-size: 60px auto;
     .forbuss-block-margin-top {
         margin-top: 50px;
     }
-
     .forbuss-block-title-padding-2 {
         padding-top: 0px;
     }
-
-
     .top-banner.banner-forbuss {
         background-position-x: 0;
     }
-
-
-
+    .forbuss-height-more3 {
+        height: 250px;
+    }
+    .forbuss-height-more4 {
+        height: 225px;
+    }
+    .forbuss-height-more5 {
+        height: 300px;
+    }
+    .forbuss-height-more6 {
+        height: 250px;
+    }
 
     /*Узнать больше*/
+    .content-crop .more-mobile{
+        padding: 30px 5px;
+        padding-bottom: 0;
+    }
+    .more-title-bott {
+        padding-bottom: 30px;
+    }
     .more-text-os-2 {
         padding: 0 10px 0 10px;
         margin-top: 0;
         margin-bottom: 82px;
         margin-left: 0;
-
+        height: 470px;
     }
     .more-text-bg-2 {
-        background-size: 520px auto;
-        min-width: 425px;
-        min-height: 290px;
-        display: block;
-        background-position-x: -15px;
-        right: -55px;
-        bottom: 20px;
+        background-size: 560px auto;
+        background-position-x: -2px;
+        min-width: 480px;
+        min-height: 50px;
+        max-height: 295px;
+        position: absolute;
+        top: 175px;
+        left: -15px;
+        right: 0;
+        bottom: 0;
+        background-position-y: 10px;
+    }
+    .more-text-os-3 {
+        padding: 0px 10px 5px 30px;
+        margin-top: 0px;
+        margin-left: -20px;
+        margin-bottom: 0;
+        height: 850px;
     }
     .more-text-bg-3 {
-        background-size: 700px auto;
-        min-width: 462px;
-        min-height: 430px;
-        top: 410px;
-        left: -38px;
-        background-position-x: 0;
-
+        background-size: 752px auto;
+        background-position-x: -267px;
+        min-width: 480px;
+        min-height: 50px;
+        max-height: 450px;
+        position: absolute;
+        top: 315px;
+        left: -15px;
+        right: 0;
+        bottom: 0;
+        background-position-y: 10px;
+    }
+    .more-text-os-1 {
+        padding: 0 0 0 10px;
+        margin-top: 25px;
+        height: 660px;
     }
     .more-text-bg-1 {
-        background-size: 400px auto;
-        min-width: 400px;
-        min-height: 215px;
-        display: none;
+        background-size: 680px auto;
+        background-position-x: -2px;
+        min-width: 480px;
+        min-height: 50px;
+        max-height: 390px;
+        position: absolute;
+        top: 232px;
+        left: -15px;
+        right: 0;
+        bottom: 0;
+        background-position-y: 10px;
     }
     .more-apple {
-        background-size: 400px auto;
-        min-width: 400px;
-        min-height: 215px;
-        display: none;
+        background-size: 591px auto;
+        background-position-x: -130px;
+        min-width: 480px;
+        min-height: 50px;
+        max-height: 430px;
+        position: absolute;
+        top: -365px;
+        left: -15px;
+        right: 0;
+        bottom: 0;
+        background-position-y: 10px;
+
     }
     .more-block-white-video {
-        background-size: 400px auto;
-        background-position-y: 110px;
-        display: none;
+        background-size: 0px auto;
     }
     .more-div-text-button {
-        margin: 275px auto 0 auto;
+        margin: 280px auto 0 auto;
     }
-
-
+    .mobile-butt-1{
+        margin-top: 460px;
+    }
+    .mobile-butt-2{
+        margin-top: 405px;
+    }
+    .more-block-comfort {
+        margin-top: 405px;
+        margin-bottom: 115px;
+        padding-top: 100px;
+    }
+    .more-app {
+        background-size: 125px auto;
+        min-width: 125px;
+        min-height: 50px;
+        margin-left: 20%;
+    }
+    .more-smart {
+        background-size: 125px auto;
+        min-width: 125px;
+        min-height: 50px;
+    }
+    .more-block-gray-c {
+        padding: 40px 10px 50px 10px;
+    }
+    .more-mobile-video {
+        display: block;
+        background: url(../img/more/more-pic-video-mobile.png) no-repeat center;
+        background-size: 480px auto;
+        min-width: 480px;
+        min-height: 300px;
+        position: absolute;
+        right: 0;
+    }
+    .more-div-button {
+        margin: 355px auto 0;
+    }
+    .more-mobile-bottmarg{
+        margin-bottom: 70px;
+    }
+    .more-elem-pic-1{
+        float: initial;
+    }
+    .more-elem-pic-2{
+        float: initial;
+    }
+    .more-elem-pic-3{
+        float: initial;
+        margin-left: 0px;
+    }
+    .more-elem-pic-4{
+        float: initial;
+    }
+    .more-elem-pic-5{
+        float: initial;
+    }
+    .more-elem {
+        margin-bottom: 40px !important;
+    }
+    .more-block-gray-form {
+        margin-right: -15px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: -15px;
+        width: 480px;
+    }
+    .more-block-gray-footer-form {
+        padding-top: 45px;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-bottom: 50px;
+    }
+    .more-button-green-bottom {
+        padding: 14px 82px!important;
+        border-radius: 50px;
+    }
+    .more-reestr {
+        background: url(../img/more/more-pic-rest-mobile.png) no-repeat center;
+        width: 459px;
+        height: 160px;
+    }
+    .more-elem-use {
+        margin: 0;
+        position: absolute;
+    }
+    .more-elem-use-pic-1 {
+        top: 0px;
+        left: 39px;
+    }
+    .more-elem-use-pic-2 {
+        min-width: 150px;
+        bottom: 40px;
+        left: 78px;
+    }
+    .more-elem-use-pic-3 {
+        min-width: 74px;
+        bottom: 42px;
+        right: 70px;
+    }
+    .more-elem-use-pic-4 {
+        bottom: -35px;
+        right: 60px;
+    }
+    .more-elem-use-pic-5 {
+        right: 0;
+    }
+    .more-elem-use-pic-6 {
+        left: 155px;
+    }
+    .more-elem-use-pic-7 {
+        min-width: 90px;
+        bottom: -32px;
+        left: 79px;
+    }
+    .more-elem-use-main {
+        height: 180px;
+        position: relative;
+    }
+    .more-elem-use-main {
+        position: relative;
+    }
 }

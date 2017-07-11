@@ -171,7 +171,7 @@ $APPLICATION->SetTitle("Дополнить возможности мегапла
 				</div>
 			</div>
 			<div class="integ-button">
-				<a class="button" href="#" title=""><span class="more-button-yellow" id="int_button">Показать ещё</span></a>
+				<a class="button" href="#" title=""><span class="more-button-yellow integ-button-bott" id="int_button">Показать ещё</span></a>
 			</div>	
 	</div>
 </section>

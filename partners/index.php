@@ -282,7 +282,7 @@ $APPLICATION->SetTitle("Присоединяйтесь к успеху Мега�
         </div>
         <div class="partners-button partners-button-hidden" data-hide-ref="1">
             <a class="button" href="javascript:void(0);" title="">
-                <span class="button-yellow" onclick="obPartnersList.hideRef(this); return false;">Скрыть</span>
+                <span class="button-yellow hide-button" onclick="obPartnersList.hideRef(this); return false;">Скрыть</span>
             </a>
         </div>
 
@@ -327,13 +327,13 @@ $APPLICATION->SetTitle("Присоединяйтесь к успеху Мега�
     <section class="content bg-white section-partners-list padding-top">
 
         <h2 class="block-title">
-            Мегаплан — самая мощная из простых российских CRM-систем
+            Мегаплан — самая мощная<br> из простых российских CRM-систем
         </h2>
         <p class="partners-text">
             Мегаплан — самая мощная из простых российских CRM-систем. Уже 10 лет повышаем эффективность бизнеса и увеличиваем доходы наших клиентов. Наши партнеры знают, как работает бизнес, и внедряют Мегаплан так, чтобы он приносил максимальный результат.
         </p>
         <h2 class="block-title block-title_strait">
-            Мы знаем, что нужно партнёру
+            Мы знаем,<br> что нужно партнёру
         </h2>
 
         <div class="partners-block">
