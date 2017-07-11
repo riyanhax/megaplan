@@ -13,15 +13,14 @@
 $this->setFrameMode(true);
 ?>
 
-<section class="top-banner banner-clients">
+<section class="top-banner banner-clients" style="background-image: url(<?=$arResult["FIRST_BIG_POSTS"][0]["DETAIL_PICTURE"]["SRC"]?>);">
     <div class="container">
         <div class="col-md-12 banner-inner banner-with-logo">
-            <div class="banner-logo"><img src="<?=SITE_TEMPLATE_PATH?>/img/clients/umi.svg"></div>
+            <div class="banner-logo"><img src="<?=$arResult["FIRST_BIG_POSTS"][0]["LOGO"]?>"></div>
             <div class="banner-text color-white">
-                Мегаплан собирает ошибки<br>
-                Мы анализируем и исправляем
+                <?=$arResult["FIRST_BIG_POSTS"][0]["PROPERTIES"]["TITLE"]["VALUE"]?>
             </div>
-            <div class="banner-subtext"><a href="#" title="">История компании «Юмисофт»</a></div>
+            <div class="banner-subtext"><a href="<?=$arResult["FIRST_BIG_POSTS"][0]["DETAIL_PAGE_URL"]?>" title="">История компании <?=$arResult["FIRST_BIG_POSTS"][0]["NAME"];?></a></div>
             <div class="banner-button">
                 <a class="button" href="#" title=""><span class="button-green">Стать клиентом Мегаплана</span></a>
             </div>
@@ -48,15 +47,15 @@ $this->setFrameMode(true);
                         <span class="company-sphere"><?=$arItem["PROPERTIES"]["COMPANY_SPHERE"]["VALUE"]?></span>
                     </div>
                     <div class="img-block bg-grey">
-                        <a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" alt=""></a>
+                        <a href="<?=$arItem["DETAIL_PAGE_URL"]?>" title=""><img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" alt=""></a>
                     </div>
                     <div class="title bg-white">
-                        <a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=$arItem["PROPERTIES"]["TITLE"]["VALUE"]?></a>
+                        <a href="<?=$arItem["DETAIL_PAGE_URL"]?>" title="">«<?=$arItem["PROPERTIES"]["TITLE"]["VALUE"]?>»</a>
                     </div>
                     <p class="preview-text bg-white">
                         <?=$arItem["PREVIEW_TEXT"]?>
                     </p>
-                    <a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="more-link bg-white">Читать далее...</a>
+                    <a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="more-link bg-white" title="">Читать далее...</a>
                 </div>
             <?endforeach;?>
 

@@ -328,15 +328,15 @@ body:not(.dark) .top-banner {
     background-image: url(../img/blog/blog-bg.jpg);
     box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5) inset;
 }
-.top-banner.banner-clients {
+/*.top-banner.banner-clients {
     background-image: url(../img/clients/clients-bg.jpg);
-}
+}*/
 .top-banner.banner-contacts {
     background-image: url(../img/contacts/contacts-bg.jpg);
 }
 .top-banner.banner-company {
     background-image: url(../img/company/company-bg.jpg);
-    background-position: center;
+    background-position: top;
 }
 .top-banner.banner-cloud {
     background-image: url(../img/cloud/cloud-bg.png);
@@ -600,8 +600,9 @@ section.section-security-question .question-block .question-text {
 }
 
 .secr-div-text-button {
-    margin: 35px auto;
+    /*margin: 35px auto;*/
     text-align: center;
+    margin-top: 46px;
 }
 
 .secr-title-padd{
@@ -1252,7 +1253,7 @@ section.section-partners-dealers .partners-text {
 
 section.section-partners-list .block-title,
 section.section-partners-dealers .block-title {
-    padding: 20px 10% 50px;
+    padding: 20px 0 50px;
 }
 
 section.section-partners-list .partners-list {
@@ -1285,6 +1286,10 @@ section.section-partners-list .partners-button.partners-button-hidden {
 section.section-partners-list .partners-button span {
     padding: 14px 38px;
     border-radius: 50px;
+}
+
+section.section-partners-list .partners-button span.hide-button {
+    padding: 14px 83px;
 }
 
 section.section-partners-list .dealers {
@@ -2335,6 +2340,10 @@ border-radius: 50px!important;
 }
 .integ-elem-footer-thin {
     font-weight: 300;
+}
+
+.integ-button-bott{
+    padding: 14px 90px!important;
 }
 
 /*========================= /SFP (Решения от партнёров, всплывашка) ========================*/

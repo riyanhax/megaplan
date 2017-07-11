@@ -13,7 +13,7 @@
 $this->setFrameMode(true);
 ?>
 
-<section class="top-banner banner-clients">
+<section class="top-banner banner-clients"  style="background-image: url(<?=$arResult["DETAIL_PICTURE"]["SRC"]?>);">
     <div class="container">
         <div class="col-md-12 banner-inner">
             <div class="banner-suptext"><?=$arResult["PROPERTIES"]["COMPANY_SPHERE"]["VALUE"]?></div>
